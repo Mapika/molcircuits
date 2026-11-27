@@ -1,0 +1,12 @@
+{
+  "sample_id": 351,
+  "model": "zinc_large_seed0",
+  "baseline": {
+    "smiles": "CN(C[C@@H]1CCCN1C(=O)[C@@H]1CCCOC1)C(=O)C1CCCC1",
+    "sample_id": 351
+  },
+  "probe:+2": {
+    "smiles": "CN(C[C@@H]1CCCN1C(=O)[C@@H]1CCCOC1)C(=O)C1CC=CC1",
+    "sample_id": 351
+  }
+}

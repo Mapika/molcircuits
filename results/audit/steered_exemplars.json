@@ -1,0 +1,179 @@
+{
+  "description": "Genuine high-QED, low-SA, planar, bridgehead/spiro-free, PAINS/Brenk-clean molecules generated under logit_token on zinc_large/tf_seed0.",
+  "exemplars": [
+    {
+      "target_property": "MolLogP",
+      "arm": "logit_token (beta=+8)",
+      "model": "zinc_large/tf_seed0 (Canonical 113.3M)",
+      "smiles": "CC(C)Cc1ccccc1C(=O)Nc1cccc(C(=O)O)c1",
+      "smiles_raw_generated": "CC(C)Cc1ccccc1C(=O)Nc1cccc(C(=O)O)c1",
+      "MolLogP": 3.8356,
+      "TPSA": 66.4,
+      "NumAromaticRings": 2,
+      "QED": 0.8809,
+      "SA": 1.7323,
+      "MolWt": 297.35,
+      "heavy_atoms": 22,
+      "fsp3": 0.2222,
+      "bridgehead_atoms": 0,
+      "spiro_atoms": 0,
+      "pains": false,
+      "brenk": false,
+      "n_candidates_passing_all_filters": 189,
+      "runner_ups": [
+        {
+          "smiles": "Cc1ccc2cc(C(=O)NCCc3ccccc3)ccc2n1",
+          "MolLogP": 3.516,
+          "TPSA": 41.99,
+          "NumAromaticRings": 3,
+          "QED": 0.7986,
+          "SA": 1.6816,
+          "fsp3": 0.158
+        },
+        {
+          "smiles": "CC(C)COc1ccccc1C(=O)Nc1ccccc1C(=O)N(C)C",
+          "MolLogP": 3.676,
+          "TPSA": 58.64,
+          "NumAromaticRings": 2,
+          "QED": 0.8726,
+          "SA": 1.846,
+          "fsp3": 0.3
+        },
+        {
+          "smiles": "CC(=O)c1ccccc1-c1ccc(C=C(C)C)c(C(=O)O)c1",
+          "MolLogP": 4.678,
+          "TPSA": 54.37,
+          "NumAromaticRings": 2,
+          "QED": 0.833,
+          "SA": 2.1854,
+          "fsp3": 0.158
+        },
+        {
+          "smiles": "Cc1cc(CSCc2ccc(C(=O)O)cc2)sn1",
+          "MolLogP": 3.583,
+          "TPSA": 50.19,
+          "NumAromaticRings": 2,
+          "QED": 0.9085,
+          "SA": 2.4434,
+          "fsp3": 0.231
+        }
+      ]
+    },
+    {
+      "target_property": "TPSA",
+      "arm": "logit_token (beta=+8)",
+      "model": "zinc_large/tf_seed0 (Canonical 113.3M)",
+      "smiles": "N#Cc1c[nH]nc1NC(=O)c1ocnc1-c1ccccc1",
+      "smiles_raw_generated": "N#Cc1c[nH]nc1NC(=O)c1ocnc1-c1ccccc1",
+      "MolLogP": 2.1887,
+      "TPSA": 107.6,
+      "NumAromaticRings": 3,
+      "QED": 0.7636,
+      "SA": 2.9686,
+      "MolWt": 279.26,
+      "heavy_atoms": 21,
+      "fsp3": 0.0,
+      "bridgehead_atoms": 0,
+      "spiro_atoms": 0,
+      "pains": false,
+      "brenk": false,
+      "n_candidates_passing_all_filters": 181,
+      "runner_ups": [
+        {
+          "smiles": "O=C(O)COc1cccc(NC(=O)c2n[nH]c3c2CCC3)c1",
+          "MolLogP": 1.614,
+          "TPSA": 104.31,
+          "NumAromaticRings": 2,
+          "QED": 0.778,
+          "SA": 2.2071,
+          "fsp3": 0.267
+        },
+        {
+          "smiles": "N#Cc1n[nH]cc1NC(=O)c1coc(COc2ccc(F)cc2)n1",
+          "MolLogP": 2.24,
+          "TPSA": 116.83,
+          "NumAromaticRings": 3,
+          "QED": 0.742,
+          "SA": 2.7831,
+          "fsp3": 0.067
+        },
+        {
+          "smiles": "COc1nn(C)cc1NC(=O)N1CCN(C(=O)c2cccnc2)CC1",
+          "MolLogP": 0.814,
+          "TPSA": 92.59,
+          "NumAromaticRings": 2,
+          "QED": 0.8896,
+          "SA": 2.3815,
+          "fsp3": 0.375
+        },
+        {
+          "smiles": "O=C(NN1CCCNC1=O)c1coc(-c2cccnc2)n1",
+          "MolLogP": 0.797,
+          "TPSA": 100.36,
+          "NumAromaticRings": 2,
+          "QED": 0.8692,
+          "SA": 2.8298,
+          "fsp3": 0.231
+        }
+      ]
+    },
+    {
+      "target_property": "NumAromaticRings",
+      "arm": "logit_token (beta=+16)",
+      "model": "zinc_large/tf_seed0 (Canonical 113.3M)",
+      "smiles": "Cn1nccc1C(=O)Nc1ccccc1Oc1ccccn1",
+      "smiles_raw_generated": "Cn1nccc1C(=O)Nc1ccccc1Oc1ccccn1",
+      "MolLogP": 2.8597,
+      "TPSA": 69.04,
+      "NumAromaticRings": 3,
+      "QED": 0.803,
+      "SA": 2.1076,
+      "MolWt": 294.31,
+      "heavy_atoms": 22,
+      "fsp3": 0.0625,
+      "bridgehead_atoms": 0,
+      "spiro_atoms": 0,
+      "pains": false,
+      "brenk": false,
+      "n_candidates_passing_all_filters": 317,
+      "runner_ups": [
+        {
+          "smiles": "Cc1[nH]ncc1C(=O)Nc1cccc(Oc2ccncc2)c1",
+          "MolLogP": 3.158,
+          "TPSA": 79.9,
+          "NumAromaticRings": 3,
+          "QED": 0.7743,
+          "SA": 2.1074,
+          "fsp3": 0.062
+        },
+        {
+          "smiles": "Cc1ocnc1C(=O)Nc1ccccc1Oc1ccncc1",
+          "MolLogP": 3.423,
+          "TPSA": 77.25,
+          "NumAromaticRings": 3,
+          "QED": 0.7976,
+          "SA": 2.2521,
+          "fsp3": 0.062
+        },
+        {
+          "smiles": "Cc1nocc1C(=O)Nc1ccccc1Oc1ccccn1",
+          "MolLogP": 3.423,
+          "TPSA": 77.25,
+          "NumAromaticRings": 3,
+          "QED": 0.7976,
+          "SA": 2.2526,
+          "fsp3": 0.062
+        },
+        {
+          "smiles": "Cc1ocnc1C(=O)Nc1ncccc1Oc1ccccc1",
+          "MolLogP": 3.423,
+          "TPSA": 77.25,
+          "NumAromaticRings": 3,
+          "QED": 0.7976,
+          "SA": 2.2851,
+          "fsp3": 0.062
+        }
+      ]
+    }
+  ]
+}

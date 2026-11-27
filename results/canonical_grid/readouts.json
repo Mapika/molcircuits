@@ -1,0 +1,278 @@
+{
+  "sample_seed": 51,
+  "atom_sample_sha256": "e5da3f6cb974e11b68c5fe6715c2c1723883209d54b009d2b45169bc6b79ea80",
+  "ring_sample_sha256": "f2af736f218d8933b326663b0396a0efc9bde825a4ad9a714ffc77252ddb11f5",
+  "n_ring_pairs": 1024,
+  "runs": {
+    "small_0": {
+      "checkpoint": "grid/zinc_small/tf_seed0",
+      "valence_readout": {
+        "zero_based_layer": 2,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.9966601321425979,
+        "molecule_bootstrap_ci": [
+          0.9956053374466638,
+          0.997672126160883
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1024,
+        "renamed_2_beats_1": 901,
+        "both_correct_in_digit_comparison": 901,
+        "original_full_vocab_top1": 1008,
+        "renamed_full_vocab_top1": 881,
+        "mean_original_logit1_minus_logit2": 12.193819046020508,
+        "mean_renamed_logit1_minus_logit2": -4.969505786895752,
+        "paired_logit_difference": 17.1633243560791,
+        "paired_difference_bootstrap_ci": [
+          16.842176818847655,
+          17.49176869392395
+        ]
+      }
+    },
+    "small_1": {
+      "checkpoint": "grid/zinc_small/tf_seed1",
+      "valence_readout": {
+        "zero_based_layer": 2,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.9978218253103899,
+        "molecule_bootstrap_ci": [
+          0.9970151584590394,
+          0.9986203415325946
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1023,
+        "renamed_2_beats_1": 909,
+        "both_correct_in_digit_comparison": 908,
+        "original_full_vocab_top1": 1010,
+        "renamed_full_vocab_top1": 891,
+        "mean_original_logit1_minus_logit2": 11.339850425720215,
+        "mean_renamed_logit1_minus_logit2": -5.733865737915039,
+        "paired_logit_difference": 17.073715209960938,
+        "paired_difference_bootstrap_ci": [
+          16.713139009475707,
+          17.431193113327026
+        ]
+      }
+    },
+    "small_2": {
+      "checkpoint": "grid/zinc_small/tf_seed2",
+      "valence_readout": {
+        "zero_based_layer": 2,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.9944093516300008,
+        "molecule_bootstrap_ci": [
+          0.9930205673855099,
+          0.9957254024244641
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1024,
+        "renamed_2_beats_1": 889,
+        "both_correct_in_digit_comparison": 889,
+        "original_full_vocab_top1": 1009,
+        "renamed_full_vocab_top1": 875,
+        "mean_original_logit1_minus_logit2": 11.752882957458496,
+        "mean_renamed_logit1_minus_logit2": -6.358242988586426,
+        "paired_logit_difference": 18.111125946044922,
+        "paired_difference_bootstrap_ci": [
+          17.736213874816894,
+          18.481407165527344
+        ]
+      }
+    },
+    "base_0": {
+      "checkpoint": "grid/zinc_base/tf_seed0",
+      "valence_readout": {
+        "zero_based_layer": 3,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.9993465475931169,
+        "molecule_bootstrap_ci": [
+          0.9989069863098766,
+          0.9997100020276093
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1024,
+        "renamed_2_beats_1": 881,
+        "both_correct_in_digit_comparison": 881,
+        "original_full_vocab_top1": 1011,
+        "renamed_full_vocab_top1": 870,
+        "mean_original_logit1_minus_logit2": 12.787259101867676,
+        "mean_renamed_logit1_minus_logit2": -7.011954307556152,
+        "paired_logit_difference": 19.799213409423828,
+        "paired_difference_bootstrap_ci": [
+          19.291260242462158,
+          20.281197547912598
+        ]
+      }
+    },
+    "base_1": {
+      "checkpoint": "grid/zinc_base/tf_seed1",
+      "valence_readout": {
+        "zero_based_layer": 3,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.999636970885065,
+        "molecule_bootstrap_ci": [
+          0.9993404772935701,
+          0.9999273152808345
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1024,
+        "renamed_2_beats_1": 871,
+        "both_correct_in_digit_comparison": 871,
+        "original_full_vocab_top1": 1007,
+        "renamed_full_vocab_top1": 856,
+        "mean_original_logit1_minus_logit2": 12.503104209899902,
+        "mean_renamed_logit1_minus_logit2": -6.699131011962891,
+        "paired_logit_difference": 19.20223617553711,
+        "paired_difference_bootstrap_ci": [
+          18.78102812767029,
+          19.628138399124147
+        ]
+      }
+    },
+    "base_2": {
+      "checkpoint": "grid/zinc_base/tf_seed2",
+      "valence_readout": {
+        "zero_based_layer": 3,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.999636970885065,
+        "molecule_bootstrap_ci": [
+          0.9993432011240546,
+          0.9999274681675548
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1023,
+        "renamed_2_beats_1": 933,
+        "both_correct_in_digit_comparison": 932,
+        "original_full_vocab_top1": 1007,
+        "renamed_full_vocab_top1": 924,
+        "mean_original_logit1_minus_logit2": 12.32314682006836,
+        "mean_renamed_logit1_minus_logit2": -7.7269392013549805,
+        "paired_logit_difference": 20.050085067749023,
+        "paired_difference_bootstrap_ci": [
+          19.625732326507567,
+          20.467797899246214
+        ]
+      }
+    },
+    "large_0": {
+      "checkpoint": "grid/zinc_large/tf_seed0",
+      "valence_readout": {
+        "zero_based_layer": 7,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.999854788354026,
+        "molecule_bootstrap_ci": [
+          0.9996360969942841,
+          1.0
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1024,
+        "renamed_2_beats_1": 890,
+        "both_correct_in_digit_comparison": 890,
+        "original_full_vocab_top1": 1009,
+        "renamed_full_vocab_top1": 868,
+        "mean_original_logit1_minus_logit2": 12.8529634475708,
+        "mean_renamed_logit1_minus_logit2": -7.106476783752441,
+        "paired_logit_difference": 19.95943832397461,
+        "paired_difference_bootstrap_ci": [
+          19.50766658782959,
+          20.375804710388184
+        ]
+      }
+    },
+    "large_1": {
+      "checkpoint": "grid/zinc_large/tf_seed1",
+      "valence_readout": {
+        "zero_based_layer": 7,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.999636970885065,
+        "molecule_bootstrap_ci": [
+          0.9992746672007096,
+          0.9999273626654903
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1024,
+        "renamed_2_beats_1": 911,
+        "both_correct_in_digit_comparison": 911,
+        "original_full_vocab_top1": 1012,
+        "renamed_full_vocab_top1": 898,
+        "mean_original_logit1_minus_logit2": 13.112439155578613,
+        "mean_renamed_logit1_minus_logit2": -8.768462181091309,
+        "paired_logit_difference": 21.880901336669922,
+        "paired_difference_bootstrap_ci": [
+          21.41485047340393,
+          22.331228828430177
+        ]
+      }
+    },
+    "large_2": {
+      "checkpoint": "grid/zinc_large/tf_seed2",
+      "valence_readout": {
+        "zero_based_layer": 7,
+        "n_train_molecules": 1400,
+        "n_test_molecules": 600,
+        "n_test_atoms": 13773,
+        "test_labels_and_groups_sha256": "644d6480d119a51f95d1e6f6aa97181c1ecaae2b0b8ff89504f582dd56eb35e5",
+        "atom_accuracy": 0.999564365062078,
+        "molecule_bootstrap_ci": [
+          0.9991984771039082,
+          0.9998554315256276
+        ],
+        "current_token_accuracy": 0.8674217672257315
+      },
+      "ring_relabeling": {
+        "original_1_beats_2": 1023,
+        "renamed_2_beats_1": 867,
+        "both_correct_in_digit_comparison": 866,
+        "original_full_vocab_top1": 1008,
+        "renamed_full_vocab_top1": 845,
+        "mean_original_logit1_minus_logit2": 13.049145698547363,
+        "mean_renamed_logit1_minus_logit2": -5.739940643310547,
+        "paired_logit_difference": 18.789087295532227,
+        "paired_difference_bootstrap_ci": [
+          18.385495138168334,
+          19.197985076904295
+        ]
+      }
+    }
+  }
+}

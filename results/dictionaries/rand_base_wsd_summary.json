@@ -1,0 +1,5816 @@
+{
+  "rand_split": [
+    {
+      "seed": 0,
+      "aggregate": {
+        "primary_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5363038665720007,
+              "median": 0.500757683704539,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.41029187042621806,
+              "median": 0.3901083374895701,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4077812561547105,
+              "median": 0.40006962418556213,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.3002990757000884,
+              "median": 0.2480918880640523,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.48983930817222293,
+              "median": 0.47376271790149166,
+              "n_exceeds_pipeline_null_p95": 31
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.12601199614578243,
+              "median_difference": 0.11004131499952235,
+              "reference_wins": 27,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.06809025946564114,
+                  0.18566500404981434
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.12852261041729005,
+              "median_difference": 0.09680002238601448,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.08779805684934311,
+                  0.16927557654369338
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.23600479087191223,
+              "median_difference": 0.21403868060286446,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.19127723080104084,
+                  0.28402944518273937
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.046464558399777665,
+              "median_difference": 0.005246474133821705,
+              "reference_wins": 16,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  -0.017492834406650393,
+                  0.1090694519926533
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 25,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 3703,
+                  "n_fragments": 4,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 364,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "primary_amine"
+                  ]
+                },
+                {
+                  "coordinate": 6475,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 6978,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 24,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 508,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 348,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "ester"
+                  ]
+                },
+                {
+                  "coordinate": 461,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 24,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 189,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 240,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 482,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 508,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1823,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 6459,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 6761,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 7,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "ketone",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 4,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "secondary_mean_absolute_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5633441009917857,
+              "median": 0.513393909963114,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.427243498200455,
+              "median": 0.4135689189985499,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.42963883539967085,
+              "median": 0.38707235713240384,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.3267606573356427,
+              "median": 0.2759607872484546,
+              "n_exceeds_pipeline_null_p95": 29
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4924841162400254,
+              "median": 0.47376271790149166,
+              "n_exceeds_pipeline_null_p95": 30
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.13610060279133093,
+              "median_difference": 0.11064934621496891,
+              "reference_wins": 29,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.08785202558609723,
+                  0.18969204122318928
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.13370526559211496,
+              "median_difference": 0.14266104288189346,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.10152605833763206,
+                  0.16911373134494692
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.2365834436561431,
+              "median_difference": 0.215617091271659,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.19414839061069775,
+                  0.286744362067924
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.0708599847517603,
+              "median_difference": 0.040053589340661555,
+              "reference_wins": 17,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.01174807706500287,
+                  0.12721403398906075
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 21,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 999,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "cyclohexane",
+                    "ester",
+                    "furan",
+                    "ketone",
+                    "morpholine",
+                    "piperidine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 3703,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                },
+                {
+                  "coordinate": 6475,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 6978,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 23,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 136,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 348,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "ester"
+                  ]
+                },
+                {
+                  "coordinate": 371,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "phenol"
+                  ]
+                },
+                {
+                  "coordinate": 461,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 508,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 25,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 189,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 482,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 508,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6608,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "cyclohexane",
+                    "ether",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 6459,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 6761,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "within_type_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.34429468564501475,
+              "median": 0.3150645523843631,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.22637052130275992,
+              "median": 0.25040081411327403,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.23279909603232754,
+              "median": 0.20316739677003137,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.18088720591562432,
+              "median": 0.1547251153958611,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.0,
+              "median": 0.0,
+              "n_exceeds_pipeline_null_p95": 0
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.11792416434225493,
+              "median_difference": 0.12224442486874235,
+              "reference_wins": 28,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.06412525970200844,
+                  0.1662499128808872
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.11149558961268731,
+              "median_difference": 0.10155058055562843,
+              "reference_wins": 29,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.07393270308758772,
+                  0.1478105232893344
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.16340747972939046,
+              "median_difference": 0.143001333796349,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.12057075007522869,
+                  0.20285281253794452
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.34429468564501475,
+              "median_difference": 0.3150645523843631,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.2586584190266957,
+                  0.42027928187341357
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null_type_matched",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6419,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 6475,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 7384,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 7872,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 7997,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "morpholine"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 30,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 293,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "pyridine",
+                    "urea"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 25,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 508,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 189,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 240,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitrile",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 482,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 495,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ketone",
+                    "nitro"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1823,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 2698,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "morpholine"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 0,
+              "n_distinct_coordinates": 0,
+              "n_fragments_without_selection_signal": 31,
+              "shared_coordinates": []
+            }
+          }
+        },
+        "inference": {
+          "cluster_unit": "fragment family",
+          "n_bootstrap": 10000,
+          "bootstrap_seed": 37000,
+          "family_assignments": {
+            "amide": "carbonyl",
+            "urea": "carbonyl",
+            "carboxylic_acid": "carbonyl",
+            "ester": "carbonyl",
+            "ketone": "carbonyl",
+            "ether": "heteroatom",
+            "alcohol": "heteroatom",
+            "primary_amine": "heteroatom",
+            "nitrile": "heteroatom",
+            "nitro": "heteroatom",
+            "sulfonamide": "sulfur",
+            "sulfone": "sulfur",
+            "thioether": "heteroatom",
+            "trifluoromethyl": "alkyl_halide",
+            "fluoro_aromatic": "arene_halide",
+            "fluoro_aliphatic": "alkyl_halide",
+            "chloro_aromatic": "arene_halide",
+            "benzene": "arene",
+            "pyridine": "arene",
+            "pyrimidine": "arene",
+            "imidazole": "hetero5",
+            "furan": "hetero5",
+            "thiophene": "hetero5",
+            "piperidine": "sat_N_ring",
+            "piperazine": "sat_N_ring",
+            "morpholine": "sat_N_ring",
+            "cyclohexane": "sat_ring",
+            "phenol": "arene",
+            "tert_butyl": "alkyl",
+            "isopropyl": "alkyl",
+            "alkene": "alkyl"
+          }
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "aggregate": {
+        "primary_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5070852140523988,
+              "median": 0.49196724800599945,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.39390386760875146,
+              "median": 0.38864577093684094,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.35149162301310427,
+              "median": 0.3448130775263644,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.3007874174573657,
+              "median": 0.2809183542927106,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.48805588108015413,
+              "median": 0.47614392054242055,
+              "n_exceeds_pipeline_null_p95": 31
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.11318134644364743,
+              "median_difference": 0.07631459651248795,
+              "reference_wins": 23,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.03762613254276165,
+                  0.18413610436798244
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.15559359103929465,
+              "median_difference": 0.1404008191893809,
+              "reference_wins": 28,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.09646602209576924,
+                  0.20878030328446837
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.20629779659503328,
+              "median_difference": 0.17785506861363864,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.1716451958165926,
+                  0.24007697931300873
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.01902933297224474,
+              "median_difference": 0.009086049472292301,
+              "reference_wins": 17,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  -0.05907205785148077,
+                  0.09190684562455416
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1518,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 3232,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                },
+                {
+                  "coordinate": 3931,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "piperazine"
+                  ]
+                },
+                {
+                  "coordinate": 6608,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 30,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 384,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "morpholine"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 393,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 471,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1997,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alkene",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 2663,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 6398,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 13,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 17,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 15,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "secondary_mean_absolute_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5471284630125052,
+              "median": 0.5301880364616712,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4180240252361238,
+              "median": 0.4105429255128415,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.38640684649316276,
+              "median": 0.3746492322527708,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.3157972801579896,
+              "median": 0.2884094630678495,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4910445238297248,
+              "median": 0.47614392054242055,
+              "n_exceeds_pipeline_null_p95": 30
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.12910443777638134,
+              "median_difference": 0.08341449901069464,
+              "reference_wins": 29,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.07814700570630703,
+                  0.18529767631524635
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1607216165193424,
+              "median_difference": 0.15482783138751985,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.11882718022360762,
+                  0.200604968023069
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.2313311828545155,
+              "median_difference": 0.2272183944175883,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.189923860894324,
+                  0.2742747820536502
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.05608393918278024,
+              "median_difference": 0.05458894906503248,
+              "reference_wins": 19,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  -0.004158875292879498,
+                  0.11653341389155947
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 21,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 406,
+                  "n_fragments": 9,
+                  "fragments": [
+                    "cyclohexane",
+                    "furan",
+                    "ketone",
+                    "morpholine",
+                    "piperazine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 1518,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 6608,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 31,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": []
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 365,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "ketone"
+                  ]
+                },
+                {
+                  "coordinate": 393,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 471,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1997,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "alkene",
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 7381,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "cyclohexane",
+                    "morpholine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 6398,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 13,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 17,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 15,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "within_type_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.34332604212703033,
+              "median": 0.3008143868021391,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.23442254625810585,
+              "median": 0.23531446120413463,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.20994006192456716,
+              "median": 0.2194790036928269,
+              "n_exceeds_pipeline_null_p95": 29
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.18132862886948004,
+              "median": 0.17491325557271853,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.0,
+              "median": 0.0,
+              "n_exceeds_pipeline_null_p95": 0
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.10890349586892444,
+              "median_difference": 0.09061146954384942,
+              "reference_wins": 25,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.043995574599001254,
+                  0.16890236220360896
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.13338598020246314,
+              "median_difference": 0.10930221100621251,
+              "reference_wins": 29,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.05944770448544809,
+                  0.19969226054956815
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.16199741325755032,
+              "median_difference": 0.1325791184604168,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.1137850082637445,
+                  0.20480538233669512
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.34332604212703033,
+              "median_difference": 0.3008143868021391,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.2453405429468817,
+                  0.43000878721761876
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null_type_matched",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 687,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 1418,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 3232,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 4226,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 6608,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 384,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "amide",
+                    "morpholine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 395,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "furan",
+                    "thioether"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 305,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "alcohol",
+                    "ether",
+                    "phenol"
+                  ]
+                },
+                {
+                  "coordinate": 383,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 3432,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "morpholine"
+                  ]
+                },
+                {
+                  "coordinate": 6398,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 6909,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 0,
+              "n_distinct_coordinates": 0,
+              "n_fragments_without_selection_signal": 31,
+              "shared_coordinates": []
+            }
+          }
+        },
+        "inference": {
+          "cluster_unit": "fragment family",
+          "n_bootstrap": 10000,
+          "bootstrap_seed": 37001,
+          "family_assignments": {
+            "amide": "carbonyl",
+            "urea": "carbonyl",
+            "carboxylic_acid": "carbonyl",
+            "ester": "carbonyl",
+            "ketone": "carbonyl",
+            "ether": "heteroatom",
+            "alcohol": "heteroatom",
+            "primary_amine": "heteroatom",
+            "nitrile": "heteroatom",
+            "nitro": "heteroatom",
+            "sulfonamide": "sulfur",
+            "sulfone": "sulfur",
+            "thioether": "heteroatom",
+            "trifluoromethyl": "alkyl_halide",
+            "fluoro_aromatic": "arene_halide",
+            "fluoro_aliphatic": "alkyl_halide",
+            "chloro_aromatic": "arene_halide",
+            "benzene": "arene",
+            "pyridine": "arene",
+            "pyrimidine": "arene",
+            "imidazole": "hetero5",
+            "furan": "hetero5",
+            "thiophene": "hetero5",
+            "piperidine": "sat_N_ring",
+            "piperazine": "sat_N_ring",
+            "morpholine": "sat_N_ring",
+            "cyclohexane": "sat_ring",
+            "phenol": "arene",
+            "tert_butyl": "alkyl",
+            "isopropyl": "alkyl",
+            "alkene": "alkyl"
+          }
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "aggregate": {
+        "primary_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5374894498140214,
+              "median": 0.5348693858832121,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.40023437211448043,
+              "median": 0.3990088455717672,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.37645411541868845,
+              "median": 0.37095860332212505,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.28302361527823755,
+              "median": 0.2611084226334449,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.49197517961597653,
+              "median": 0.4611788031391122,
+              "n_exceeds_pipeline_null_p95": 31
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.13725507769954104,
+              "median_difference": 0.13147334924766002,
+              "reference_wins": 25,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.05994833621533209,
+                  0.20182764721916305
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1610353343953329,
+              "median_difference": 0.14861733421231765,
+              "reference_wins": 28,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.09958289346237642,
+                  0.21331844318799068
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.2544658345357838,
+              "median_difference": 0.23414523315926394,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.1958070727342865,
+                  0.30517093499557113
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.04551427019804489,
+              "median_difference": 0.00020145470057339465,
+              "reference_wins": 16,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  -0.025414686876729757,
+                  0.1070386540821087
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 23,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 4243,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 7878,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 889,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 1390,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "morpholine"
+                  ]
+                },
+                {
+                  "coordinate": 7266,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "primary_amine"
+                  ]
+                },
+                {
+                  "coordinate": 7535,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "ester"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 81,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 87,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alkene",
+                    "pyridine"
+                  ]
+                },
+                {
+                  "coordinate": 434,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 503,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "pyrimidine"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 219,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "morpholine",
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 173,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 337,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "phenol"
+                  ]
+                },
+                {
+                  "coordinate": 390,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 30,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 8037,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "secondary_mean_absolute_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5621932822713354,
+              "median": 0.5348693858832121,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4136438451090737,
+              "median": 0.4078238353011061,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.40751878154915483,
+              "median": 0.3809069037088193,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.30627709715020546,
+              "median": 0.2611084226334449,
+              "n_exceeds_pipeline_null_p95": 28
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4936238567041418,
+              "median": 0.4611788031391122,
+              "n_exceeds_pipeline_null_p95": 30
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.14854943716226157,
+              "median_difference": 0.12266275779085828,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.09713346501957411,
+                  0.19721805933691575
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1546745007221806,
+              "median_difference": 0.15666579455137253,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.11414960807105509,
+                  0.20058340287847043
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.2559161851211299,
+              "median_difference": 0.2257048355358829,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.20544870239336754,
+                  0.30192488302959936
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.06856942556719359,
+              "median_difference": 0.06704571470618248,
+              "reference_wins": 18,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.005740918880807103,
+                  0.12450555342565954
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 22,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 425,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "cyclohexane",
+                    "imidazole",
+                    "morpholine",
+                    "piperazine",
+                    "pyrimidine"
+                  ]
+                },
+                {
+                  "coordinate": 4243,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 7878,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 7535,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "ester"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 81,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 280,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 434,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "urea"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 173,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 200,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 219,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "piperazine"
+                  ]
+                },
+                {
+                  "coordinate": 337,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "phenol"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 8006,
+                  "n_fragments": 4,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine"
+                  ]
+                },
+                {
+                  "coordinate": 893,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "ester"
+                  ]
+                },
+                {
+                  "coordinate": 8037,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "within_type_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.34552727766159097,
+              "median": 0.3384672426896445,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.24127538457372072,
+              "median": 0.23371151002836335,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.2137877990378409,
+              "median": 0.22599085854987302,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.1824836519210664,
+              "median": 0.16624613677831898,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.0,
+              "median": 0.0,
+              "n_exceeds_pipeline_null_p95": 0
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.10425189308787018,
+              "median_difference": 0.1131637854697673,
+              "reference_wins": 24,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.030618369166261802,
+                  0.1621426219370266
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.13173947862375,
+              "median_difference": 0.12925263860573372,
+              "reference_wins": 27,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.06775927504796128,
+                  0.1814291601247695
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1630436257405245,
+              "median_difference": 0.16754101890449724,
+              "reference_wins": 28,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.0980509136140086,
+                  0.21130330124425997
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.3455272776615908,
+              "median_difference": 0.3384672426896445,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.23468957624771886,
+                  0.43876325943701766
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null_type_matched",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1390,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "morpholine"
+                  ]
+                },
+                {
+                  "coordinate": 4243,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "imidazole"
+                  ]
+                },
+                {
+                  "coordinate": 5851,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 6040,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 436,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "isopropyl",
+                    "piperazine",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 189,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "pyrimidine"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 173,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "alcohol",
+                    "phenol",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 293,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 362,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "thiophene"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 417,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 4803,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 0,
+              "n_distinct_coordinates": 0,
+              "n_fragments_without_selection_signal": 31,
+              "shared_coordinates": []
+            }
+          }
+        },
+        "inference": {
+          "cluster_unit": "fragment family",
+          "n_bootstrap": 10000,
+          "bootstrap_seed": 37002,
+          "family_assignments": {
+            "amide": "carbonyl",
+            "urea": "carbonyl",
+            "carboxylic_acid": "carbonyl",
+            "ester": "carbonyl",
+            "ketone": "carbonyl",
+            "ether": "heteroatom",
+            "alcohol": "heteroatom",
+            "primary_amine": "heteroatom",
+            "nitrile": "heteroatom",
+            "nitro": "heteroatom",
+            "sulfonamide": "sulfur",
+            "sulfone": "sulfur",
+            "thioether": "heteroatom",
+            "trifluoromethyl": "alkyl_halide",
+            "fluoro_aromatic": "arene_halide",
+            "fluoro_aliphatic": "alkyl_halide",
+            "chloro_aromatic": "arene_halide",
+            "benzene": "arene",
+            "pyridine": "arene",
+            "pyrimidine": "arene",
+            "imidazole": "hetero5",
+            "furan": "hetero5",
+            "thiophene": "hetero5",
+            "piperidine": "sat_N_ring",
+            "piperazine": "sat_N_ring",
+            "morpholine": "sat_N_ring",
+            "cyclohexane": "sat_ring",
+            "phenol": "arene",
+            "tert_butyl": "alkyl",
+            "isopropyl": "alkyl",
+            "alkene": "alkyl"
+          }
+        }
+      }
+    }
+  ],
+  "canon_split": [
+    {
+      "seed": 0,
+      "aggregate": {
+        "primary_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5472173756092666,
+              "median": 0.5321789114940457,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4375275133060403,
+              "median": 0.4430545694391492,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.42094230311648007,
+              "median": 0.37048573948835073,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.3290556737216913,
+              "median": 0.3284730058074207,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.48983930817222293,
+              "median": 0.47376271790149166,
+              "n_exceeds_pipeline_null_p95": 31
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.10968986230322644,
+              "median_difference": 0.08131417500067362,
+              "reference_wins": 24,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.058532582654361266,
+                  0.16536641728533222
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1262750724927865,
+              "median_difference": 0.10172663203307564,
+              "reference_wins": 28,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.09170197116514091,
+                  0.1580528143039579
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.21816170188757536,
+              "median_difference": 0.19072956819501186,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.1659288845532273,
+                  0.27163094185490505
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.05737806743704375,
+              "median_difference": 0.01565210702112657,
+              "reference_wins": 18,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  -0.013328359910888658,
+                  0.1251069614094237
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 22,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 3703,
+                  "n_fragments": 4,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 7997,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "alcohol",
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 5873,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 5887,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "piperazine"
+                  ]
+                },
+                {
+                  "coordinate": 6475,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 6978,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 25,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 508,
+                  "n_fragments": 4,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 6,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 461,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 23,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 189,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 240,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "nitrile",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 508,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "pyridine"
+                  ]
+                },
+                {
+                  "coordinate": 6,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1762,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                },
+                {
+                  "coordinate": 6459,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 7,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "ketone",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 4,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "secondary_mean_absolute_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.585702463207323,
+              "median": 0.5595278934095845,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.45117286600949574,
+              "median": 0.44748971808803617,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4449636128667791,
+              "median": 0.4018067725002766,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.35915151900870995,
+              "median": 0.3430841989523056,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4924841162400254,
+              "median": 0.47376271790149166,
+              "n_exceeds_pipeline_null_p95": 30
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.13452959719782712,
+              "median_difference": 0.10062210323022941,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.09643472943794658,
+                  0.18056677904067012
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1407388503405439,
+              "median_difference": 0.15173798953848222,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.11607111861462265,
+                  0.16488317542895625
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.22655094419861305,
+              "median_difference": 0.23166302481425832,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.17828220850657206,
+                  0.2905548629035662
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.09321834696729749,
+              "median_difference": 0.03358198881526536,
+              "reference_wins": 20,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.03321780612203147,
+                  0.15527050868694256
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 19,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 999,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "cyclohexane",
+                    "ester",
+                    "imidazole",
+                    "ketone",
+                    "morpholine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 1072,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperidine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 3703,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "furan"
+                  ]
+                },
+                {
+                  "coordinate": 6475,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 6978,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 7997,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 23,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 508,
+                  "n_fragments": 4,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 6,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 67,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 233,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 461,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 125,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "nitro",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 189,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 240,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "nitrile"
+                  ]
+                },
+                {
+                  "coordinate": 508,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 23,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 6608,
+                  "n_fragments": 7,
+                  "fragments": [
+                    "alkene",
+                    "ester",
+                    "ether",
+                    "imidazole",
+                    "isopropyl",
+                    "ketone",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 1762,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                },
+                {
+                  "coordinate": 6459,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "within_type_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.3622857158429698,
+              "median": 0.3681994902936718,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.2676735037981487,
+              "median": 0.26687609515049393,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.2512506375645224,
+              "median": 0.24254522477477836,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.20885773704976338,
+              "median": 0.19878698312160042,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.0,
+              "median": 0.0,
+              "n_exceeds_pipeline_null_p95": 0
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.09461221204482115,
+              "median_difference": 0.08540244709621087,
+              "reference_wins": 25,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.04345478012475213,
+                  0.1305072558328681
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.11103507827844737,
+              "median_difference": 0.11025066383182999,
+              "reference_wins": 28,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.07832040509943516,
+                  0.145616308353236
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1534279787932064,
+              "median_difference": 0.12222065754728961,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.12656065860549753,
+                  0.17748130174150092
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.36228571584296987,
+              "median_difference": 0.3681994902936718,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37000,
+                "ci95": [
+                  0.2880040795187657,
+                  0.42958029048719204
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null_type_matched",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 24,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 3703,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "imidazole"
+                  ]
+                },
+                {
+                  "coordinate": 4498,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 5873,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 5887,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "piperazine"
+                  ]
+                },
+                {
+                  "coordinate": 6419,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 6475,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 7384,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 98,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "imidazole",
+                    "pyrimidine"
+                  ]
+                },
+                {
+                  "coordinate": 146,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid"
+                  ]
+                },
+                {
+                  "coordinate": 178,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 268,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "nitro"
+                  ]
+                },
+                {
+                  "coordinate": 509,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 508,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 189,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 30,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 3160,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 0,
+              "n_distinct_coordinates": 0,
+              "n_fragments_without_selection_signal": 31,
+              "shared_coordinates": []
+            }
+          }
+        },
+        "inference": {
+          "cluster_unit": "fragment family",
+          "n_bootstrap": 10000,
+          "bootstrap_seed": 37000,
+          "family_assignments": {
+            "amide": "carbonyl",
+            "urea": "carbonyl",
+            "carboxylic_acid": "carbonyl",
+            "ester": "carbonyl",
+            "ketone": "carbonyl",
+            "ether": "heteroatom",
+            "alcohol": "heteroatom",
+            "primary_amine": "heteroatom",
+            "nitrile": "heteroatom",
+            "nitro": "heteroatom",
+            "sulfonamide": "sulfur",
+            "sulfone": "sulfur",
+            "thioether": "heteroatom",
+            "trifluoromethyl": "alkyl_halide",
+            "fluoro_aromatic": "arene_halide",
+            "fluoro_aliphatic": "alkyl_halide",
+            "chloro_aromatic": "arene_halide",
+            "benzene": "arene",
+            "pyridine": "arene",
+            "pyrimidine": "arene",
+            "imidazole": "hetero5",
+            "furan": "hetero5",
+            "thiophene": "hetero5",
+            "piperidine": "sat_N_ring",
+            "piperazine": "sat_N_ring",
+            "morpholine": "sat_N_ring",
+            "cyclohexane": "sat_ring",
+            "phenol": "arene",
+            "tert_butyl": "alkyl",
+            "isopropyl": "alkyl",
+            "alkene": "alkyl"
+          }
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "aggregate": {
+        "primary_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5015661096805002,
+              "median": 0.4665827638025996,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4228327017159354,
+              "median": 0.4153992948678773,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4045561616513769,
+              "median": 0.39296947504449264,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.34600102754004,
+              "median": 0.33249879804336363,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.48805588108015413,
+              "median": 0.47614392054242055,
+              "n_exceeds_pipeline_null_p95": 31
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.07873340796456473,
+              "median_difference": 0.04698760782911887,
+              "reference_wins": 22,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.02109422674124169,
+                  0.1386574513866095
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.09700994802912334,
+              "median_difference": 0.09584194134153862,
+              "reference_wins": 25,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.053022225542466994,
+                  0.1379892344194365
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.15556508214046044,
+              "median_difference": 0.15113832432080088,
+              "reference_wins": 30,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.12466800215555347,
+                  0.19661539135704187
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.013510228600346041,
+              "median_difference": 0.002991104209926765,
+              "reference_wins": 16,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  -0.05527750946607482,
+                  0.0813428955683318
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 687,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 1518,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 3232,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "pyridine"
+                  ]
+                },
+                {
+                  "coordinate": 4226,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                },
+                {
+                  "coordinate": 5646,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "morpholine"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 31,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": []
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 293,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 301,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "furan",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 384,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "morpholine"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 30,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 7128,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 13,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 17,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 15,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "secondary_mean_absolute_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5449398274813468,
+              "median": 0.5184559963980239,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.44231454553619093,
+              "median": 0.4237464031423716,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4335967866993438,
+              "median": 0.41372861882141065,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.35945032171743946,
+              "median": 0.3564350548386574,
+              "n_exceeds_pipeline_null_p95": 28
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4910445238297248,
+              "median": 0.47614392054242055,
+              "n_exceeds_pipeline_null_p95": 30
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.10262528194515588,
+              "median_difference": 0.08450842324863284,
+              "reference_wins": 25,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.052560424024937755,
+                  0.15999939489948836
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.11134304078200302,
+              "median_difference": 0.11905358131937932,
+              "reference_wins": 26,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.06984420837587682,
+                  0.15786460565349075
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.18548950576390738,
+              "median_difference": 0.18847410431430667,
+              "reference_wins": 29,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.133730656103296,
+                  0.251817725187794
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.05389530365162194,
+              "median_difference": 0.03373972225543265,
+              "reference_wins": 18,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.002714380694137063,
+                  0.11332531257363887
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 21,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 406,
+                  "n_fragments": 9,
+                  "fragments": [
+                    "cyclohexane",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperazine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 1518,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 4226,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfonamide",
+                    "sulfone"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 31,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": []
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 293,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 496,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ether",
+                    "isopropyl"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 5231,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 5793,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 7128,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 13,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 17,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 15,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "within_type_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.35378006658778066,
+              "median": 0.3052113540333641,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.25940112203174187,
+              "median": 0.2708661660666769,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.2764038524549587,
+              "median": 0.2808086516395692,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.2042699856037736,
+              "median": 0.20467956017495859,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.0,
+              "median": 0.0,
+              "n_exceeds_pipeline_null_p95": 0
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.0943789445560387,
+              "median_difference": 0.07575315200484087,
+              "reference_wins": 26,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.04208319896094215,
+                  0.1348469026050256
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.07737621413282199,
+              "median_difference": 0.07153613930184048,
+              "reference_wins": 26,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.034330252756792454,
+                  0.11172008282237039
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1495100809840071,
+              "median_difference": 0.1285631820808781,
+              "reference_wins": 29,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.11549074844131815,
+                  0.17395526629272137
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.3537800665877806,
+              "median_difference": 0.3052113540333641,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37001,
+                "ci95": [
+                  0.2865833624733062,
+                  0.4160776788680905
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null_type_matched",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1418,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 4374,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 6608,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 115,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "phenol"
+                  ]
+                },
+                {
+                  "coordinate": 219,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 373,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "carboxylic_acid",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 478,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 14,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 422,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 5141,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 5793,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "alcohol",
+                    "amide",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 0,
+              "n_distinct_coordinates": 0,
+              "n_fragments_without_selection_signal": 31,
+              "shared_coordinates": []
+            }
+          }
+        },
+        "inference": {
+          "cluster_unit": "fragment family",
+          "n_bootstrap": 10000,
+          "bootstrap_seed": 37001,
+          "family_assignments": {
+            "amide": "carbonyl",
+            "urea": "carbonyl",
+            "carboxylic_acid": "carbonyl",
+            "ester": "carbonyl",
+            "ketone": "carbonyl",
+            "ether": "heteroatom",
+            "alcohol": "heteroatom",
+            "primary_amine": "heteroatom",
+            "nitrile": "heteroatom",
+            "nitro": "heteroatom",
+            "sulfonamide": "sulfur",
+            "sulfone": "sulfur",
+            "thioether": "heteroatom",
+            "trifluoromethyl": "alkyl_halide",
+            "fluoro_aromatic": "arene_halide",
+            "fluoro_aliphatic": "alkyl_halide",
+            "chloro_aromatic": "arene_halide",
+            "benzene": "arene",
+            "pyridine": "arene",
+            "pyrimidine": "arene",
+            "imidazole": "hetero5",
+            "furan": "hetero5",
+            "thiophene": "hetero5",
+            "piperidine": "sat_N_ring",
+            "piperazine": "sat_N_ring",
+            "morpholine": "sat_N_ring",
+            "cyclohexane": "sat_ring",
+            "phenol": "arene",
+            "tert_butyl": "alkyl",
+            "isopropyl": "alkyl",
+            "alkene": "alkyl"
+          }
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "aggregate": {
+        "primary_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5298127079959937,
+              "median": 0.5406485504160324,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4315206881760578,
+              "median": 0.43588480645647415,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.42417807458196083,
+              "median": 0.39694128936513307,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.31531535263603916,
+              "median": 0.310840832400712,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.49197517961597653,
+              "median": 0.4611788031391122,
+              "n_exceeds_pipeline_null_p95": 31
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.0982920198199358,
+              "median_difference": 0.08098888148864114,
+              "reference_wins": 24,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.021019415911696048,
+                  0.1625308152954614
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.1056346334140328,
+              "median_difference": 0.11549357498685514,
+              "reference_wins": 23,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.04725295653106197,
+                  0.15610605588248075
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.21449735535995446,
+              "median_difference": 0.19776342661594443,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.1624748826581705,
+                  0.2642597831024844
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.03783752838001714,
+              "median_difference": -0.0003792720265908267,
+              "reference_wins": 15,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  -0.031247407514658453,
+                  0.10383174306017179
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 24,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1390,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "alcohol",
+                    "ether",
+                    "morpholine"
+                  ]
+                },
+                {
+                  "coordinate": 4243,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 7878,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 889,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 33,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 439,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "carboxylic_acid"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 33,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 337,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 390,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 30,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 8037,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "secondary_mean_absolute_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.5619188986002783,
+              "median": 0.5551255356441153,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4438072916330813,
+              "median": 0.43588480645647415,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4470966415991493,
+              "median": 0.4178184553624151,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.33753507028420904,
+              "median": 0.3189664737322761,
+              "n_exceeds_pipeline_null_p95": 27
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.4936238567041418,
+              "median": 0.4611788031391122,
+              "n_exceeds_pipeline_null_p95": 30
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.11811160696719705,
+              "median_difference": 0.08269434178352253,
+              "reference_wins": 27,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.06357087540581804,
+                  0.17266181026116756
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.11482225700112894,
+              "median_difference": 0.11399673148425238,
+              "reference_wins": 27,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.07838766509792831,
+                  0.15809787986147408
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.22438382831606923,
+              "median_difference": 0.22432859657606008,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.17249141568571852,
+                  0.2702146919699564
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.0682950418961365,
+              "median_difference": 0.03191843846048903,
+              "reference_wins": 17,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.00442919374106769,
+                  0.1325326502149912
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 21,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 425,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "cyclohexane",
+                    "ester",
+                    "furan",
+                    "imidazole",
+                    "pyrimidine"
+                  ]
+                },
+                {
+                  "coordinate": 4243,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "benzene",
+                    "pyridine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 7878,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 1390,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 6952,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 30,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 33,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 33,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "piperazine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 66,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 337,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 390,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 27,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 504,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "ester",
+                    "isopropyl",
+                    "ketone"
+                  ]
+                },
+                {
+                  "coordinate": 4803,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 8037,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 8,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 32,
+                  "n_fragments": 8,
+                  "fragments": [
+                    "benzene",
+                    "furan",
+                    "imidazole",
+                    "morpholine",
+                    "piperidine",
+                    "pyridine",
+                    "pyrimidine",
+                    "thiophene"
+                  ]
+                },
+                {
+                  "coordinate": 19,
+                  "n_fragments": 6,
+                  "fragments": [
+                    "alcohol",
+                    "carboxylic_acid",
+                    "ester",
+                    "ether",
+                    "phenol",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 14,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "alkene",
+                    "cyclohexane",
+                    "isopropyl",
+                    "ketone",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 18,
+                  "n_fragments": 5,
+                  "fragments": [
+                    "amide",
+                    "nitrile",
+                    "piperazine",
+                    "primary_amine",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 16,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "fluoro_aromatic",
+                    "trifluoromethyl"
+                  ]
+                },
+                {
+                  "coordinate": 20,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "sulfone",
+                    "thioether"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "within_type_oriented_wsd": {
+          "arms": {
+            "learned_sae_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.3502602203513949,
+              "median": 0.2956450202975909,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.2592153899728781,
+              "median": 0.2880085500232367,
+              "n_exceeds_pipeline_null_p95": 30
+            },
+            "dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.25839239649153145,
+              "median": 0.23994686674986837,
+              "n_exceeds_pipeline_null_p95": 29
+            },
+            "random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.21583048666138013,
+              "median": 0.17467324137687684,
+              "n_exceeds_pipeline_null_p95": 31
+            },
+            "atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean": 0.0,
+              "median": 0.0,
+              "n_exceeds_pipeline_null_p95": 0
+            }
+          },
+          "paired_contrasts": {
+            "learned_sae_topk32_8192_minus_dense_neurons_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.09104483037851686,
+              "median_difference": 0.1022146473098118,
+              "reference_wins": 23,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.02809553538087402,
+                  0.13885561980036434
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_dense_standardized_topk32_512": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.09186782385986351,
+              "median_difference": 0.07829038025811319,
+              "reference_wins": 25,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.052381052402148603,
+                  0.12034543339357705
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_random_relu_topk32_8192": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.13442973369001476,
+              "median_difference": 0.14067112554802552,
+              "reference_wins": 28,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.08958735244700745,
+                  0.16747237212558855
+                ]
+              }
+            },
+            "learned_sae_topk32_8192_minus_atom_type_onehot": {
+              "status": "ok",
+              "n_fragments": 31,
+              "mean_difference": 0.350260220351395,
+              "median_difference": 0.2956450202975909,
+              "reference_wins": 31,
+              "ties": 0,
+              "fragment_family_cluster_bootstrap": {
+                "method": "fragment-family cluster bootstrap",
+                "n_fragments": 31,
+                "n_families": 10,
+                "n_bootstrap": 10000,
+                "seed": 37002,
+                "ci95": [
+                  0.2628569244258912,
+                  0.4295169500860982
+                ]
+              }
+            }
+          },
+          "pipeline_null_key": "pipeline_null_type_matched",
+          "detector_sharing": {
+            "learned_sae_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 25,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 3337,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "amide",
+                    "urea"
+                  ]
+                },
+                {
+                  "coordinate": 4243,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "benzene",
+                    "imidazole"
+                  ]
+                },
+                {
+                  "coordinate": 4821,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "cyclohexane",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 5851,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                },
+                {
+                  "coordinate": 6040,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 6255,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "piperazine"
+                  ]
+                }
+              ]
+            },
+            "dense_neurons_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 26,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 179,
+                  "n_fragments": 3,
+                  "fragments": [
+                    "ketone",
+                    "nitrile",
+                    "sulfonamide"
+                  ]
+                },
+                {
+                  "coordinate": 2,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "isopropyl",
+                    "tert_butyl"
+                  ]
+                },
+                {
+                  "coordinate": 33,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "morpholine",
+                    "piperidine"
+                  ]
+                },
+                {
+                  "coordinate": 158,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "fluoro_aliphatic",
+                    "trifluoromethyl"
+                  ]
+                }
+              ]
+            },
+            "dense_standardized_topk32_512": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 28,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 38,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "phenol"
+                  ]
+                },
+                {
+                  "coordinate": 135,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 337,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "ester",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "random_relu_topk32_8192": {
+              "n_fragments_with_selected_coordinate": 31,
+              "n_distinct_coordinates": 29,
+              "n_fragments_without_selection_signal": 0,
+              "shared_coordinates": [
+                {
+                  "coordinate": 1315,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "chloro_aromatic",
+                    "fluoro_aromatic"
+                  ]
+                },
+                {
+                  "coordinate": 7091,
+                  "n_fragments": 2,
+                  "fragments": [
+                    "alcohol",
+                    "ether"
+                  ]
+                }
+              ]
+            },
+            "atom_type_onehot": {
+              "n_fragments_with_selected_coordinate": 0,
+              "n_distinct_coordinates": 0,
+              "n_fragments_without_selection_signal": 31,
+              "shared_coordinates": []
+            }
+          }
+        },
+        "inference": {
+          "cluster_unit": "fragment family",
+          "n_bootstrap": 10000,
+          "bootstrap_seed": 37002,
+          "family_assignments": {
+            "amide": "carbonyl",
+            "urea": "carbonyl",
+            "carboxylic_acid": "carbonyl",
+            "ester": "carbonyl",
+            "ketone": "carbonyl",
+            "ether": "heteroatom",
+            "alcohol": "heteroatom",
+            "primary_amine": "heteroatom",
+            "nitrile": "heteroatom",
+            "nitro": "heteroatom",
+            "sulfonamide": "sulfur",
+            "sulfone": "sulfur",
+            "thioether": "heteroatom",
+            "trifluoromethyl": "alkyl_halide",
+            "fluoro_aromatic": "arene_halide",
+            "fluoro_aliphatic": "alkyl_halide",
+            "chloro_aromatic": "arene_halide",
+            "benzene": "arene",
+            "pyridine": "arene",
+            "pyrimidine": "arene",
+            "imidazole": "hetero5",
+            "furan": "hetero5",
+            "thiophene": "hetero5",
+            "piperidine": "sat_N_ring",
+            "piperazine": "sat_N_ring",
+            "morpholine": "sat_N_ring",
+            "cyclohexane": "sat_ring",
+            "phenol": "arene",
+            "tert_butyl": "alkyl",
+            "isopropyl": "alkyl",
+            "alkene": "alkyl"
+          }
+        }
+      }
+    }
+  ]
+}

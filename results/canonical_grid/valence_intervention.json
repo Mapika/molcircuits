@@ -1,0 +1,442 @@
+{
+  "analysis": "held-out multiple-bond probability after a layer-1 post-MLP intervention",
+  "sample_seed": 47,
+  "n_sampled_validation_rows": 2048,
+  "validation_sample_sha256": "3c0321a1e9155a53f5c65a091125bd2e89fdfe4b4fdbd27e1fa64fec51623764",
+  "null_directions_per_reference": 256,
+  "relative_update_norm": 0.08838834764831843,
+  "runs": {
+    "small_0": {
+      "checkpoint": "grid/zinc_small/tf_seed0/checkpoint.pt",
+      "checkpoint_sha256": "318d7b552e64244762c5b6b10805e446389af64e38ce54cb0b9db7a5ec0932a1",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 256,
+      "heldout_probe_accuracy_all_decisions": 1.0,
+      "base_probabilities": {
+        "single": 0.09372273087501526,
+        "multiple": 0.894088864326477,
+        "other": 0.01218844298273325,
+        "double": 0.8854806423187256,
+        "triple": 0.008608129806816578,
+        "illegal": 0.04689979925751686
+      },
+      "cells": [
+        {
+          "alpha": -1.4142135623730951,
+          "dprob_multiple": -0.0004354777338448912,
+          "dprob_illegal": -1.681374851614237e-05,
+          "dprob_other": -0.000508757249917835,
+          "dprob_multiple_null_mean": -0.00017250914040878307,
+          "dprob_multiple_null_sd": 0.0008830607773513653,
+          "dprob_multiple_z": -0.2977921790695524,
+          "dprob_multiple_cov_null_mean": -0.00032664370474400073,
+          "dprob_multiple_cov_null_sd": 0.0016342572152468545,
+          "dprob_multiple_cov_z": -0.06659540984058356,
+          "flips_intended": 2,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 1.4142135623730951,
+          "dprob_multiple": 2.9179098419263028e-05,
+          "dprob_illegal": 8.648447874293197e-06,
+          "dprob_other": 0.0006896163686178625,
+          "dprob_multiple_null_mean": -0.00016537268145278006,
+          "dprob_multiple_null_sd": 0.0008701562424494837,
+          "dprob_multiple_z": 0.22358258225074454,
+          "dprob_multiple_cov_null_mean": -0.00026651529760624015,
+          "dprob_multiple_cov_null_sd": 0.001630586246441305,
+          "dprob_multiple_cov_z": 0.18134238313950155,
+          "flips_intended": 2,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "small_1": {
+      "checkpoint": "grid/zinc_small/tf_seed1/checkpoint.pt",
+      "checkpoint_sha256": "03b806652a5e905023d5af4a6f6ce697758321ffb2b243970b270557eca9141d",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 256,
+      "heldout_probe_accuracy_all_decisions": 0.9990592662276576,
+      "base_probabilities": {
+        "single": 0.094207264482975,
+        "multiple": 0.8941431045532227,
+        "other": 0.011649672873318195,
+        "double": 0.885017454624176,
+        "triple": 0.009125635027885437,
+        "illegal": 0.046759650111198425
+      },
+      "cells": [
+        {
+          "alpha": -1.4142135623730951,
+          "dprob_multiple": -0.0023062515538185835,
+          "dprob_illegal": -1.016325313685229e-06,
+          "dprob_other": 0.0002926504530478269,
+          "dprob_multiple_null_mean": -0.0001739904327866526,
+          "dprob_multiple_null_sd": 0.0009761304602696254,
+          "dprob_multiple_z": -2.1844017840182537,
+          "dprob_multiple_cov_null_mean": -0.00040221680952789995,
+          "dprob_multiple_cov_null_sd": 0.0019496042313076616,
+          "dprob_multiple_cov_z": -0.976626287909193,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 1.4142135623730951,
+          "dprob_multiple": 0.0013824920170009136,
+          "dprob_illegal": 1.1336800525896251e-05,
+          "dprob_other": 0.0002025574358412996,
+          "dprob_multiple_null_mean": -0.00022273768058056476,
+          "dprob_multiple_null_sd": 0.0009721346068086733,
+          "dprob_multiple_z": 1.6512422093478283,
+          "dprob_multiple_cov_null_mean": -0.0003372795893028524,
+          "dprob_multiple_cov_null_sd": 0.0018956597858624446,
+          "dprob_multiple_cov_z": 0.90721532324648,
+          "flips_intended": 1,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "small_2": {
+      "checkpoint": "grid/zinc_small/tf_seed2/checkpoint.pt",
+      "checkpoint_sha256": "6075dd1466574b964d185ee614881afcd872465d561b70b51173c3c835c6a775",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 256,
+      "heldout_probe_accuracy_all_decisions": 1.0,
+      "base_probabilities": {
+        "single": 0.09515704959630966,
+        "multiple": 0.8921631574630737,
+        "other": 0.012679869309067726,
+        "double": 0.8838974237442017,
+        "triple": 0.008265713229775429,
+        "illegal": 0.04646386578679085
+      },
+      "cells": [
+        {
+          "alpha": -1.4142135623730951,
+          "dprob_multiple": -0.0012885958421975374,
+          "dprob_illegal": -0.00024927008780650795,
+          "dprob_other": 7.593184272991493e-05,
+          "dprob_multiple_null_mean": -0.0001285330026057352,
+          "dprob_multiple_null_sd": 0.0009426858698735188,
+          "dprob_multiple_z": -1.230593218202004,
+          "dprob_multiple_cov_null_mean": -0.00018345713594369872,
+          "dprob_multiple_cov_null_sd": 0.0015039057605085635,
+          "dprob_multiple_cov_z": -0.7348457160941236,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 1.4142135623730951,
+          "dprob_multiple": 0.0009185723611153662,
+          "dprob_illegal": 0.0002186560450354591,
+          "dprob_other": 0.00015889413771219552,
+          "dprob_multiple_null_mean": -0.00024273477505487584,
+          "dprob_multiple_null_sd": 0.0009564173278021354,
+          "dprob_multiple_z": 1.2142263645773972,
+          "dprob_multiple_cov_null_mean": -0.00021156122547294487,
+          "dprob_multiple_cov_null_sd": 0.0014938910766813503,
+          "dprob_multiple_cov_z": 0.7565033378085217,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "base_0": {
+      "checkpoint": "grid/zinc_base/tf_seed0/checkpoint.pt",
+      "checkpoint_sha256": "768385fbe2b5a5c4a886afe819307ade62545f82781fdc954e1cdaaeff06300c",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 512,
+      "heldout_probe_accuracy_all_decisions": 0.980244590780809,
+      "base_probabilities": {
+        "single": 0.09389503300189972,
+        "multiple": 0.8944328427314758,
+        "other": 0.01167210191488266,
+        "double": 0.8850387334823608,
+        "triple": 0.009394179098308086,
+        "illegal": 0.04679035395383835
+      },
+      "cells": [
+        {
+          "alpha": -2.0,
+          "dprob_multiple": -0.0003927383222617209,
+          "dprob_illegal": -8.463474841846619e-06,
+          "dprob_other": 6.493188993772492e-05,
+          "dprob_multiple_null_mean": -3.6248902155477936e-05,
+          "dprob_multiple_null_sd": 0.0003290499729763573,
+          "dprob_multiple_z": -1.0833899051815674,
+          "dprob_multiple_cov_null_mean": -0.00020403241734356925,
+          "dprob_multiple_cov_null_sd": 0.0009365353283526427,
+          "dprob_multiple_cov_z": -0.2014936319045113,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 2.0,
+          "dprob_multiple": 0.00020848166604992002,
+          "dprob_illegal": 1.0809293598867953e-05,
+          "dprob_other": 8.096778765320778e-05,
+          "dprob_multiple_null_mean": -5.9397675149508444e-05,
+          "dprob_multiple_null_sd": 0.0003267703233029743,
+          "dprob_multiple_z": 0.8197786680012491,
+          "dprob_multiple_cov_null_mean": -0.0001091152908330173,
+          "dprob_multiple_cov_null_sd": 0.0009423858153019587,
+          "dprob_multiple_cov_z": 0.33701372769937055,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "base_1": {
+      "checkpoint": "grid/zinc_base/tf_seed1/checkpoint.pt",
+      "checkpoint_sha256": "79af311ead83758fc4f4082a1289e31f2166d07ad7b835b3fbc28a61cf46fdd2",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 512,
+      "heldout_probe_accuracy_all_decisions": 0.9981185324553151,
+      "base_probabilities": {
+        "single": 0.09254441410303116,
+        "multiple": 0.8944377303123474,
+        "other": 0.013017836958169937,
+        "double": 0.8859807252883911,
+        "triple": 0.008456990122795105,
+        "illegal": 0.04684479534626007
+      },
+      "cells": [
+        {
+          "alpha": -2.0,
+          "dprob_multiple": -0.0021219132468104362,
+          "dprob_illegal": -4.17620640291716e-06,
+          "dprob_other": 6.104000931372866e-05,
+          "dprob_multiple_null_mean": -3.386698874230376e-05,
+          "dprob_multiple_null_sd": 0.00032301297269825437,
+          "dprob_multiple_z": -6.464279852792231,
+          "dprob_multiple_cov_null_mean": 1.1835375559599015e-06,
+          "dprob_multiple_cov_null_sd": 0.0011931472849402687,
+          "dprob_multiple_cov_z": -1.779408803409609,
+          "flips_intended": 1,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 2.0,
+          "dprob_multiple": 0.0017399968346580863,
+          "dprob_illegal": 9.254647920897696e-06,
+          "dprob_other": 0.00011890966561622918,
+          "dprob_multiple_null_mean": -1.742882043326288e-05,
+          "dprob_multiple_null_sd": 0.0003203283527348144,
+          "dprob_multiple_z": 5.486325623695003,
+          "dprob_multiple_cov_null_mean": -0.0001399959578645138,
+          "dprob_multiple_cov_null_sd": 0.001185123274670232,
+          "dprob_multiple_cov_z": 1.5863267822998355,
+          "flips_intended": 1,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "base_2": {
+      "checkpoint": "grid/zinc_base/tf_seed2/checkpoint.pt",
+      "checkpoint_sha256": "86cb28255b7c04f3b759a6cedc4ba612c6d243d03d8c0a4ea6cfe34486cc5ce4",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 512,
+      "heldout_probe_accuracy_all_decisions": 0.9962370649106302,
+      "base_probabilities": {
+        "single": 0.09213299304246902,
+        "multiple": 0.8958554863929749,
+        "other": 0.012011568993330002,
+        "double": 0.8863403797149658,
+        "triple": 0.009515096433460712,
+        "illegal": 0.04690929874777794
+      },
+      "cells": [
+        {
+          "alpha": -2.0,
+          "dprob_multiple": -0.0010825956705957651,
+          "dprob_illegal": -1.1929787433473393e-05,
+          "dprob_other": 4.631709816749208e-05,
+          "dprob_multiple_null_mean": -0.00010946268974804108,
+          "dprob_multiple_null_sd": 0.00023874628541174748,
+          "dprob_multiple_z": -4.076013057515944,
+          "dprob_multiple_cov_null_mean": -0.00023979995691014722,
+          "dprob_multiple_cov_null_sd": 0.001107254254296891,
+          "dprob_multiple_cov_z": -0.7611582521844875,
+          "flips_intended": 2,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 2.0,
+          "dprob_multiple": 0.0006213441374711692,
+          "dprob_illegal": 1.25581527754548e-05,
+          "dprob_other": -1.6437847079942003e-05,
+          "dprob_multiple_null_mean": 5.402163654633085e-06,
+          "dprob_multiple_null_sd": 0.00023793501242592446,
+          "dprob_multiple_z": 2.588698338037144,
+          "dprob_multiple_cov_null_mean": -0.0002990334923786975,
+          "dprob_multiple_cov_null_sd": 0.0011045577862362926,
+          "dprob_multiple_cov_z": 0.8332543941885903,
+          "flips_intended": 1,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "large_0": {
+      "checkpoint": "grid/zinc_large/tf_seed0/checkpoint.pt",
+      "checkpoint_sha256": "7754afac07f5ca561b65df3dda1acdcf2a517734a2c0a08c307903c931d9c6fe",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 768,
+      "heldout_probe_accuracy_all_decisions": 0.9962370649106302,
+      "base_probabilities": {
+        "single": 0.09041748195886612,
+        "multiple": 0.8974338173866272,
+        "other": 0.012148729525506496,
+        "double": 0.8888072371482849,
+        "triple": 0.008626463823020458,
+        "illegal": 0.04684477671980858
+      },
+      "cells": [
+        {
+          "alpha": -2.449489742783178,
+          "dprob_multiple": -0.0006905982154421508,
+          "dprob_illegal": -4.120267021789914e-06,
+          "dprob_other": 7.585712592117488e-05,
+          "dprob_multiple_null_mean": -1.277795424192707e-07,
+          "dprob_multiple_null_sd": 0.00018307452524988978,
+          "dprob_multiple_z": -3.7715265473759336,
+          "dprob_multiple_cov_null_mean": -8.149415716740549e-05,
+          "dprob_multiple_cov_null_sd": 0.0007238246726880695,
+          "dprob_multiple_cov_z": -0.8415077302783923,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 2.449489742783178,
+          "dprob_multiple": 0.0006109853275120258,
+          "dprob_illegal": -3.9283276009882684e-07,
+          "dprob_other": -1.4987136637500953e-05,
+          "dprob_multiple_null_mean": -1.9343141786865026e-05,
+          "dprob_multiple_null_sd": 0.00018349257922936084,
+          "dprob_multiple_z": 3.435171430425127,
+          "dprob_multiple_cov_null_mean": -7.841834887045707e-05,
+          "dprob_multiple_cov_null_sd": 0.0007198272794949608,
+          "dprob_multiple_cov_z": 0.9577348553786982,
+          "flips_intended": 1,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "large_1": {
+      "checkpoint": "grid/zinc_large/tf_seed1/checkpoint.pt",
+      "checkpoint_sha256": "d7bb6a71cde4d49c0f6b7b0a55c614f72d4d155a45856ad05e3d2aafcd68913c",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 768,
+      "heldout_probe_accuracy_all_decisions": 0.9849482596425212,
+      "base_probabilities": {
+        "single": 0.09207369387149811,
+        "multiple": 0.8969048857688904,
+        "other": 0.011021503247320652,
+        "double": 0.8872936964035034,
+        "triple": 0.009611100889742374,
+        "illegal": 0.04674770310521126
+      },
+      "cells": [
+        {
+          "alpha": -2.449489742783178,
+          "dprob_multiple": -0.00010438088793307543,
+          "dprob_illegal": -6.244200903893216e-06,
+          "dprob_other": 3.835339521174319e-05,
+          "dprob_multiple_null_mean": -2.5790290573701746e-05,
+          "dprob_multiple_null_sd": 0.00010378868550504875,
+          "dprob_multiple_z": -0.7572173808708011,
+          "dprob_multiple_cov_null_mean": -0.00013042476961164923,
+          "dprob_multiple_cov_null_sd": 0.00022902846744171244,
+          "dprob_multiple_cov_z": 0.11371460437112405,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 2.449489742783178,
+          "dprob_multiple": 1.0404007298348006e-05,
+          "dprob_illegal": 6.792515250708675e-06,
+          "dprob_other": -2.1635361918015406e-05,
+          "dprob_multiple_null_mean": -6.92835296733918e-06,
+          "dprob_multiple_null_sd": 0.00010378099241923772,
+          "dprob_multiple_z": 0.16700900323502121,
+          "dprob_multiple_cov_null_mean": -0.00015744573405207518,
+          "dprob_multiple_cov_null_sd": 0.0002236390239566482,
+          "dprob_multiple_cov_z": 0.7505386923546121,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        }
+      ]
+    },
+    "large_2": {
+      "checkpoint": "grid/zinc_large/tf_seed2/checkpoint.pt",
+      "checkpoint_sha256": "b1bcd8474888df9d73805d46e8e88d9055e3fb216095ffcbea481b469bcf45e4",
+      "evaluation_sample_sha256": "019ce6aa516a26c91c2f64c11a4e746fbf3003242aca368cec8875e687b973ad",
+      "n_fit_molecules": 1389,
+      "n_fit_positions": 2581,
+      "n_eval_molecules": 596,
+      "width": 768,
+      "heldout_probe_accuracy_all_decisions": 0.9341486359360301,
+      "base_probabilities": {
+        "single": 0.09219799190759659,
+        "multiple": 0.8958801627159119,
+        "other": 0.011921810917556286,
+        "double": 0.8869249820709229,
+        "triple": 0.008955186232924461,
+        "illegal": 0.04683889448642731
+      },
+      "cells": [
+        {
+          "alpha": -2.449489742783178,
+          "dprob_multiple": 1.1617771633609664e-05,
+          "dprob_illegal": -4.095567419426516e-06,
+          "dprob_other": -2.991141809616238e-05,
+          "dprob_multiple_null_mean": -2.1511254108874667e-05,
+          "dprob_multiple_null_sd": 0.00013809068618230854,
+          "dprob_multiple_z": 0.23990774771615916,
+          "dprob_multiple_cov_null_mean": -0.00012217799170246776,
+          "dprob_multiple_cov_null_sd": 0.00045180494991028724,
+          "dprob_multiple_cov_z": 0.29613611596444106,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        },
+        {
+          "alpha": 2.449489742783178,
+          "dprob_multiple": -4.412242924445309e-05,
+          "dprob_illegal": 5.538160166906891e-06,
+          "dprob_other": 4.74750304420013e-05,
+          "dprob_multiple_null_mean": 6.145878402641358e-06,
+          "dprob_multiple_null_sd": 0.00013849134559791555,
+          "dprob_multiple_z": -0.36297074786224254,
+          "dprob_multiple_cov_null_mean": -8.348499683030752e-05,
+          "dprob_multiple_cov_null_sd": 0.00045916992796510704,
+          "dprob_multiple_cov_z": 0.0857254909409489,
+          "flips_intended": 0,
+          "flips_to_illegal": 0
+        }
+      ]
+    }
+  }
+}

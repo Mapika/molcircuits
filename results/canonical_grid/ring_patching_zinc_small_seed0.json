@@ -1,0 +1,87 @@
+{
+  "artifact_schema_version": 1,
+  "analysis": "ring_opener_activation_patching",
+  "config": {
+    "ckpt": "runs/grid/zinc_small/tf_seed0/checkpoint.pt",
+    "tokenizer": "runs/data/tokenizer.json",
+    "data": "runs/data/valid.smi",
+    "pointers": "runs/grid/zinc_small/pointers_seed0/pointer_results.json",
+    "out": "runs/grid/zinc_small/ring_patching_seed0",
+    "n_pairs": 1024,
+    "n_ctx": 128,
+    "batch": 32,
+    "max_scan_positions": 48,
+    "seed": 0,
+    "device": "cuda"
+  },
+  "metric": "recovery of (logit[clean label] - logit[corrupt label]) at the position predicting the ring closer; 1.0 = clean, 0.0 = corrupt",
+  "minimal_pair": "single ring relabelled 1 -> 2; inputs differ only at the opener",
+  "n_pairs": 1024,
+  "n_pairs_with_recovery": 1024,
+  "mean_clean_logit_diff": 11.938433647155762,
+  "mean_corrupt_logit_diff": -5.168737411499023,
+  "resid_post_sites": [
+    "opener",
+    "predict",
+    "opener..predict"
+  ],
+  "resid_post_recovery": [
+    [
+      0.5362648610025644,
+      0.004926683144731214,
+      1.0
+    ],
+    [
+      0.3496007788926363,
+      0.24669758835807443,
+      1.0
+    ],
+    [
+      -0.0012601349858414324,
+      0.7826341222971678,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "head_z_recovery_at_predict": [
+    [
+      -0.001337624954317107,
+      -0.0014820167716607102,
+      -3.7995532897738826e-06,
+      0.006153344847007247
+    ],
+    [
+      0.022383168805390596,
+      0.19541123509407043,
+      0.00840195280034095,
+      -0.0008849964042383363
+    ],
+    [
+      0.012865344135207124,
+      0.10718271625228226,
+      0.49306091107428074,
+      0.013499422595486976
+    ],
+    [
+      0.21905474923551083,
+      0.05239298299420625,
+      0.03287097834981978,
+      0.010007672593928874
+    ]
+  ],
+  "top_pointer_head": {
+    "layer": 2,
+    "head": 2,
+    "pointer_mass": 0.31236759232894135,
+    "patch_recovery": 0.49306091107428074
+  },
+  "best_patch_head": {
+    "layer": 2,
+    "head": 2,
+    "patch_recovery": 0.49306091107428074
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "elapsed_sec": 34.3,
+  "part_a_gpt2_l11_patching_audit": {
+    "root_cause": "In HuggingFace GPT2Model.forward(), out.hidden_states[-1] (index 12) is the output AFTER transformer.ln_f (final LayerNorm), NOT the raw output of transformer.h[11]. In 10_external_models.py (lines 581-582 and 1160-1161), l=12 patched clean_hs[12] (post-ln_f) into the output of transformer.h[11] (pre-ln_f), causing transformer.ln_f to be applied TWICE: ln_f(ln_f(h11)).",
+    "tensor_identity_check": {
+      "max_abs_diff_hidden_states12_vs_ln_f_of_h11": 0.0,
+      "max_abs_diff_hidden_states12_vs_raw_h11": 105.30619049072266
+    },
+    "final_layer_L11_decision_recovery_comparison": {
+      "valence_standalone_eq_near_le3": {
+        "buggy_post_lnf_into_h11": 0.728987,
+        "fixed_raw_h11_into_h11": 1.0,
+        "fixed_post_lnf_into_lnf": 1.0,
+        "n_eligible": 255
+      },
+      "valence_branch_peq_near_le3": {
+        "buggy_post_lnf_into_h11": 0.90795,
+        "fixed_raw_h11_into_h11": 1.0,
+        "fixed_post_lnf_into_lnf": 1.0,
+        "n_eligible": 256
+      },
+      "valence_branch_peq_far_ge10": {
+        "buggy_post_lnf_into_h11": 0.94393,
+        "fixed_raw_h11_into_h11": 1.0,
+        "fixed_post_lnf_into_lnf": 1.0,
+        "n_eligible": 256
+      },
+      "ring_activation_patching": {
+        "buggy_post_lnf_into_h11": 0.875389,
+        "fixed_raw_h11_into_h11": 1.0,
+        "fixed_post_lnf_into_lnf": 1.0,
+        "n_eligible": 501
+      }
+    }
+  },
+  "part_b_two_ring_in_dist_swap_control": {
+    "n_pairs": 512,
+    "n_nested_1221": 510,
+    "n_crossing_1212": 2,
+    "example_pairs": [
+      {
+        "topology": "nested",
+        "clean": "Cc1cccc(C(=O)N(C)[C@H](C)CNC(=O)c2cncn2C)c1Cl",
+        "swap": "Cc2cccc(C(=O)N(C)[C@H](C)CNC(=O)c1cncn1C)c2Cl"
+      },
+      {
+        "topology": "nested",
+        "clean": "COCC1(C(=O)N[C@H](C)C[C@@H](C)NC(=O)c2cc(C)sn2)CC1",
+        "swap": "COCC2(C(=O)N[C@H](C)C[C@@H](C)NC(=O)c1cc(C)sn1)CC2"
+      },
+      {
+        "topology": "nested",
+        "clean": "CCCC(=O)NC[C@]1(C)CCCN(C(=O)[C@@H]2C[C@H]2CC(C)C)C1",
+        "swap": "CCCC(=O)NC[C@]2(C)CCCN(C(=O)[C@@H]1C[C@H]1CC(C)C)C2"
+      },
+      {
+        "topology": "nested",
+        "clean": "N#CCc1cccc(S(=O)(=O)NCC2(C#N)CCOCC2)c1",
+        "swap": "N#CCc2cccc(S(=O)(=O)NCC1(C#N)CCOCC1)c2"
+      },
+      {
+        "topology": "nested",
+        "clean": "Cc1ccc(C(=O)N(C)CCN(C)CC(=O)NCc2ccco2)o1",
+        "swap": "Cc2ccc(C(=O)N(C)CCN(C)CC(=O)NCc1ccco1)o2"
+      }
+    ],
+    "models": {
+      "gpt2_zinc_87m": {
+        "first_closure_both_rings_open": {
+          "overall": {
+            "n": 512,
+            "clean_2way_acc": 0.998046875,
+            "swap_2way_acc": 0.03515625,
+            "both_correct_2way_acc": 0.033203125,
+            "clean_full_vocab_top1_acc": 0.966796875,
+            "swap_full_vocab_top1_acc": 0.025390625,
+            "mean_clean_target_margin": 16.34821319580078,
+            "mean_swap_target_margin": -12.735713958740234,
+            "mean_clean_logit1_minus_logit2": -16.232666015625,
+            "mean_swap_logit1_minus_logit2": -12.62413215637207,
+            "mean_paired_logit_flip": 3.6125011444091797
+          },
+          "nested_1221": {
+            "n": 510,
+            "clean_2way_acc": 0.9980392156862745,
+            "swap_2way_acc": 0.03529411764705882,
+            "both_correct_2way_acc": 0.03333333333333333,
+            "clean_full_vocab_top1_acc": 0.9666666666666667,
+            "swap_full_vocab_top1_acc": 0.025490196078431372,
+            "mean_clean_target_margin": 16.354324340820312,
+            "mean_swap_target_margin": -12.729647636413574,
+            "mean_clean_logit1_minus_logit2": -16.354324340820312,
+            "mean_swap_logit1_minus_logit2": -12.729647636413574,
+            "mean_paired_logit_flip": 3.62467622756958
+          },
+          "crossing_1212": {
+            "n": 2,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.0,
+            "both_correct_2way_acc": 0.0,
+            "clean_full_vocab_top1_acc": 1.0,
+            "swap_full_vocab_top1_acc": 0.0,
+            "mean_clean_target_margin": 14.79032039642334,
+            "mean_swap_target_margin": -14.282511711120605,
+            "mean_clean_logit1_minus_logit2": 14.79032039642334,
+            "mean_swap_logit1_minus_logit2": 14.282511711120605,
+            "mean_paired_logit_flip": 0.5078086853027344
+          }
+        },
+        "second_closure_one_ring_left": {
+          "overall": {
+            "n": 512,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.08984375,
+            "both_correct_2way_acc": 0.08984375,
+            "clean_full_vocab_top1_acc": 0.9921875,
+            "swap_full_vocab_top1_acc": 0.08984375,
+            "mean_clean_target_margin": 16.916751861572266,
+            "mean_swap_target_margin": -13.05978012084961,
+            "mean_clean_logit1_minus_logit2": 16.799440383911133,
+            "mean_swap_logit1_minus_logit2": 13.0507230758667,
+            "mean_paired_logit_flip": 3.856973171234131
+          },
+          "nested_1221": {
+            "n": 510,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.08823529411764706,
+            "both_correct_2way_acc": 0.08823529411764706,
+            "clean_full_vocab_top1_acc": 0.9921568627450981,
+            "swap_full_vocab_top1_acc": 0.08823529411764706,
+            "mean_clean_target_margin": 16.92420768737793,
+            "mean_swap_target_margin": -13.106449127197266,
+            "mean_clean_logit1_minus_logit2": 16.92420768737793,
+            "mean_swap_logit1_minus_logit2": 13.106449127197266,
+            "mean_paired_logit_flip": 3.817758798599243
+          },
+          "crossing_1212": {
+            "n": 2,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.5,
+            "both_correct_2way_acc": 0.5,
+            "clean_full_vocab_top1_acc": 1.0,
+            "swap_full_vocab_top1_acc": 0.5,
+            "mean_clean_target_margin": 15.01594352722168,
+            "mean_swap_target_margin": -1.1593399047851562,
+            "mean_clean_logit1_minus_logit2": -15.01594352722168,
+            "mean_swap_logit1_minus_logit2": -1.1593399047851562,
+            "mean_paired_logit_flip": 13.856603622436523
+          }
+        }
+      },
+      "canon_zinc_large_seed0": {
+        "first_closure_both_rings_open": {
+          "overall": {
+            "n": 512,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.951171875,
+            "both_correct_2way_acc": 0.951171875,
+            "clean_full_vocab_top1_acc": 0.93359375,
+            "swap_full_vocab_top1_acc": 0.89453125,
+            "mean_clean_target_margin": 13.713933944702148,
+            "mean_swap_target_margin": 8.359227180480957,
+            "mean_clean_logit1_minus_logit2": -13.629446029663086,
+            "mean_swap_logit1_minus_logit2": 8.420395851135254,
+            "mean_paired_logit_flip": 22.07316017150879
+          },
+          "nested_1221": {
+            "n": 510,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.9549019607843138,
+            "both_correct_2way_acc": 0.9549019607843138,
+            "clean_full_vocab_top1_acc": 0.9333333333333333,
+            "swap_full_vocab_top1_acc": 0.8980392156862745,
+            "mean_clean_target_margin": 13.72530460357666,
+            "mean_swap_target_margin": 8.422711372375488,
+            "mean_clean_logit1_minus_logit2": -13.72530460357666,
+            "mean_swap_logit1_minus_logit2": 8.422711372375488,
+            "mean_paired_logit_flip": 22.14801788330078
+          },
+          "crossing_1212": {
+            "n": 2,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.0,
+            "both_correct_2way_acc": 0.0,
+            "clean_full_vocab_top1_acc": 1.0,
+            "swap_full_vocab_top1_acc": 0.0,
+            "mean_clean_target_margin": 10.814413070678711,
+            "mean_swap_target_margin": -7.829658508300781,
+            "mean_clean_logit1_minus_logit2": 10.814413070678711,
+            "mean_swap_logit1_minus_logit2": 7.829658508300781,
+            "mean_paired_logit_flip": 2.9847545623779297
+          }
+        },
+        "second_closure_one_ring_left": {
+          "overall": {
+            "n": 512,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.3046875,
+            "both_correct_2way_acc": 0.3046875,
+            "clean_full_vocab_top1_acc": 0.9765625,
+            "swap_full_vocab_top1_acc": 0.296875,
+            "mean_clean_target_margin": 14.04385757446289,
+            "mean_swap_target_margin": -3.444305896759033,
+            "mean_clean_logit1_minus_logit2": 13.974286079406738,
+            "mean_swap_logit1_minus_logit2": 3.4122841358184814,
+            "mean_paired_logit_flip": 10.599552154541016
+          },
+          "nested_1221": {
+            "n": 510,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.3058823529411765,
+            "both_correct_2way_acc": 0.3058823529411765,
+            "clean_full_vocab_top1_acc": 0.9784313725490196,
+            "swap_full_vocab_top1_acc": 0.2980392156862745,
+            "mean_clean_target_margin": 14.064009666442871,
+            "mean_swap_target_margin": -3.441739320755005,
+            "mean_clean_logit1_minus_logit2": 14.064009666442871,
+            "mean_swap_logit1_minus_logit2": 3.441739320755005,
+            "mean_paired_logit_flip": 10.622270584106445
+          },
+          "crossing_1212": {
+            "n": 2,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.0,
+            "both_correct_2way_acc": 0.0,
+            "clean_full_vocab_top1_acc": 0.5,
+            "swap_full_vocab_top1_acc": 0.0,
+            "mean_clean_target_margin": 8.905275344848633,
+            "mean_swap_target_margin": -4.098789215087891,
+            "mean_clean_logit1_minus_logit2": -8.905275344848633,
+            "mean_swap_logit1_minus_logit2": -4.098789215087891,
+            "mean_paired_logit_flip": 4.806485652923584
+          }
+        }
+      },
+      "rand_zinc_large_seed0": {
+        "first_closure_both_rings_open": {
+          "overall": {
+            "n": 512,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.96875,
+            "both_correct_2way_acc": 0.96875,
+            "clean_full_vocab_top1_acc": 0.939453125,
+            "swap_full_vocab_top1_acc": 0.896484375,
+            "mean_clean_target_margin": 12.57689094543457,
+            "mean_swap_target_margin": 11.121844291687012,
+            "mean_clean_logit1_minus_logit2": -12.501569747924805,
+            "mean_swap_logit1_minus_logit2": 11.149364471435547,
+            "mean_paired_logit_flip": 23.698734283447266
+          },
+          "nested_1221": {
+            "n": 510,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.9725490196078431,
+            "both_correct_2way_acc": 0.9725490196078431,
+            "clean_full_vocab_top1_acc": 0.9392156862745098,
+            "swap_full_vocab_top1_acc": 0.9,
+            "mean_clean_target_margin": 12.588403701782227,
+            "mean_swap_target_margin": 11.17927360534668,
+            "mean_clean_logit1_minus_logit2": -12.588403701782227,
+            "mean_swap_logit1_minus_logit2": 11.17927360534668,
+            "mean_paired_logit_flip": 23.767677307128906
+          },
+          "crossing_1212": {
+            "n": 2,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.0,
+            "both_correct_2way_acc": 0.0,
+            "clean_full_vocab_top1_acc": 1.0,
+            "swap_full_vocab_top1_acc": 0.0,
+            "mean_clean_target_margin": 9.641195297241211,
+            "mean_swap_target_margin": -3.522629976272583,
+            "mean_clean_logit1_minus_logit2": 9.641195297241211,
+            "mean_swap_logit1_minus_logit2": 3.522629976272583,
+            "mean_paired_logit_flip": 6.118564605712891
+          }
+        },
+        "second_closure_one_ring_left": {
+          "overall": {
+            "n": 512,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.869140625,
+            "both_correct_2way_acc": 0.869140625,
+            "clean_full_vocab_top1_acc": 0.978515625,
+            "swap_full_vocab_top1_acc": 0.7578125,
+            "mean_clean_target_margin": 13.741830825805664,
+            "mean_swap_target_margin": 4.644865989685059,
+            "mean_clean_logit1_minus_logit2": 13.635602951049805,
+            "mean_swap_logit1_minus_logit2": -4.691511154174805,
+            "mean_paired_logit_flip": 18.386695861816406
+          },
+          "nested_1221": {
+            "n": 510,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.8705882352941177,
+            "both_correct_2way_acc": 0.8705882352941177,
+            "clean_full_vocab_top1_acc": 0.9784313725490196,
+            "swap_full_vocab_top1_acc": 0.7607843137254902,
+            "mean_clean_target_margin": 13.74239730834961,
+            "mean_swap_target_margin": 4.686494827270508,
+            "mean_clean_logit1_minus_logit2": 13.74239730834961,
+            "mean_swap_logit1_minus_logit2": -4.686494827270508,
+            "mean_paired_logit_flip": 18.428890228271484
+          },
+          "crossing_1212": {
+            "n": 2,
+            "clean_2way_acc": 1.0,
+            "swap_2way_acc": 0.5,
+            "both_correct_2way_acc": 0.5,
+            "clean_full_vocab_top1_acc": 1.0,
+            "swap_full_vocab_top1_acc": 0.0,
+            "mean_clean_target_margin": 13.597240447998047,
+            "mean_swap_target_margin": -5.970614433288574,
+            "mean_clean_logit1_minus_logit2": -13.597240447998047,
+            "mean_swap_logit1_minus_logit2": -5.970614433288574,
+            "mean_paired_logit_flip": 7.6266255378723145
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "config": {
+    "ckpts": [
+      "runs/grid/zinc_small/tf_seed0/checkpoint.pt",
+      "runs/grid/zinc_small/tf_seed1/checkpoint.pt",
+      "runs/grid/zinc_small/tf_seed2/checkpoint.pt",
+      "runs/grid/zinc_base/tf_seed0/checkpoint.pt",
+      "runs/grid/zinc_base/tf_seed1/checkpoint.pt",
+      "runs/grid/zinc_base/tf_seed2/checkpoint.pt",
+      "runs/grid/zinc_large/tf_seed0/checkpoint.pt",
+      "runs/grid/zinc_large/tf_seed1/checkpoint.pt",
+      "runs/grid/zinc_large/tf_seed2/checkpoint.pt"
+    ],
+    "data": "runs/data",
+    "hf_dir": "runs/z20ll",
+    "out": "runs/grid/split_generalization.json",
+    "column": "smiles",
+    "stride": 7,
+    "offset": 3,
+    "n_sequences": 25600,
+    "n_ctx": 256,
+    "batch": 256,
+    "seed": 0,
+    "device": "cuda"
+  },
+  "runs": {
+    "runs/grid/zinc_small/tf_seed0/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.5418060421943665,
+        "se": 0.00018907851772382856,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5539219379425049,
+        "se": 0.0002024078043177724,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.5991734862327576,
+        "se": 0.00028381035663187503,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5422859787940979,
+        "se": 0.0001917591318488121,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_small/tf_seed1/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.5416041016578674,
+        "se": 0.00018839641707018017,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5533548593521118,
+        "se": 0.00020130162592977286,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.5973260402679443,
+        "se": 0.00028186941053718326,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5419508218765259,
+        "se": 0.0001908310572616756,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_small/tf_seed2/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.5415760278701782,
+        "se": 0.00018832472851499916,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5541978478431702,
+        "se": 0.00020200770813971758,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.5973268747329712,
+        "se": 0.00027691032737493516,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5420159101486206,
+        "se": 0.0001914720400236547,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_base/tf_seed0/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.535121738910675,
+        "se": 0.0001794846379198134,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5563139319419861,
+        "se": 0.0002003401517868042,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.6068422198295593,
+        "se": 0.0002920923288911581,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5357520580291748,
+        "se": 0.00018278422066941857,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_base/tf_seed1/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.5350026488304138,
+        "se": 0.00017992403591051697,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5568364858627319,
+        "se": 0.00020214016549289227,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.6057834029197693,
+        "se": 0.00028584275860339404,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5356513261795044,
+        "se": 0.0001821611076593399,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_base/tf_seed2/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.535076379776001,
+        "se": 0.0001800847821868956,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5565552115440369,
+        "se": 0.00020143820438534021,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.6072733402252197,
+        "se": 0.00029270236846059563,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5357924103736877,
+        "se": 0.00018299712100997568,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_large/tf_seed0/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.5299917459487915,
+        "se": 0.00017384289531037213,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5685037970542908,
+        "se": 0.00022947501856833695,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.6315291523933411,
+        "se": 0.000340486946515739,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5308352708816528,
+        "se": 0.00017681559547781943,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_large/tf_seed1/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.5299900770187378,
+        "se": 0.00017354674637317657,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5700132250785828,
+        "se": 0.00023208011407405138,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.6300570964813232,
+        "se": 0.0003334025386720896,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5307919979095459,
+        "se": 0.00017629907233640552,
+        "n_sequences": 25600
+      }
+    },
+    "runs/grid/zinc_large/tf_seed2/checkpoint.pt": {
+      "train_imported": {
+        "ce": 0.530039370059967,
+        "se": 0.00017358287004753947,
+        "n_sequences": 25600
+      },
+      "valid": {
+        "ce": 0.5690168142318726,
+        "se": 0.000229987851344049,
+        "n_sequences": 25600
+      },
+      "test": {
+        "ce": 0.6306303143501282,
+        "se": 0.000335775432176888,
+        "n_sequences": 25600
+      },
+      "train_unseen": {
+        "ce": 0.5307900905609131,
+        "se": 0.00017692301189526917,
+        "n_sequences": 25600
+      }
+    }
+  }
+}

@@ -1,0 +1,1721 @@
+{
+  "analysis": "graph_invariance_and_distance_geometry",
+  "config": {
+    "ckpt": "runs/grid/zinc_base/tf_seed1/checkpoint.pt",
+    "data": "runs/data/valid.smi",
+    "n_mols": 1000,
+    "total_atoms": 23114,
+    "seed": 0,
+    "pairs_sha256": "d397777b9c28730f001c8076e44ce2bb4a958013716b4018fdec977be1af17de",
+    "exact_same_token_frac": 0.9667301202734273,
+    "model_cfg": {
+      "n_layers": 6,
+      "n_heads": 8,
+      "d_model": 512,
+      "d_ff": 2048
+    }
+  },
+  "part1_traversal_invariance": {
+    "layers": [
+      "embed",
+      "layer_0",
+      "layer_1",
+      "layer_2",
+      "layer_3",
+      "layer_4",
+      "layer_5"
+    ],
+    "by_layer": {
+      "embed": {
+        "raw": {
+          "same_atom_cos_mean": 0.9960296750068665,
+          "same_atom_cos_std": 0.021520433947443962,
+          "same_atom_cos_mol_mean": 0.9960269660949707,
+          "null1_within_mol_same_tok_mean": 1.0000000819255448,
+          "null1_within_mol_mol_mean": 1.000000077040478,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 1.000000039983192,
+          "margin_vs_null1": -0.0039704069186783375,
+          "margin_vs_null2": -0.0039703649763256355,
+          "top1_retrieval_all_atoms": 0.2584148135329238,
+          "top1_retrieval_same_tok": 0.19493817619783615,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.9951615333557129,
+              "null2_cos": 1.0000000367910058,
+              "margin_vs_null2": -0.004838503435292907
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.9955596923828125,
+              "null2_cos": 1.00000003781687,
+              "margin_vs_null2": -0.00444034543405758
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.9967479705810547,
+              "null2_cos": 1.000000042910774,
+              "margin_vs_null2": -0.0032520723297193577
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.9951644539833069,
+              "null2_cos": 1.000000039696038,
+              "margin_vs_null2": -0.0048355857127311275
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.9972324371337891,
+              "null2_cos": 1.0000000408484555,
+              "margin_vs_null2": -0.0027676037146664445
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.9966503381729126,
+              "null2_cos": 1.0000000397149056,
+              "margin_vs_null2": -0.0033497015419929888
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.9947723746299744,
+              "null2_cos": 1.0000000385539336,
+              "margin_vs_null2": -0.005227663923959236
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.9978201389312744,
+              "null2_cos": 1.0000000420188437,
+              "margin_vs_null2": -0.0021799030875693237
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 1.0,
+              "null2_cos": 1.0000000374326856,
+              "margin_vs_null2": -3.7432685617844186e-08
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.9896507859230042,
+              "null2_cos": 1.0000000396524589,
+              "margin_vs_null2": -0.010349253729454722
+            }
+          }
+        },
+        "centered": {
+          "same_atom_cos_mean": 0.995093047618866,
+          "same_atom_cos_std": 0.026672180742025375,
+          "same_atom_cos_mol_mean": 0.9950897409319878,
+          "null1_within_mol_same_tok_mean": 0.9999999547238568,
+          "null1_within_mol_mol_mean": 0.9999999567088771,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.9999999613895293,
+          "margin_vs_null1": -0.004906907104990865,
+          "margin_vs_null2": -0.004906913770663324,
+          "top1_retrieval_all_atoms": 0.2616596002422774,
+          "top1_retrieval_same_tok": 0.19856066460587327,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.9940087795257568,
+              "null2_cos": 0.999999964361784,
+              "margin_vs_null2": -0.005991184836027119
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.9945177435874939,
+              "null2_cos": 0.9999999633938854,
+              "margin_vs_null2": -0.0054822198063915195
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.9959827065467834,
+              "null2_cos": 0.9999999586719478,
+              "margin_vs_null2": -0.00401725212516435
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.9940264821052551,
+              "null2_cos": 0.9999999615900653,
+              "margin_vs_null2": -0.005973479484810196
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.996588408946991,
+              "null2_cos": 0.9999999610330285,
+              "margin_vs_null2": -0.003411552086037495
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.9958453178405762,
+              "null2_cos": 0.9999999613247684,
+              "margin_vs_null2": -0.004154643484192255
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.9935411214828491,
+              "null2_cos": 0.9999999764610156,
+              "margin_vs_null2": -0.006458854978166451
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.9973031878471375,
+              "null2_cos": 0.999999939923648,
+              "margin_vs_null2": -0.0026967520765105446
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 1.0,
+              "null2_cos": 1.0000000093980463,
+              "margin_vs_null2": -9.398046341146937e-09
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.9872130751609802,
+              "null2_cos": 0.9999999441914652,
+              "margin_vs_null2": -0.012786869030484982
+            }
+          }
+        },
+        "linear_cka_mol_mean": 0.9999704416363235,
+        "linear_cka_atom_aligned": 0.9997952873365946
+      },
+      "layer_0": {
+        "raw": {
+          "same_atom_cos_mean": 0.9955605864524841,
+          "same_atom_cos_std": 0.01742810569703579,
+          "same_atom_cos_mol_mean": 0.995537401676178,
+          "null1_within_mol_same_tok_mean": 0.9969161692821246,
+          "null1_within_mol_mol_mean": 0.9967303310886241,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.9929071367392426,
+          "margin_vs_null1": -0.0013555828296404338,
+          "margin_vs_null2": 0.0026534497132415513,
+          "top1_retrieval_all_atoms": 0.29562170113351216,
+          "top1_retrieval_same_tok": 0.23676584234930448,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.9969925880432129,
+              "null2_cos": 0.9943218740071504,
+              "margin_vs_null2": 0.0026707140360624493
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.9964633584022522,
+              "null2_cos": 0.9941144056745426,
+              "margin_vs_null2": 0.00234895272770963
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.994292140007019,
+              "null2_cos": 0.9914483079703753,
+              "margin_vs_null2": 0.002843832036643734
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.9930320978164673,
+              "null2_cos": 0.9923937518971562,
+              "margin_vs_null2": 0.0006383459193111118
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.998336911201477,
+              "null2_cos": 0.9929741401693629,
+              "margin_vs_null2": 0.005362771032114133
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.998126208782196,
+              "null2_cos": 0.9939334687963083,
+              "margin_vs_null2": 0.004192739985887761
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.9962841868400574,
+              "null2_cos": 0.9976603802258083,
+              "margin_vs_null2": -0.0013761933857509012
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.9945299029350281,
+              "null2_cos": 0.9861372297428008,
+              "margin_vs_null2": 0.008392673192227251
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.998809278011322,
+              "null2_cos": 0.99876159920598,
+              "margin_vs_null2": 4.7678805342066255e-05
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.99381023645401,
+              "null2_cos": 0.9965814778279728,
+              "margin_vs_null2": -0.002771241373962785
+            }
+          }
+        },
+        "centered": {
+          "same_atom_cos_mean": 0.9862350225448608,
+          "same_atom_cos_std": 0.039809294044971466,
+          "same_atom_cos_mol_mean": 0.9861748595833778,
+          "null1_within_mol_same_tok_mean": 0.9868530895274599,
+          "null1_within_mol_mol_mean": 0.986516106966996,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.9793292077954521,
+          "margin_vs_null1": -0.0006180669825990304,
+          "margin_vs_null2": 0.006905814749408767,
+          "top1_retrieval_all_atoms": 0.29947218136194514,
+          "top1_retrieval_same_tok": 0.24077472952086554,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.9922513961791992,
+              "null2_cos": 0.9833700907706571,
+              "margin_vs_null2": 0.00888130540854215
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.9899115562438965,
+              "null2_cos": 0.9832235762889113,
+              "margin_vs_null2": 0.006687979954985157
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.9809821248054504,
+              "null2_cos": 0.9748711900186181,
+              "margin_vs_null2": 0.006110934786832334
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.9772801995277405,
+              "null2_cos": 0.9765996447650441,
+              "margin_vs_null2": 0.0006805547626963504
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.9957598447799683,
+              "null2_cos": 0.9812344459611281,
+              "margin_vs_null2": 0.014525398818840185
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.9956352710723877,
+              "null2_cos": 0.9832097591532694,
+              "margin_vs_null2": 0.012425511919118337
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.989537239074707,
+              "null2_cos": 0.9920494213611395,
+              "margin_vs_null2": -0.0025121822864324628
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.9815322756767273,
+              "null2_cos": 0.9612121761184571,
+              "margin_vs_null2": 0.020320099558270188
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.9949679374694824,
+              "null2_cos": 0.9947945370308842,
+              "margin_vs_null2": 0.00017340043859825904
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.9842165112495422,
+              "null2_cos": 0.9893599364069648,
+              "margin_vs_null2": -0.00514342515742261
+            }
+          }
+        },
+        "linear_cka_mol_mean": 0.9989185517794903,
+        "linear_cka_atom_aligned": 0.9956518172425294
+      },
+      "layer_1": {
+        "raw": {
+          "same_atom_cos_mean": 0.8348886966705322,
+          "same_atom_cos_std": 0.12181629985570908,
+          "same_atom_cos_mol_mean": 0.8346604916453362,
+          "null1_within_mol_same_tok_mean": 0.7878147254279235,
+          "null1_within_mol_mol_mean": 0.7878528393210817,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.7909836561762134,
+          "margin_vs_null1": 0.0470739712426087,
+          "margin_vs_null2": 0.04390504049431887,
+          "top1_retrieval_all_atoms": 0.38574024400796053,
+          "top1_retrieval_same_tok": 0.3775598918083462,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.886199951171875,
+              "null2_cos": 0.7966154332612257,
+              "margin_vs_null2": 0.08958451791064925
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.8509953618049622,
+              "null2_cos": 0.7979228158857232,
+              "margin_vs_null2": 0.053072545919238934
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.8000463247299194,
+              "null2_cos": 0.7837837560638323,
+              "margin_vs_null2": 0.016262568666087107
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.779517650604248,
+              "null2_cos": 0.7790561972549703,
+              "margin_vs_null2": 0.0004614533492777184
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.870578944683075,
+              "null2_cos": 0.8051365822924819,
+              "margin_vs_null2": 0.06544236239059309
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.9166290760040283,
+              "null2_cos": 0.8020105483598314,
+              "margin_vs_null2": 0.11461852764419689
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.8488988280296326,
+              "null2_cos": 0.8050742175714306,
+              "margin_vs_null2": 0.04382461045820196
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.8149364590644836,
+              "null2_cos": 0.7709148777845987,
+              "margin_vs_null2": 0.04402158127988498
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.8532155156135559,
+              "null2_cos": 0.8145942600090562,
+              "margin_vs_null2": 0.038621255604499694
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.844669759273529,
+              "null2_cos": 0.7957471020763376,
+              "margin_vs_null2": 0.048922657197191466
+            }
+          }
+        },
+        "centered": {
+          "same_atom_cos_mean": 0.4594992399215698,
+          "same_atom_cos_std": 0.3761124014854431,
+          "same_atom_cos_mol_mean": 0.45922109119594096,
+          "null1_within_mol_same_tok_mean": 0.24199294742093935,
+          "null1_within_mol_mol_mean": 0.24676075960653684,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.3061456122993328,
+          "margin_vs_null1": 0.21750629250063047,
+          "margin_vs_null2": 0.15335362762223703,
+          "top1_retrieval_all_atoms": 0.3944362723890283,
+          "top1_retrieval_same_tok": 0.3821966769706337,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.6242949366569519,
+              "null2_cos": 0.3228238309970103,
+              "margin_vs_null2": 0.3014711056599416
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.5074111223220825,
+              "null2_cos": 0.3266300470753985,
+              "margin_vs_null2": 0.18078107524668402
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.35008886456489563,
+              "null2_cos": 0.2848662561723571,
+              "margin_vs_null2": 0.06522260839253852
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.3005430996417999,
+              "null2_cos": 0.2797103588965258,
+              "margin_vs_null2": 0.020832740745274136
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.5492169260978699,
+              "null2_cos": 0.3386087329919333,
+              "margin_vs_null2": 0.2106081931059366
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.7071192860603333,
+              "null2_cos": 0.329470148398556,
+              "margin_vs_null2": 0.37764913766177727
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.49011388421058655,
+              "null2_cos": 0.33147082890680274,
+              "margin_vs_null2": 0.1586430553037838
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.41590026021003723,
+              "null2_cos": 0.2700756399568915,
+              "margin_vs_null2": 0.14582462025314574
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.5113743543624878,
+              "null2_cos": 0.3695711173938277,
+              "margin_vs_null2": 0.1418032369686601
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.4692842662334442,
+              "null2_cos": 0.2941426559030401,
+              "margin_vs_null2": 0.1751416103304041
+            }
+          }
+        },
+        "linear_cka_mol_mean": 0.9227416282917568,
+        "linear_cka_atom_aligned": 0.061883533657625764
+      },
+      "layer_2": {
+        "raw": {
+          "same_atom_cos_mean": 0.676837682723999,
+          "same_atom_cos_std": 0.16899949312210083,
+          "same_atom_cos_mol_mean": 0.6764778427481651,
+          "null1_within_mol_same_tok_mean": 0.617307925099166,
+          "null1_within_mol_mol_mean": 0.6164783212305894,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.6073944352282095,
+          "margin_vs_null1": 0.059529757624833035,
+          "margin_vs_null2": 0.06944324749578956,
+          "top1_retrieval_all_atoms": 0.33161720169594183,
+          "top1_retrieval_same_tok": 0.36925231839258116,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.7663217186927795,
+              "null2_cos": 0.6066206024176234,
+              "margin_vs_null2": 0.15970111627515615
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.7006622552871704,
+              "null2_cos": 0.6104617452705495,
+              "margin_vs_null2": 0.09020051001662088
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.6188586950302124,
+              "null2_cos": 0.6057589598624027,
+              "margin_vs_null2": 0.013099735167809712
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.5871191024780273,
+              "null2_cos": 0.593659883961148,
+              "margin_vs_null2": -0.00654078148312065
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.7193535566329956,
+              "null2_cos": 0.6197770378777228,
+              "margin_vs_null2": 0.09957651875527285
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.8248658776283264,
+              "null2_cos": 0.6240754414183195,
+              "margin_vs_null2": 0.20079043621000692
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.6892181038856506,
+              "null2_cos": 0.6190876448619964,
+              "margin_vs_null2": 0.07013045902365422
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.6592063903808594,
+              "null2_cos": 0.5907401354991141,
+              "margin_vs_null2": 0.06846625488174529
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.6901629567146301,
+              "null2_cos": 0.627599550484978,
+              "margin_vs_null2": 0.06256340622965217
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.688292384147644,
+              "null2_cos": 0.6107482359413905,
+              "margin_vs_null2": 0.07754414820625355
+            }
+          }
+        },
+        "centered": {
+          "same_atom_cos_mean": 0.3031937777996063,
+          "same_atom_cos_std": 0.3527021110057831,
+          "same_atom_cos_mol_mean": 0.30318148657120764,
+          "null1_within_mol_same_tok_mean": 0.12072682230568622,
+          "null1_within_mol_mol_mean": 0.12304493007282,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.1489567302353406,
+          "margin_vs_null1": 0.1824669554939201,
+          "margin_vs_null2": 0.15423704756426573,
+          "top1_retrieval_all_atoms": 0.35978195033313143,
+          "top1_retrieval_same_tok": 0.38461166924265844,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.5204659104347229,
+              "null2_cos": 0.15795795687509445,
+              "margin_vs_null2": 0.36250795355962845
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.36919069290161133,
+              "null2_cos": 0.16642372463782149,
+              "margin_vs_null2": 0.20276696826378984
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.1570969671010971,
+              "null2_cos": 0.133286795760397,
+              "margin_vs_null2": 0.023810171340700098
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.11839908361434937,
+              "null2_cos": 0.11990559426522626,
+              "margin_vs_null2": -0.0015065106508768966
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.39481356739997864,
+              "null2_cos": 0.182124844894222,
+              "margin_vs_null2": 0.21268872250575663
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.6039695143699646,
+              "null2_cos": 0.17714081744513727,
+              "margin_vs_null2": 0.42682869692482733
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.3169163465499878,
+              "null2_cos": 0.15535858119658774,
+              "margin_vs_null2": 0.16155776535340005
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.2836511731147766,
+              "null2_cos": 0.13983875937287202,
+              "margin_vs_null2": 0.1438124137419046
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.31585389375686646,
+              "null2_cos": 0.16588739650114195,
+              "margin_vs_null2": 0.1499664972557245
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.31795722246170044,
+              "null2_cos": 0.1450431359645417,
+              "margin_vs_null2": 0.17291408649715875
+            }
+          }
+        },
+        "linear_cka_mol_mean": 0.5412782066225214,
+        "linear_cka_atom_aligned": 0.07129761722555097
+      },
+      "layer_3": {
+        "raw": {
+          "same_atom_cos_mean": 0.5146464705467224,
+          "same_atom_cos_std": 0.20997440814971924,
+          "same_atom_cos_mol_mean": 0.5145398120582104,
+          "null1_within_mol_same_tok_mean": 0.42351904629696363,
+          "null1_within_mol_mol_mean": 0.4240865384800618,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.4146989773435241,
+          "margin_vs_null1": 0.09112742424975878,
+          "margin_vs_null2": 0.09994749320319829,
+          "top1_retrieval_all_atoms": 0.30989876265466815,
+          "top1_retrieval_same_tok": 0.3760142967542504,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.6323195099830627,
+              "null2_cos": 0.4082295621454566,
+              "margin_vs_null2": 0.22408994783760616
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.5347468852996826,
+              "null2_cos": 0.4081413091201015,
+              "margin_vs_null2": 0.12660557617958113
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.4457346796989441,
+              "null2_cos": 0.4220469598113078,
+              "margin_vs_null2": 0.023687719887636294
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.40916261076927185,
+              "null2_cos": 0.40776546517767065,
+              "margin_vs_null2": 0.001397145591601201
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.5511290431022644,
+              "null2_cos": 0.42041270595014174,
+              "margin_vs_null2": 0.13071633715212266
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.7024279236793518,
+              "null2_cos": 0.4236666691257866,
+              "margin_vs_null2": 0.2787612545535652
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.517720639705658,
+              "null2_cos": 0.41396726642704135,
+              "margin_vs_null2": 0.10375337327861661
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.5102684497833252,
+              "null2_cos": 0.4157411320042039,
+              "margin_vs_null2": 0.09452731777912132
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.5260018706321716,
+              "null2_cos": 0.43171463126114945,
+              "margin_vs_null2": 0.09428723937102218
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.5096073150634766,
+              "null2_cos": 0.3965795580606313,
+              "margin_vs_null2": 0.11302775700284529
+            }
+          }
+        },
+        "centered": {
+          "same_atom_cos_mean": 0.2362099587917328,
+          "same_atom_cos_std": 0.3219117820262909,
+          "same_atom_cos_mol_mean": 0.2365965936786961,
+          "null1_within_mol_same_tok_mean": 0.06983469290406662,
+          "null1_within_mol_mol_mean": 0.07242632488328934,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.07812486400626227,
+          "margin_vs_null1": 0.16637526588766616,
+          "margin_vs_null2": 0.1580850947854705,
+          "top1_retrieval_all_atoms": 0.33352080989876265,
+          "top1_retrieval_same_tok": 0.3881375579598145,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.45011940598487854,
+              "null2_cos": 0.08075655306487549,
+              "margin_vs_null2": 0.36936285292000304
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.29699835181236267,
+              "null2_cos": 0.08766336257438803,
+              "margin_vs_null2": 0.20933498923797464
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.09510797262191772,
+              "null2_cos": 0.07065043952183604,
+              "margin_vs_null2": 0.024457533100081683
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.06065690889954567,
+              "null2_cos": 0.05582324395748621,
+              "margin_vs_null2": 0.00483366494205946
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.3107888102531433,
+              "null2_cos": 0.10427196411385466,
+              "margin_vs_null2": 0.20651684613928867
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.5346219539642334,
+              "null2_cos": 0.09906381816593585,
+              "margin_vs_null2": 0.43555813579829755
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.24162790179252625,
+              "null2_cos": 0.07404780479406405,
+              "margin_vs_null2": 0.1675800969984622
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.22849413752555847,
+              "null2_cos": 0.08393170132978225,
+              "margin_vs_null2": 0.14456243619577622
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.23827379941940308,
+              "null2_cos": 0.08180818412815767,
+              "margin_vs_null2": 0.15646561529124542
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.2449139952659607,
+              "null2_cos": 0.06644469222297361,
+              "margin_vs_null2": 0.17846930304298708
+            }
+          }
+        },
+        "linear_cka_mol_mean": 0.3233588268382747,
+        "linear_cka_atom_aligned": 0.0766513464252393
+      },
+      "layer_4": {
+        "raw": {
+          "same_atom_cos_mean": 0.3686983585357666,
+          "same_atom_cos_std": 0.215139240026474,
+          "same_atom_cos_mol_mean": 0.36944782319664954,
+          "null1_within_mol_same_tok_mean": 0.25723493503818273,
+          "null1_within_mol_mol_mean": 0.2595682369127557,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.264347188446659,
+          "margin_vs_null1": 0.11146342349758387,
+          "margin_vs_null2": 0.1043511700891076,
+          "top1_retrieval_all_atoms": 0.31803236133944796,
+          "top1_retrieval_same_tok": 0.3787673879443586,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.4934857189655304,
+              "null2_cos": 0.2607553806277494,
+              "margin_vs_null2": 0.232730338337781
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.38753530383110046,
+              "null2_cos": 0.25954044734196297,
+              "margin_vs_null2": 0.1279948564891375
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.29723867774009705,
+              "null2_cos": 0.2691879002603828,
+              "margin_vs_null2": 0.02805077747971424
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.2802656292915344,
+              "null2_cos": 0.2662209126193955,
+              "margin_vs_null2": 0.014044716672138913
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.3889467716217041,
+              "null2_cos": 0.26577003504182556,
+              "margin_vs_null2": 0.12317673657987854
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.5366443991661072,
+              "null2_cos": 0.25890460872445986,
+              "margin_vs_null2": 0.2777397904416473
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.35824957489967346,
+              "null2_cos": 0.24786537060659045,
+              "margin_vs_null2": 0.11038420429308302
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.38357871770858765,
+              "null2_cos": 0.28782176411797133,
+              "margin_vs_null2": 0.09575695359061631
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.36321622133255005,
+              "null2_cos": 0.2593192846924047,
+              "margin_vs_null2": 0.10389693664014538
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.3533836305141449,
+              "null2_cos": 0.2366435740390628,
+              "margin_vs_null2": 0.1167400564750821
+            }
+          }
+        },
+        "centered": {
+          "same_atom_cos_mean": 0.17356809973716736,
+          "same_atom_cos_std": 0.2876647710800171,
+          "same_atom_cos_mol_mean": 0.17454860817518783,
+          "null1_within_mol_same_tok_mean": 0.0260183366567504,
+          "null1_within_mol_mol_mean": 0.029357297161993187,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.04105639839567412,
+          "margin_vs_null1": 0.14754976308041695,
+          "margin_vs_null2": 0.13251170134149323,
+          "top1_retrieval_all_atoms": 0.3285887341005451,
+          "top1_retrieval_same_tok": 0.38364567233384855,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.3496183156967163,
+              "null2_cos": 0.04076235507982707,
+              "margin_vs_null2": 0.30885596061688925
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.2156442403793335,
+              "null2_cos": 0.04612875031300965,
+              "margin_vs_null2": 0.16951549006632385
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.06263215839862823,
+              "null2_cos": 0.037884561335001045,
+              "margin_vs_null2": 0.02474759706362719
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.03125259652733803,
+              "null2_cos": 0.02581415479166088,
+              "margin_vs_null2": 0.005438441735677146
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.22840240597724915,
+              "null2_cos": 0.06178634042359159,
+              "margin_vs_null2": 0.16661606555365754
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.421205073595047,
+              "null2_cos": 0.0524575350892865,
+              "margin_vs_null2": 0.3687475385057605
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.17060784995555878,
+              "null2_cos": 0.029306185450192472,
+              "margin_vs_null2": 0.1413016645053663
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.17778384685516357,
+              "null2_cos": 0.057791886290229945,
+              "margin_vs_null2": 0.11999196056493364
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.17382565140724182,
+              "null2_cos": 0.04240757701434574,
+              "margin_vs_null2": 0.13141807439289607
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.16745522618293762,
+              "null2_cos": 0.016470298103478664,
+              "margin_vs_null2": 0.15098492807945896
+            }
+          }
+        },
+        "linear_cka_mol_mean": 0.1270220827802119,
+        "linear_cka_atom_aligned": 0.20980487943310816
+      },
+      "layer_5": {
+        "raw": {
+          "same_atom_cos_mean": 0.377022922039032,
+          "same_atom_cos_std": 0.3029075860977173,
+          "same_atom_cos_mol_mean": 0.37879714418202637,
+          "null1_within_mol_same_tok_mean": 0.251546954253829,
+          "null1_within_mol_mol_mean": 0.256410726141137,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.2852942172612578,
+          "margin_vs_null1": 0.12547596778520298,
+          "margin_vs_null2": 0.09172870477777417,
+          "top1_retrieval_all_atoms": 0.24448386259409882,
+          "top1_retrieval_same_tok": 0.31568778979907264,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.5253419280052185,
+              "null2_cos": 0.28926001963562215,
+              "margin_vs_null2": 0.23608190836959636
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.40282419323921204,
+              "null2_cos": 0.28481099381680225,
+              "margin_vs_null2": 0.11801319942240979
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.2898600995540619,
+              "null2_cos": 0.2837294959289897,
+              "margin_vs_null2": 0.006130603625072173
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.3253166675567627,
+              "null2_cos": 0.3020490873454219,
+              "margin_vs_null2": 0.023267580211340788
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.37423092126846313,
+              "null2_cos": 0.2757244864723495,
+              "margin_vs_null2": 0.09850643479611365
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.49010905623435974,
+              "null2_cos": 0.2593116592472692,
+              "margin_vs_null2": 0.23079739698709056
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.3648296892642975,
+              "null2_cos": 0.271254374096459,
+              "margin_vs_null2": 0.09357531516783846
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.3943876624107361,
+              "null2_cos": 0.30529075914659476,
+              "margin_vs_null2": 0.08909690326414132
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.3453671634197235,
+              "null2_cos": 0.2654253283888495,
+              "margin_vs_null2": 0.07994183503087399
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.3838978409767151,
+              "null2_cos": 0.2769652921829346,
+              "margin_vs_null2": 0.1069325487937805
+            }
+          }
+        },
+        "centered": {
+          "same_atom_cos_mean": 0.23913003504276276,
+          "same_atom_cos_std": 0.3920079171657562,
+          "same_atom_cos_mol_mean": 0.24031275760151039,
+          "null1_within_mol_same_tok_mean": 0.08509197558090063,
+          "null1_within_mol_mol_mean": 0.08926607408301428,
+          "null1_n_pairs": 146394,
+          "null2_between_mol_same_tok_mean": 0.13941861686637072,
+          "margin_vs_null1": 0.1540380594618621,
+          "margin_vs_null2": 0.09971141817639204,
+          "top1_retrieval_all_atoms": 0.23911914856796745,
+          "top1_retrieval_same_tok": 0.3106646058732612,
+          "top1_same_tok_n": 20704,
+          "splits": {
+            "pos_shift_small_le3": {
+              "n_atoms": 5152,
+              "same_atom_cos": 0.439024418592453,
+              "null2_cos": 0.13547717665127154,
+              "margin_vs_null2": 0.30354724194118143
+            },
+            "pos_shift_med_4_10": {
+              "n_atoms": 7095,
+              "same_atom_cos": 0.29533377289772034,
+              "null2_cos": 0.15021685615607636,
+              "margin_vs_null2": 0.14511691674164398
+            },
+            "pos_shift_large_gt10": {
+              "n_atoms": 10867,
+              "same_atom_cos": 0.10766581445932388,
+              "null2_cos": 0.13423812459316004,
+              "margin_vs_null2": -0.026572310133836152
+            },
+            "prefix_jaccard_low_lt03": {
+              "n_atoms": 11876,
+              "same_atom_cos": 0.07595768570899963,
+              "null2_cos": 0.09601731614307707,
+              "margin_vs_null2": -0.020059630434077436
+            },
+            "prefix_jaccard_mid_03_07": {
+              "n_atoms": 5668,
+              "same_atom_cos": 0.3345964848995209,
+              "null2_cos": 0.18861574625760721,
+              "margin_vs_null2": 0.14598073864191366
+            },
+            "prefix_jaccard_high_ge07": {
+              "n_atoms": 5570,
+              "same_atom_cos": 0.48988956212997437,
+              "null2_cos": 0.18188560370651147,
+              "margin_vs_null2": 0.3080039584234629
+            },
+            "ring_atoms": {
+              "n_atoms": 13579,
+              "same_atom_cos": 0.26151591539382935,
+              "null2_cos": 0.1610648829298716,
+              "margin_vs_null2": 0.10045103246395776
+            },
+            "chain_atoms": {
+              "n_atoms": 9535,
+              "same_atom_cos": 0.20724979043006897,
+              "null2_cos": 0.1085884672044997,
+              "margin_vs_null2": 0.09866132322556927
+            },
+            "aromatic_ring_atoms": {
+              "n_atoms": 6720,
+              "same_atom_cos": 0.25992247462272644,
+              "null2_cos": 0.18332708023837566,
+              "margin_vs_null2": 0.07659539438435078
+            },
+            "aliphatic_ring_atoms": {
+              "n_atoms": 6859,
+              "same_atom_cos": 0.26307711005210876,
+              "null2_cos": 0.1392538367258845,
+              "margin_vs_null2": 0.12382327332622425
+            }
+          }
+        },
+        "linear_cka_mol_mean": 0.1927110261552633,
+        "linear_cka_atom_aligned": 0.0
+      }
+    }
+  },
+  "part2_graph_vs_string_distance": {
+    "n_train_mols": 500,
+    "n_test_mols": 500,
+    "n_total_pairs": 257072,
+    "string_distance_only_baseline": {
+      "ridge_r2": 0.436429669149786,
+      "pearson_r": 0.6607376508670886,
+      "alpha": 0.01,
+      "nonadj_bonded_auroc_neg_dS": 0.7093728621536306,
+      "n_nonadj_test_pairs": 116110,
+      "n_nonadj_bonded_test_pairs": 4184
+    },
+    "residual_by_layer": {
+      "embed": {
+        "partial_pearson_cos_vs_dG_ctrl_dS": -0.059555285484590506,
+        "partial_spearman_cos_vs_dG_ctrl_dS": -0.12562250578904724,
+        "partial_pearson_l2_vs_dG_ctrl_dS": 0.04489656591478944,
+        "partial_spearman_l2_vs_dG_ctrl_dS": 0.12280959385013616,
+        "ridge_r2_scalar_only": 0.016425811652337585,
+        "ridge_r2_scalar_plus_str": 0.43885146905137884,
+        "ridge_r2_absdiff_only": 0.07578079373502489,
+        "ridge_r2_absdiff_plus_str": 0.4628504582299777,
+        "delta_r2_over_str_baseline": 0.026420789080191742,
+        "nonadj_bonded_auroc_cos": 0.5934374962523894,
+        "alpha_absdiff": 3162.277660168379,
+        "alpha_absdiff_str": 10.0
+      },
+      "layer_0": {
+        "partial_pearson_cos_vs_dG_ctrl_dS": -0.04240433304900152,
+        "partial_spearman_cos_vs_dG_ctrl_dS": -0.10087063669779839,
+        "partial_pearson_l2_vs_dG_ctrl_dS": 0.014675069892932165,
+        "partial_spearman_l2_vs_dG_ctrl_dS": -0.016267385972265694,
+        "ridge_r2_scalar_only": 0.01047569162507933,
+        "ridge_r2_scalar_plus_str": 0.4394082256092896,
+        "ridge_r2_absdiff_only": 0.18433471836327509,
+        "ridge_r2_absdiff_plus_str": 0.48070134272419274,
+        "delta_r2_over_str_baseline": 0.044271673574406756,
+        "nonadj_bonded_auroc_cos": 0.5651282548521458,
+        "alpha_absdiff": 31.622776601683796,
+        "alpha_absdiff_str": 31.622776601683796
+      },
+      "layer_1": {
+        "partial_pearson_cos_vs_dG_ctrl_dS": -0.009838658188798045,
+        "partial_spearman_cos_vs_dG_ctrl_dS": -0.06406014698980526,
+        "partial_pearson_l2_vs_dG_ctrl_dS": 0.07246886258090468,
+        "partial_spearman_l2_vs_dG_ctrl_dS": 0.04336915936991194,
+        "ridge_r2_scalar_only": 0.040430990146580914,
+        "ridge_r2_scalar_plus_str": 0.4421291359684676,
+        "ridge_r2_absdiff_only": 0.17755032553802275,
+        "ridge_r2_absdiff_plus_str": 0.5310940805928706,
+        "delta_r2_over_str_baseline": 0.09466441144308457,
+        "nonadj_bonded_auroc_cos": 0.5919544161826533,
+        "alpha_absdiff": 1000.0,
+        "alpha_absdiff_str": 0.03162277660168379
+      },
+      "layer_2": {
+        "partial_pearson_cos_vs_dG_ctrl_dS": -0.03079848167242443,
+        "partial_spearman_cos_vs_dG_ctrl_dS": -0.12412440425391921,
+        "partial_pearson_l2_vs_dG_ctrl_dS": 0.07260478053976795,
+        "partial_spearman_l2_vs_dG_ctrl_dS": 0.06600428519908567,
+        "ridge_r2_scalar_only": 0.1778045961679341,
+        "ridge_r2_scalar_plus_str": 0.44258366385624315,
+        "ridge_r2_absdiff_only": 0.3936425895141328,
+        "ridge_r2_absdiff_plus_str": 0.5912072430988675,
+        "delta_r2_over_str_baseline": 0.15477757394908154,
+        "nonadj_bonded_auroc_cos": 0.706482349296341,
+        "alpha_absdiff": 1000.0,
+        "alpha_absdiff_str": 1.0
+      },
+      "layer_3": {
+        "partial_pearson_cos_vs_dG_ctrl_dS": -0.045573240115925964,
+        "partial_spearman_cos_vs_dG_ctrl_dS": -0.1672738885097623,
+        "partial_pearson_l2_vs_dG_ctrl_dS": 0.04354932113166584,
+        "partial_spearman_l2_vs_dG_ctrl_dS": 0.06687004581129549,
+        "ridge_r2_scalar_only": 0.265580590582008,
+        "ridge_r2_scalar_plus_str": 0.4421636232396742,
+        "ridge_r2_absdiff_only": 0.42855050530727923,
+        "ridge_r2_absdiff_plus_str": 0.5952567966635192,
+        "delta_r2_over_str_baseline": 0.15882712751373318,
+        "nonadj_bonded_auroc_cos": 0.7430282847185739,
+        "alpha_absdiff": 3162.277660168379,
+        "alpha_absdiff_str": 0.31622776601683794
+      },
+      "layer_4": {
+        "partial_pearson_cos_vs_dG_ctrl_dS": 0.011006503340004175,
+        "partial_spearman_cos_vs_dG_ctrl_dS": -0.08530829230188214,
+        "partial_pearson_l2_vs_dG_ctrl_dS": -0.07270873483319873,
+        "partial_spearman_l2_vs_dG_ctrl_dS": 0.007092909184522544,
+        "ridge_r2_scalar_only": 0.21332933139973165,
+        "ridge_r2_scalar_plus_str": 0.44111830482743375,
+        "ridge_r2_absdiff_only": 0.28535786174823097,
+        "ridge_r2_absdiff_plus_str": 0.5502449744273288,
+        "delta_r2_over_str_baseline": 0.1138153052775428,
+        "nonadj_bonded_auroc_cos": 0.6906064841342694,
+        "alpha_absdiff": 3162.277660168379,
+        "alpha_absdiff_str": 0.01
+      },
+      "layer_5": {
+        "partial_pearson_cos_vs_dG_ctrl_dS": 0.0030664988605082367,
+        "partial_spearman_cos_vs_dG_ctrl_dS": -0.021985292497923983,
+        "partial_pearson_l2_vs_dG_ctrl_dS": 0.041287536664181834,
+        "partial_spearman_l2_vs_dG_ctrl_dS": -0.01599123618881588,
+        "ridge_r2_scalar_only": 0.08118886676305359,
+        "ridge_r2_scalar_plus_str": 0.4391331264440258,
+        "ridge_r2_absdiff_only": 0.23144528097850448,
+        "ridge_r2_absdiff_plus_str": 0.5162798796268895,
+        "delta_r2_over_str_baseline": 0.0798502104771035,
+        "nonadj_bonded_auroc_cos": 0.6994441326109723,
+        "alpha_absdiff": 1000.0,
+        "alpha_absdiff_str": 0.01
+      }
+    },
+    "attention_enrichment_n_bonded_ds_ge3": 8260,
+    "attention_enrichment_n_nonbonded_ds_ge3": 221065,
+    "attention_partial_corr_n_pairs": 60000,
+    "attention_by_head": [
+      {
+        "layer": 0,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.01790997680836643,
+        "mean_attn_nonbonded_ds_matched": 0.04445450232940321,
+        "bonded_enrichment_ratio": 0.40288330472480327,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.023838555230868468,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.03465758313107694
+      },
+      {
+        "layer": 0,
+        "head": 1,
+        "mean_attn_bonded_ds_ge3": 6.652480219723805e-08,
+        "mean_attn_nonbonded_ds_matched": 1.1737586250274738e-08,
+        "bonded_enrichment_ratio": 5.667673129616484,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.00026650248150017567,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.05926709414110413
+      },
+      {
+        "layer": 0,
+        "head": 2,
+        "mean_attn_bonded_ds_ge3": 0.0765145579030707,
+        "mean_attn_nonbonded_ds_matched": 0.06044322949909006,
+        "bonded_enrichment_ratio": 1.2658912923278294,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.018225952941298165,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.0035836184704597976
+      },
+      {
+        "layer": 0,
+        "head": 3,
+        "mean_attn_bonded_ds_ge3": 0.00033792002212602244,
+        "mean_attn_nonbonded_ds_matched": 0.006993606667626012,
+        "bonded_enrichment_ratio": 0.048318419691842605,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.014983070576017414,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.008858518395724924
+      },
+      {
+        "layer": 0,
+        "head": 4,
+        "mean_attn_bonded_ds_ge3": 0.049671962033186294,
+        "mean_attn_nonbonded_ds_matched": 0.04271421029291807,
+        "bonded_enrichment_ratio": 1.1628907965886428,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.047426841511520476,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.06662437845454
+      },
+      {
+        "layer": 0,
+        "head": 5,
+        "mean_attn_bonded_ds_ge3": 0.00013505684027567805,
+        "mean_attn_nonbonded_ds_matched": 0.00012122515270279662,
+        "bonded_enrichment_ratio": 1.1140991556990825,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.0031844965062442993,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.022363448698137212
+      },
+      {
+        "layer": 0,
+        "head": 6,
+        "mean_attn_bonded_ds_ge3": 0.0770017103753626,
+        "mean_attn_nonbonded_ds_matched": 0.04065309404422899,
+        "bonded_enrichment_ratio": 1.8941168485623192,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.002176652999443247,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.1093958597584995
+      },
+      {
+        "layer": 0,
+        "head": 7,
+        "mean_attn_bonded_ds_ge3": 0.001352471211182052,
+        "mean_attn_nonbonded_ds_matched": 0.000917299314728974,
+        "bonded_enrichment_ratio": 1.4744055614842078,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.004347814637194086,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.02034143120068562
+      },
+      {
+        "layer": 1,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.1437811004597539,
+        "mean_attn_nonbonded_ds_matched": 0.0751144956644481,
+        "bonded_enrichment_ratio": 1.9141591671207332,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.008785039149183913,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.07882054445440885
+      },
+      {
+        "layer": 1,
+        "head": 1,
+        "mean_attn_bonded_ds_ge3": 0.015924873606686315,
+        "mean_attn_nonbonded_ds_matched": 0.024797157796549164,
+        "bonded_enrichment_ratio": 0.6422056002282028,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.01468320377976691,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.03380053394330121
+      },
+      {
+        "layer": 1,
+        "head": 2,
+        "mean_attn_bonded_ds_ge3": 0.22444053717095955,
+        "mean_attn_nonbonded_ds_matched": 0.21190454007738563,
+        "bonded_enrichment_ratio": 1.0591586998985292,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.015713944476507213,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.069016464354014
+      },
+      {
+        "layer": 1,
+        "head": 3,
+        "mean_attn_bonded_ds_ge3": 2.7867958339000765e-15,
+        "mean_attn_nonbonded_ds_matched": 2.920768495390989e-12,
+        "bonded_enrichment_ratio": 0.0009541310234952469,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.0707959001570736,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.043425435337974376
+      },
+      {
+        "layer": 1,
+        "head": 4,
+        "mean_attn_bonded_ds_ge3": 5.231013163003278e-19,
+        "mean_attn_nonbonded_ds_matched": 2.60400210364358e-14,
+        "bonded_enrichment_ratio": 5.231013163003278e-07,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.007733285472151603,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.0014111788734692979
+      },
+      {
+        "layer": 1,
+        "head": 5,
+        "mean_attn_bonded_ds_ge3": 4.165478533303634e-07,
+        "mean_attn_nonbonded_ds_matched": 6.954481972705326e-08,
+        "bonded_enrichment_ratio": 5.989631649995124,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.029033962676124667,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.017670929246168803
+      },
+      {
+        "layer": 1,
+        "head": 6,
+        "mean_attn_bonded_ds_ge3": 0.0011364191988452357,
+        "mean_attn_nonbonded_ds_matched": 0.004917144215689428,
+        "bonded_enrichment_ratio": 0.23111366049000445,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.008655806645733902,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.04088403625712017
+      },
+      {
+        "layer": 1,
+        "head": 7,
+        "mean_attn_bonded_ds_ge3": 0.1261619754145806,
+        "mean_attn_nonbonded_ds_matched": 0.13059292131924805,
+        "bonded_enrichment_ratio": 0.966070550686009,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.04694069752537961,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.031109618102316754
+      },
+      {
+        "layer": 2,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.06345987590458438,
+        "mean_attn_nonbonded_ds_matched": 0.06104832435503901,
+        "bonded_enrichment_ratio": 1.0395023381071116,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.10155413229265926,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.11427925984766799
+      },
+      {
+        "layer": 2,
+        "head": 1,
+        "mean_attn_bonded_ds_ge3": 0.03946676261234473,
+        "mean_attn_nonbonded_ds_matched": 0.020137034305511843,
+        "bonded_enrichment_ratio": 1.959909389514325,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.04202126559315466,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.015992372388233023
+      },
+      {
+        "layer": 2,
+        "head": 2,
+        "mean_attn_bonded_ds_ge3": 0.14144544474640192,
+        "mean_attn_nonbonded_ds_matched": 0.15878552569043042,
+        "bonded_enrichment_ratio": 0.8907955818477128,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.0425182512738969,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.08324243625758385
+      },
+      {
+        "layer": 2,
+        "head": 3,
+        "mean_attn_bonded_ds_ge3": 0.003486163951208565,
+        "mean_attn_nonbonded_ds_matched": 0.0035050778174570206,
+        "bonded_enrichment_ratio": 0.9946038669514682,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.04529838170576383,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.011780118088789858
+      },
+      {
+        "layer": 2,
+        "head": 4,
+        "mean_attn_bonded_ds_ge3": 0.25700151932461346,
+        "mean_attn_nonbonded_ds_matched": 0.20095477166531328,
+        "bonded_enrichment_ratio": 1.27890229823776,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.015046515586756785,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.06841691446989806
+      },
+      {
+        "layer": 2,
+        "head": 5,
+        "mean_attn_bonded_ds_ge3": 0.09481944926684968,
+        "mean_attn_nonbonded_ds_matched": 0.17051319963741549,
+        "bonded_enrichment_ratio": 0.5560827517662954,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.019552905934645697,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.2086177704749984
+      },
+      {
+        "layer": 2,
+        "head": 6,
+        "mean_attn_bonded_ds_ge3": 1.4657449868605982e-07,
+        "mean_attn_nonbonded_ds_matched": 0.003647492648931433,
+        "bonded_enrichment_ratio": 4.018500180637792e-05,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.06551346070479756,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.06042264982270908
+      },
+      {
+        "layer": 2,
+        "head": 7,
+        "mean_attn_bonded_ds_ge3": 0.036807888158099426,
+        "mean_attn_nonbonded_ds_matched": 0.020552257011876317,
+        "bonded_enrichment_ratio": 1.79094141031954,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.02840884703549524,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.1260358339053962
+      },
+      {
+        "layer": 3,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.4860669606248018,
+        "mean_attn_nonbonded_ds_matched": 0.0706558359371695,
+        "bonded_enrichment_ratio": 6.8793604120264815,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.04843876442668499,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.19178146292397213
+      },
+      {
+        "layer": 3,
+        "head": 1,
+        "mean_attn_bonded_ds_ge3": 0.00012921000927950042,
+        "mean_attn_nonbonded_ds_matched": 0.00022893568377850733,
+        "bonded_enrichment_ratio": 0.5643943624118887,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.005021917250931599,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.013416281340694489
+      },
+      {
+        "layer": 3,
+        "head": 2,
+        "mean_attn_bonded_ds_ge3": 0.29129546019566654,
+        "mean_attn_nonbonded_ds_matched": 0.18786936087981124,
+        "bonded_enrichment_ratio": 1.550521377362974,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.038817025103156225,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.0645734513005769
+      },
+      {
+        "layer": 3,
+        "head": 3,
+        "mean_attn_bonded_ds_ge3": 0.030208569154137003,
+        "mean_attn_nonbonded_ds_matched": 0.023678117553316773,
+        "bonded_enrichment_ratio": 1.2758011309858313,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.06696674830943165,
+        "partial_spearman_attn_vs_dG_ctrl_dS": 0.011298926098961985
+      },
+      {
+        "layer": 3,
+        "head": 4,
+        "mean_attn_bonded_ds_ge3": 0.011001881599809943,
+        "mean_attn_nonbonded_ds_matched": 0.011404645794384424,
+        "bonded_enrichment_ratio": 0.9646841995940988,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.04166842738958392,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.09067457959976119
+      },
+      {
+        "layer": 3,
+        "head": 5,
+        "mean_attn_bonded_ds_ge3": 0.07806075442671682,
+        "mean_attn_nonbonded_ds_matched": 0.02626930063092241,
+        "bonded_enrichment_ratio": 2.9715581516026006,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.0708838779647398,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.4155587880931983
+      },
+      {
+        "layer": 3,
+        "head": 6,
+        "mean_attn_bonded_ds_ge3": 0.12765423101389378,
+        "mean_attn_nonbonded_ds_matched": 0.087979746852122,
+        "bonded_enrichment_ratio": 1.450950196849934,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.08280521256843681,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.05405629502330792
+      },
+      {
+        "layer": 3,
+        "head": 7,
+        "mean_attn_bonded_ds_ge3": 0.0836342149745384,
+        "mean_attn_nonbonded_ds_matched": 0.14562021221318636,
+        "bonded_enrichment_ratio": 0.5743310884075546,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.04086885711724788,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.36138265260676056
+      },
+      {
+        "layer": 4,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.04737337425797236,
+        "mean_attn_nonbonded_ds_matched": 0.06849191741151436,
+        "bonded_enrichment_ratio": 0.691663718119363,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.028548504659913144,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.43566224334779013
+      },
+      {
+        "layer": 4,
+        "head": 1,
+        "mean_attn_bonded_ds_ge3": 0.09105888045085121,
+        "mean_attn_nonbonded_ds_matched": 0.11470383527278331,
+        "bonded_enrichment_ratio": 0.7938608175942786,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.010148083164868746,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.008390471609707854
+      },
+      {
+        "layer": 4,
+        "head": 2,
+        "mean_attn_bonded_ds_ge3": 0.6635043161378723,
+        "mean_attn_nonbonded_ds_matched": 0.07800892659649535,
+        "bonded_enrichment_ratio": 8.505492192834264,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.12512338958337282,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.5208595071871787
+      },
+      {
+        "layer": 4,
+        "head": 3,
+        "mean_attn_bonded_ds_ge3": 0.0430734143079436,
+        "mean_attn_nonbonded_ds_matched": 0.07048749394187168,
+        "bonded_enrichment_ratio": 0.6110788155337823,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.07553166209665431,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.4143432974893278
+      },
+      {
+        "layer": 4,
+        "head": 4,
+        "mean_attn_bonded_ds_ge3": 0.21878070185808787,
+        "mean_attn_nonbonded_ds_matched": 0.10373772364717236,
+        "bonded_enrichment_ratio": 2.1089792041532935,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.16422192179274844,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.3562169513808016
+      },
+      {
+        "layer": 4,
+        "head": 5,
+        "mean_attn_bonded_ds_ge3": 0.02791316854472773,
+        "mean_attn_nonbonded_ds_matched": 0.019828943170657413,
+        "bonded_enrichment_ratio": 1.4076982471780564,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.07650437794694256,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.007802100674259331
+      },
+      {
+        "layer": 4,
+        "head": 6,
+        "mean_attn_bonded_ds_ge3": 0.0480290886362888,
+        "mean_attn_nonbonded_ds_matched": 0.048776927666025906,
+        "bonded_enrichment_ratio": 0.984668180930592,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.005223677588302674,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.14780876834534992
+      },
+      {
+        "layer": 4,
+        "head": 7,
+        "mean_attn_bonded_ds_ge3": 0.17902823496827408,
+        "mean_attn_nonbonded_ds_matched": 0.09528259139858102,
+        "bonded_enrichment_ratio": 1.8789186181909432,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.13393059477971445,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.3346673854823028
+      },
+      {
+        "layer": 5,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.33891717058652865,
+        "mean_attn_nonbonded_ds_matched": 0.08143696019867842,
+        "bonded_enrichment_ratio": 4.161711951915767,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.08215444100412184,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.20535447467750237
+      },
+      {
+        "layer": 5,
+        "head": 1,
+        "mean_attn_bonded_ds_ge3": 0.16987397897350856,
+        "mean_attn_nonbonded_ds_matched": 0.17655703829791378,
+        "bonded_enrichment_ratio": 0.9621478736343065,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.014256672048549303,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.08607357861263185
+      },
+      {
+        "layer": 5,
+        "head": 2,
+        "mean_attn_bonded_ds_ge3": 3.610616803288637e-08,
+        "mean_attn_nonbonded_ds_matched": 0.004360247267668287,
+        "bonded_enrichment_ratio": 8.28076157529358e-06,
+        "partial_pearson_attn_vs_dG_ctrl_dS": 0.0049387648083824105,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.06802408344699887
+      },
+      {
+        "layer": 5,
+        "head": 3,
+        "mean_attn_bonded_ds_ge3": 0.0458475090782204,
+        "mean_attn_nonbonded_ds_matched": 0.051523342981515334,
+        "bonded_enrichment_ratio": 0.8898395644604967,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.09076523116595449,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.16534431049985265
+      },
+      {
+        "layer": 5,
+        "head": 4,
+        "mean_attn_bonded_ds_ge3": 0.15300527853359328,
+        "mean_attn_nonbonded_ds_matched": 0.08869527451695783,
+        "bonded_enrichment_ratio": 1.7250668580358235,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.026134729398143406,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.12463655028666826
+      },
+      {
+        "layer": 5,
+        "head": 5,
+        "mean_attn_bonded_ds_ge3": 0.20931119864464517,
+        "mean_attn_nonbonded_ds_matched": 0.07579089586583913,
+        "bonded_enrichment_ratio": 2.76169315923058,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.07306515475238591,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.3190105774510613
+      },
+      {
+        "layer": 5,
+        "head": 6,
+        "mean_attn_bonded_ds_ge3": 0.3962188860958198,
+        "mean_attn_nonbonded_ds_matched": 0.12010886278488146,
+        "bonded_enrichment_ratio": 3.2988313843705237,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.1280280217505781,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.26442562572160483
+      },
+      {
+        "layer": 5,
+        "head": 7,
+        "mean_attn_bonded_ds_ge3": 0.07400427365232534,
+        "mean_attn_nonbonded_ds_matched": 0.11628757140715573,
+        "bonded_enrichment_ratio": 0.6363902243105191,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.053741126862584636,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.048107362424734346
+      }
+    ],
+    "top5_bonded_enrichment_heads": [
+      {
+        "layer": 4,
+        "head": 2,
+        "mean_attn_bonded_ds_ge3": 0.6635043161378723,
+        "mean_attn_nonbonded_ds_matched": 0.07800892659649535,
+        "bonded_enrichment_ratio": 8.505492192834264,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.12512338958337282,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.5208595071871787
+      },
+      {
+        "layer": 3,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.4860669606248018,
+        "mean_attn_nonbonded_ds_matched": 0.0706558359371695,
+        "bonded_enrichment_ratio": 6.8793604120264815,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.04843876442668499,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.19178146292397213
+      },
+      {
+        "layer": 1,
+        "head": 5,
+        "mean_attn_bonded_ds_ge3": 4.165478533303634e-07,
+        "mean_attn_nonbonded_ds_matched": 6.954481972705326e-08,
+        "bonded_enrichment_ratio": 5.989631649995124,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.029033962676124667,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.017670929246168803
+      },
+      {
+        "layer": 0,
+        "head": 1,
+        "mean_attn_bonded_ds_ge3": 6.652480219723805e-08,
+        "mean_attn_nonbonded_ds_matched": 1.1737586250274738e-08,
+        "bonded_enrichment_ratio": 5.667673129616484,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.00026650248150017567,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.05926709414110413
+      },
+      {
+        "layer": 5,
+        "head": 0,
+        "mean_attn_bonded_ds_ge3": 0.33891717058652865,
+        "mean_attn_nonbonded_ds_matched": 0.08143696019867842,
+        "bonded_enrichment_ratio": 4.161711951915767,
+        "partial_pearson_attn_vs_dG_ctrl_dS": -0.08215444100412184,
+        "partial_spearman_attn_vs_dG_ctrl_dS": -0.20535447467750237
+      }
+    ]
+  },
+  "elapsed_sec": 434.86
+}

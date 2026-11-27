@@ -1,0 +1,1489 @@
+{
+  "description": "Random-step gating control at alpha=+8 (single-layer L1 and multi-layer 1..L-2, n=1024/arm, 3 seeds each).",
+  "summary": {
+    "canon_small": {
+      "n_seeds": 3,
+      "baseline": {
+        "valid_mean": 0.9886067708333334,
+        "valid_sd": 0.005378486862584084,
+        "mult_per_att_mean": 1.7122395833333333,
+        "mult_per_att_sd": 0.015512698642505022
+      },
+      "single": {
+        "const": {
+          "valid_mean": 0.384765625,
+          "valid_sd": 0.3061130139460407,
+          "mult_per_att_mean": 0.6839192708333334,
+          "mult_per_att_sd": 0.5681481946764375,
+          "mult_frac_valid_mean": 0.07001341895669362,
+          "gate_frac_mean": 1.0
+        },
+        "gated": {
+          "valid_mean": 0.5791015625,
+          "valid_sd": 0.3298570242288399,
+          "mult_per_att_mean": 1.03125,
+          "mult_per_att_sd": 0.601978504950437,
+          "mult_frac_valid_mean": 0.07384423396950364,
+          "gate_frac_mean": 0.7332724046957643
+        },
+        "random_step_matched_gated": {
+          "valid_mean": 0.6149088541666666,
+          "valid_sd": 0.28986199965008497,
+          "mult_per_att_mean": 1.0882161458333333,
+          "mult_per_att_sd": 0.545640988226728,
+          "mult_frac_valid_mean": 0.07231052434961364,
+          "gate_frac_mean": 0.7337697143907498
+        },
+        "gated_nonarom": {
+          "valid_mean": 0.8043619791666666,
+          "valid_sd": 0.22569864383279364,
+          "mult_per_att_mean": 1.3616536458333333,
+          "mult_per_att_sd": 0.40851412034269813,
+          "mult_frac_valid_mean": 0.070412819552587,
+          "gate_frac_mean": 0.5160481925509509
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean": 0.7854817708333334,
+          "valid_sd": 0.1771359832883224,
+          "mult_per_att_mean": 1.3541666666666667,
+          "mult_per_att_sd": 0.3063377617926497,
+          "mult_frac_valid_mean": 0.07184787416036147,
+          "gate_frac_mean": 0.5146485082656483
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean": 0.86962890625,
+          "valid_sd": 0.02102871511977427,
+          "mult_per_att_mean": 1.4046223958333333,
+          "mult_per_att_sd": 0.08154089767049262,
+          "mult_frac_valid_mean": 0.06834846340125446,
+          "gate_frac_mean": 0.4987331593594824
+        }
+      },
+      "multi": {
+        "const": {
+          "valid_mean": 0.2998046875,
+          "valid_sd": 0.23052460591682067,
+          "mult_per_att_mean": 0.5921223958333334,
+          "mult_per_att_sd": 0.4498279807888994,
+          "mult_frac_valid_mean": 0.08471685451115513,
+          "gate_frac_mean": 1.0
+        },
+        "gated": {
+          "valid_mean": 0.51953125,
+          "valid_sd": 0.31182941967540145,
+          "mult_per_att_mean": 1.0169270833333333,
+          "mult_per_att_sd": 0.5657242099594221,
+          "mult_frac_valid_mean": 0.08492843967813679,
+          "gate_frac_mean": 0.7268281692963384
+        },
+        "random_step_matched_gated": {
+          "valid_mean": 0.533203125,
+          "valid_sd": 0.24152505167360486,
+          "mult_per_att_mean": 0.9905598958333334,
+          "mult_per_att_sd": 0.46282915654196316,
+          "mult_frac_valid_mean": 0.07676587355291596,
+          "gate_frac_mean": 0.7273675443922057
+        },
+        "gated_nonarom": {
+          "valid_mean": 0.7900390625,
+          "valid_sd": 0.20723153269251723,
+          "mult_per_att_mean": 1.3942057291666667,
+          "mult_per_att_sd": 0.39552147610143046,
+          "mult_frac_valid_mean": 0.07331217982276036,
+          "gate_frac_mean": 0.5192228760188481
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean": 0.7037760416666666,
+          "valid_sd": 0.16378712628784414,
+          "mult_per_att_mean": 1.2760416666666667,
+          "mult_per_att_sd": 0.31096475504109294,
+          "mult_frac_valid_mean": 0.0749658386644935,
+          "gate_frac_mean": 0.5181309289995736
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean": 0.9231770833333334,
+          "valid_sd": 0.017809440840879275,
+          "mult_per_att_mean": 1.5362955729166667,
+          "mult_per_att_sd": 0.047321314096098126,
+          "mult_frac_valid_mean": 0.06950997881408806,
+          "gate_frac_mean": 0.4986639209658979
+        }
+      }
+    },
+    "canon_base": {
+      "n_seeds": 3,
+      "baseline": {
+        "valid_mean": 0.9944661458333334,
+        "valid_sd": 0.0020328769526036456,
+        "mult_per_att_mean": 1.7278645833333333,
+        "mult_per_att_sd": 0.007953640444577224
+      },
+      "single": {
+        "const": {
+          "valid_mean": 0.7330729166666666,
+          "valid_sd": 0.2627848457244355,
+          "mult_per_att_mean": 1.2955729166666667,
+          "mult_per_att_sd": 0.44981101977558974,
+          "mult_frac_valid_mean": 0.07190857117171985,
+          "gate_frac_mean": 1.0
+        },
+        "gated": {
+          "valid_mean": 0.865234375,
+          "valid_sd": 0.12197652647232543,
+          "mult_per_att_mean": 1.51953125,
+          "mult_per_att_sd": 0.2245435535349034,
+          "mult_frac_valid_mean": 0.07181393766956985,
+          "gate_frac_mean": 0.7281444928873287
+        },
+        "random_step_matched_gated": {
+          "valid_mean": 0.8831380208333334,
+          "valid_sd": 0.09090602753997647,
+          "mult_per_att_mean": 1.546875,
+          "mult_per_att_sd": 0.1590448288010628,
+          "mult_frac_valid_mean": 0.07155954768569091,
+          "gate_frac_mean": 0.7281653613804403
+        },
+        "gated_nonarom": {
+          "valid_mean": 0.9339192708333334,
+          "valid_sd": 0.053527147672215614,
+          "mult_per_att_mean": 1.6165364583333333,
+          "mult_per_att_sd": 0.1277630912707116,
+          "mult_frac_valid_mean": 0.07106027536857355,
+          "gate_frac_mean": 0.5026495247672896
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean": 0.9427083333333334,
+          "valid_sd": 0.026945575633561036,
+          "mult_per_att_mean": 1.6416015625,
+          "mult_per_att_sd": 0.04105048741598379,
+          "mult_frac_valid_mean": 0.07129261296556089,
+          "gate_frac_mean": 0.5018579388555603
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean": 0.5166015625,
+          "valid_sd": 0.07335318737320716,
+          "mult_per_att_mean": 0.7950846354166666,
+          "mult_per_att_sd": 0.12469476944742791,
+          "mult_frac_valid_mean": 0.06497844100392938,
+          "gate_frac_mean": 0.5040125060554811
+        }
+      },
+      "multi": {
+        "const": {
+          "valid_mean": 0.166015625,
+          "valid_sd": 0.11165317131215978,
+          "mult_per_att_mean": 0.3209635416666667,
+          "mult_per_att_sd": 0.16858459655218047,
+          "mult_frac_valid_mean": 0.08165097623097675,
+          "gate_frac_mean": 1.0
+        },
+        "gated": {
+          "valid_mean": 0.5133463541666666,
+          "valid_sd": 0.19873066870127123,
+          "mult_per_att_mean": 0.9934895833333334,
+          "mult_per_att_sd": 0.3242015910682803,
+          "mult_frac_valid_mean": 0.08127086969509532,
+          "gate_frac_mean": 0.7263413892042473
+        },
+        "random_step_matched_gated": {
+          "valid_mean": 0.4680989583333333,
+          "valid_sd": 0.115900045893092,
+          "mult_per_att_mean": 0.8876953125,
+          "mult_per_att_sd": 0.18678401301259656,
+          "mult_frac_valid_mean": 0.07804893745953263,
+          "gate_frac_mean": 0.7268674622699617
+        },
+        "gated_nonarom": {
+          "valid_mean": 0.80078125,
+          "valid_sd": 0.05381736614630803,
+          "mult_per_att_mean": 1.4163411458333333,
+          "mult_per_att_sd": 0.10550641929538009,
+          "mult_frac_valid_mean": 0.07265437600503792,
+          "gate_frac_mean": 0.5108161985379487
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean": 0.6956380208333334,
+          "valid_sd": 0.109454897807883,
+          "mult_per_att_mean": 1.2786458333333333,
+          "mult_per_att_sd": 0.16444086918653042,
+          "mult_frac_valid_mean": 0.0760777617948053,
+          "gate_frac_mean": 0.5093971586893247
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean": 0.8048502604166666,
+          "valid_sd": 0.11291189378361488,
+          "mult_per_att_mean": 1.3387044270833333,
+          "mult_per_att_sd": 0.21394525551750218,
+          "mult_frac_valid_mean": 0.0687671201411194,
+          "gate_frac_mean": 0.5067129031527869
+        }
+      }
+    },
+    "rand_base": {
+      "n_seeds": 3,
+      "baseline": {
+        "valid_mean": 0.9879557291666666,
+        "valid_sd": 0.0014917238590351043,
+        "mult_per_att_mean": 1.6962890625,
+        "mult_per_att_sd": 0.016658908309796855
+      },
+      "single": {
+        "const": {
+          "valid_mean": 0.9264322916666666,
+          "valid_sd": 0.014949169926048222,
+          "mult_per_att_mean": 1.5615234375,
+          "mult_per_att_sd": 0.020320949264340638,
+          "mult_frac_valid_mean": 0.07068254082837049,
+          "gate_frac_mean": 1.0
+        },
+        "gated": {
+          "valid_mean": 0.9638671875,
+          "valid_sd": 0.005167483029423029,
+          "mult_per_att_mean": 1.6253255208333333,
+          "mult_per_att_sd": 0.012288141984490153,
+          "mult_frac_valid_mean": 0.0700923930146634,
+          "gate_frac_mean": 0.7418714684795958
+        },
+        "random_step_matched_gated": {
+          "valid_mean": 0.96875,
+          "valid_sd": 0.010874539771152386,
+          "mult_per_att_mean": 1.6246744791666667,
+          "mult_per_att_sd": 0.03091762533697995,
+          "mult_frac_valid_mean": 0.06988215513676377,
+          "gate_frac_mean": 0.7431449660314965
+        },
+        "gated_nonarom": {
+          "valid_mean": 0.9798177083333334,
+          "valid_sd": 0.009830513587592123,
+          "mult_per_att_mean": 1.6604817708333333,
+          "mult_per_att_sd": 0.006859149578680168,
+          "mult_frac_valid_mean": 0.07047141738476831,
+          "gate_frac_mean": 0.5123692682936359
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean": 0.982421875,
+          "valid_sd": 0.005167483029423029,
+          "mult_per_att_mean": 1.6907552083333333,
+          "mult_per_att_sd": 0.007893460711576915,
+          "mult_frac_valid_mean": 0.07101882151767462,
+          "gate_frac_mean": 0.5115678588190901
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean": 0.4693196614583333,
+          "valid_sd": 0.13107289975584147,
+          "mult_per_att_mean": 0.7799479166666666,
+          "mult_per_att_sd": 0.18876670418227615,
+          "mult_frac_valid_mean": 0.06692260115383387,
+          "gate_frac_mean": 0.51695195272344
+        }
+      },
+      "multi": {
+        "const": {
+          "valid_mean": 0.7024739583333334,
+          "valid_sd": 0.08015748100500482,
+          "mult_per_att_mean": 1.2350260416666667,
+          "mult_per_att_sd": 0.10461684542422854,
+          "mult_frac_valid_mean": 0.0726792532464603,
+          "gate_frac_mean": 1.0
+        },
+        "gated": {
+          "valid_mean": 0.9052734375,
+          "valid_sd": 0.014385663928375229,
+          "mult_per_att_mean": 1.611328125,
+          "mult_per_att_sd": 0.04567974829502539,
+          "mult_frac_valid_mean": 0.0734143064727642,
+          "gate_frac_mean": 0.7449030326600621
+        },
+        "random_step_matched_gated": {
+          "valid_mean": 0.7958984375,
+          "valid_sd": 0.06966526104301488,
+          "mult_per_att_mean": 1.3678385416666667,
+          "mult_per_att_sd": 0.08768603212773395,
+          "mult_frac_valid_mean": 0.07094318900469106,
+          "gate_frac_mean": 0.7461316800869437
+        },
+        "gated_nonarom": {
+          "valid_mean": 0.9703776041666666,
+          "valid_sd": 0.012365507756004283,
+          "mult_per_att_mean": 1.6663411458333333,
+          "mult_per_att_sd": 0.0356456460299421,
+          "mult_frac_valid_mean": 0.07129975667390918,
+          "gate_frac_mean": 0.5134344600859403
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean": 0.8616536458333334,
+          "valid_sd": 0.061145083299896666,
+          "mult_per_att_mean": 1.4977213541666667,
+          "mult_per_att_sd": 0.10855814764111826,
+          "mult_frac_valid_mean": 0.07147904425601635,
+          "gate_frac_mean": 0.5121791406390784
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean": 0.839599609375,
+          "valid_sd": 0.14702313845694404,
+          "mult_per_att_mean": 1.4539388020833333,
+          "mult_per_att_sd": 0.2821330231176605,
+          "mult_frac_valid_mean": 0.07036410055599779,
+          "gate_frac_mean": 0.5174413233514543
+        }
+      }
+    }
+  },
+  "per_checkpoint": {
+    "canon_small_seed0": {
+      "checkpoint": "runs/grid/zinc_small/tf_seed0/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 8.21,
+      "baseline": {
+        "complete_valid_rate": 0.9912109375,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.7216796875,
+        "multiple_fraction_valid": 0.07175268448101015,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.6279296875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.1767578125,
+            "multiple_fraction_valid": 0.07606747034449154,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.7734375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.4306640625,
+            "multiple_fraction_valid": 0.07570319822139486,
+            "gate_active_fraction": 0.7304426333512274
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.7763671875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.4306640625,
+            "multiple_fraction_valid": 0.07531846830095047,
+            "gate_active_fraction": 0.7310537843757605
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.943359375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.619140625,
+            "multiple_fraction_valid": 0.0705927187776245,
+            "gate_active_fraction": 0.5116510160480946
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.8818359375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.55859375,
+            "multiple_fraction_valid": 0.07258893654431411,
+            "gate_active_fraction": 0.5108552713197528
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.8642578125,
+            "complete_valid_rate_std": 0.08419135559360862,
+            "multiple_bonds_per_attempt": 1.423095703125,
+            "multiple_bonds_per_attempt_std": 0.15256796744933018,
+            "multiple_fraction_valid": 0.06935716010587421,
+            "gate_active_fraction": 0.5031659573946529
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2
+          ],
+          "const": {
+            "complete_valid_rate": 0.4765625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.94921875,
+            "multiple_fraction_valid": 0.08028772040962516,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.6279296875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.2548828125,
+            "multiple_fraction_valid": 0.08103221385221113,
+            "gate_active_fraction": 0.7232663797226208
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.646484375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.23046875,
+            "multiple_fraction_valid": 0.07816358189212863,
+            "gate_active_fraction": 0.723334450883663
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.9130859375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6240234375,
+            "multiple_fraction_valid": 0.0724020014421885,
+            "gate_active_fraction": 0.5066709255755669
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.78125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.458984375,
+            "multiple_fraction_valid": 0.07609975246218234,
+            "gate_active_fraction": 0.5053592404072044
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.91650390625,
+            "complete_valid_rate_std": 0.04991228038301022,
+            "multiple_bonds_per_attempt": 1.52880859375,
+            "multiple_bonds_per_attempt_std": 0.1249780635658941,
+            "multiple_fraction_valid": 0.06943051362830881,
+            "gate_active_fraction": 0.5001702732133143
+          }
+        }
+      }
+    },
+    "canon_small_seed1": {
+      "checkpoint": "runs/grid/zinc_small/tf_seed1/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 6.63,
+      "baseline": {
+        "complete_valid_rate": 0.982421875,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.6943359375,
+        "multiple_fraction_valid": 0.07105960754757826,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.041015625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.0625,
+            "multiple_fraction_valid": 0.06336721356677544,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.1982421875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.3388671875,
+            "multiple_fraction_valid": 0.07315659450944109,
+            "gate_active_fraction": 0.7405920614816563
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.2802734375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.458984375,
+            "multiple_fraction_valid": 0.06876739560273558,
+            "gate_active_fraction": 0.7416824990058764
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.5439453125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.890625,
+            "multiple_fraction_valid": 0.06890559197494363,
+            "gate_active_fraction": 0.5385106625612954
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.5810546875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.001953125,
+            "multiple_fraction_valid": 0.07244016567155279,
+            "gate_active_fraction": 0.536655971823511
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.892822265625,
+            "complete_valid_rate_std": 0.035996463337003216,
+            "multiple_bonds_per_attempt": 1.475341796875,
+            "multiple_bonds_per_attempt_std": 0.1105293934078098,
+            "multiple_fraction_valid": 0.06955374113561208,
+            "gate_active_fraction": 0.4922993657469838
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2
+          ],
+          "const": {
+            "complete_valid_rate": 0.0390625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.0869140625,
+            "multiple_fraction_valid": 0.09332280053253776,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.16796875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.37109375,
+            "multiple_fraction_valid": 0.09452184385603546,
+            "gate_active_fraction": 0.7359042013395576
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.255859375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.45703125,
+            "multiple_fraction_valid": 0.07431578936944205,
+            "gate_active_fraction": 0.7366877112429054
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.55078125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.9375,
+            "multiple_fraction_valid": 0.07160375781212523,
+            "gate_active_fraction": 0.5419090948860406
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.515625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.9169921875,
+            "multiple_fraction_valid": 0.0737608629628101,
+            "gate_active_fraction": 0.5411085829560648
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.90966796875,
+            "complete_valid_rate_std": 0.05997914587640838,
+            "multiple_bonds_per_attempt": 1.5869140625,
+            "multiple_bonds_per_attempt_std": 0.1219589335630239,
+            "multiple_fraction_valid": 0.07268631942147073,
+            "gate_active_fraction": 0.4918595901844598
+          }
+        }
+      }
+    },
+    "canon_small_seed2": {
+      "checkpoint": "runs/grid/zinc_small/tf_seed2/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 5.88,
+      "baseline": {
+        "complete_valid_rate": 0.9921875,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.720703125,
+        "multiple_fraction_valid": 0.07128349904604404,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.4853515625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.8125,
+            "multiple_fraction_valid": 0.07060557295881388,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.765625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.32421875,
+            "multiple_fraction_valid": 0.072672909177675,
+            "gate_active_fraction": 0.7287825192544091
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.7880859375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.375,
+            "multiple_fraction_valid": 0.07284570914515487,
+            "gate_active_fraction": 0.7285728597906126
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.92578125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.5751953125,
+            "multiple_fraction_valid": 0.07174014790519291,
+            "gate_active_fraction": 0.4979828990434628
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.8935546875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.501953125,
+            "multiple_fraction_valid": 0.07051452026521751,
+            "gate_active_fraction": 0.4964342816536812
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.851806640625,
+            "complete_valid_rate_std": 0.10880101684417708,
+            "multiple_bonds_per_attempt": 1.3154296875,
+            "multiple_bonds_per_attempt_std": 0.12386377826138498,
+            "multiple_fraction_valid": 0.0661344889622771,
+            "gate_active_fraction": 0.5007341549368107
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2
+          ],
+          "const": {
+            "complete_valid_rate": 0.3837890625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.740234375,
+            "multiple_fraction_valid": 0.08054004259130247,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.7626953125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.4248046875,
+            "multiple_fraction_valid": 0.0792312613261638,
+            "gate_active_fraction": 0.7213139268268368
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.697265625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.2841796875,
+            "multiple_fraction_valid": 0.07781824939717717,
+            "gate_active_fraction": 0.722080471050049
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.90625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.62109375,
+            "multiple_fraction_valid": 0.07593078021396735,
+            "gate_active_fraction": 0.5090886075949367
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.814453125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.4521484375,
+            "multiple_fraction_valid": 0.07503690056848802,
+            "gate_active_fraction": 0.5079249636354517
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.943359375,
+            "complete_valid_rate_std": 0.025173728036426254,
+            "multiple_bonds_per_attempt": 1.4931640625,
+            "multiple_bonds_per_attempt_std": 0.2340197095476941,
+            "multiple_fraction_valid": 0.06641310339248467,
+            "gate_active_fraction": 0.5039618994999197
+          }
+        }
+      }
+    },
+    "canon_base_seed0": {
+      "checkpoint": "runs/grid/zinc_base/tf_seed0/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 10.4,
+      "baseline": {
+        "complete_valid_rate": 0.99609375,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.7333984375,
+        "multiple_fraction_valid": 0.07167784292950224,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.8798828125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.5673828125,
+            "multiple_fraction_valid": 0.07186026905159057,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.9423828125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6787109375,
+            "multiple_fraction_valid": 0.07184132567687741,
+            "gate_active_fraction": 0.7301528781399007
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.9306640625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.642578125,
+            "multiple_fraction_valid": 0.07158398563191873,
+            "gate_active_fraction": 0.7312476906022909
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.9736328125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.7197265625,
+            "multiple_fraction_valid": 0.07144007303928342,
+            "gate_active_fraction": 0.5023223638699477
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.962890625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.68359375,
+            "multiple_fraction_valid": 0.07131949424475123,
+            "gate_active_fraction": 0.5009586414680909
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.4326171875,
+            "complete_valid_rate_std": 0.3161235535431302,
+            "multiple_bonds_per_attempt": 0.65234375,
+            "multiple_bonds_per_attempt_std": 0.5106735621020823,
+            "multiple_fraction_valid": 0.06313292178514815,
+            "gate_active_fraction": 0.5097239138875037
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "const": {
+            "complete_valid_rate": 0.130859375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.287109375,
+            "multiple_fraction_valid": 0.08336789939473567,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.6064453125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.1787109375,
+            "multiple_fraction_valid": 0.07755692271995933,
+            "gate_active_fraction": 0.7275736888970068
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.482421875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.935546875,
+            "multiple_fraction_valid": 0.07729590516495577,
+            "gate_active_fraction": 0.7285892522948044
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.8046875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.5029296875,
+            "multiple_fraction_valid": 0.07548485980011038,
+            "gate_active_fraction": 0.5132265099080308
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.744140625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.3681640625,
+            "multiple_fraction_valid": 0.07490200638983474,
+            "gate_active_fraction": 0.5110231498140818
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.774169921875,
+            "complete_valid_rate_std": 0.2195359144699495,
+            "multiple_bonds_per_attempt": 1.271728515625,
+            "multiple_bonds_per_attempt_std": 0.4214166341088491,
+            "multiple_fraction_valid": 0.06916286986810015,
+            "gate_active_fraction": 0.511478478537672
+          }
+        }
+      }
+    },
+    "canon_base_seed1": {
+      "checkpoint": "runs/grid/zinc_base/tf_seed1/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 9.31,
+      "baseline": {
+        "complete_valid_rate": 0.9951171875,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.71875,
+        "multiple_fraction_valid": 0.07118585424853882,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.4296875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.7763671875,
+            "multiple_fraction_valid": 0.07365276630077201,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.724609375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.2626953125,
+            "multiple_fraction_valid": 0.07213885085515527,
+            "gate_active_fraction": 0.7258726142811525
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.7783203125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.36328125,
+            "multiple_fraction_valid": 0.07250908844743023,
+            "gate_active_fraction": 0.7252006104465121
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.873046875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.4736328125,
+            "multiple_fraction_valid": 0.07024916599646186,
+            "gate_active_fraction": 0.5013071238248454
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.912109375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6015625,
+            "multiple_fraction_valid": 0.07211961052671698,
+            "gate_active_fraction": 0.5007595188883631
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.549072265625,
+            "complete_valid_rate_std": 0.13429487634118034,
+            "multiple_bonds_per_attempt": 0.85009765625,
+            "multiple_bonds_per_attempt_std": 0.25117360258324034,
+            "multiple_fraction_valid": 0.06425955221751224,
+            "gate_active_fraction": 0.49346487196966493
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "const": {
+            "complete_valid_rate": 0.076171875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.171875,
+            "multiple_fraction_valid": 0.09049722500807054,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.28515625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.619140625,
+            "multiple_fraction_valid": 0.09159564287572246,
+            "gate_active_fraction": 0.7173668153015724
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.345703125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.681640625,
+            "multiple_fraction_valid": 0.08294222773041891,
+            "gate_active_fraction": 0.7174298899538516
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.7451171875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.298828125,
+            "multiple_fraction_valid": 0.07264832421183831,
+            "gate_active_fraction": 0.5003587954371118
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.5703125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.0888671875,
+            "multiple_fraction_valid": 0.0800968871939701,
+            "gate_active_fraction": 0.5000491690431704
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.71044921875,
+            "complete_valid_rate_std": 0.22467146305582628,
+            "multiple_bonds_per_attempt": 1.166259765625,
+            "multiple_bonds_per_attempt_std": 0.45234474880391534,
+            "multiple_fraction_valid": 0.06529212512589629,
+            "gate_active_fraction": 0.4980010260285074
+          }
+        }
+      }
+    },
+    "canon_base_seed2": {
+      "checkpoint": "runs/grid/zinc_base/tf_seed2/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 9.1,
+      "baseline": {
+        "complete_valid_rate": 0.9921875,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.7314453125,
+        "multiple_fraction_valid": 0.07171849824633306,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.8896484375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.54296875,
+            "multiple_fraction_valid": 0.07021267816279696,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.9287109375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6171875,
+            "multiple_fraction_valid": 0.07146163647667689,
+            "gate_active_fraction": 0.7284079862409332
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.9404296875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.634765625,
+            "multiple_fraction_valid": 0.07058556897772379,
+            "gate_active_fraction": 0.7280477830925178
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.955078125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.65625,
+            "multiple_fraction_valid": 0.07149158706997538,
+            "gate_active_fraction": 0.5043190866070758
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.953125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6396484375,
+            "multiple_fraction_valid": 0.07043873412521444,
+            "gate_active_fraction": 0.5038556562102269
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.568115234375,
+            "complete_valid_rate_std": 0.21237301678823303,
+            "multiple_bonds_per_attempt": 0.8828125,
+            "multiple_bonds_per_attempt_std": 0.3462516613861879,
+            "multiple_fraction_valid": 0.06754284900912774,
+            "gate_active_fraction": 0.5088487323092747
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "const": {
+            "complete_valid_rate": 0.291015625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 0.50390625,
+            "multiple_fraction_valid": 0.07108780429012404,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.6484375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.1826171875,
+            "multiple_fraction_valid": 0.07466004348960416,
+            "gate_active_fraction": 0.7340836634141629
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.576171875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.0458984375,
+            "multiple_fraction_valid": 0.07390867948322322,
+            "gate_active_fraction": 0.734583244561229
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.8525390625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.447265625,
+            "multiple_fraction_valid": 0.06982994400316508,
+            "gate_active_fraction": 0.5188632902687036
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.7724609375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.37890625,
+            "multiple_fraction_valid": 0.07323439180061105,
+            "gate_active_fraction": 0.5171191572107219
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.929931640625,
+            "complete_valid_rate_std": 0.05327582547046386,
+            "multiple_bonds_per_attempt": 1.578125,
+            "multiple_bonds_per_attempt_std": 0.07672699365396628,
+            "multiple_fraction_valid": 0.07184636542936174,
+            "gate_active_fraction": 0.5106592048921815
+          }
+        }
+      }
+    },
+    "rand_base_seed0": {
+      "checkpoint": "runs/grid_rand/zinc_base/tf_seed0/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 9.27,
+      "baseline": {
+        "complete_valid_rate": 0.9892578125,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.7099609375,
+        "multiple_fraction_valid": 0.07112402566653504,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.935546875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.572265625,
+            "multiple_fraction_valid": 0.07120487924485597,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.9677734375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.63671875,
+            "multiple_fraction_valid": 0.07081298498050886,
+            "gate_active_fraction": 0.7436324569662731
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.970703125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.603515625,
+            "multiple_fraction_valid": 0.06915779846162218,
+            "gate_active_fraction": 0.7453282858727365
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.990234375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6669921875,
+            "multiple_fraction_valid": 0.07062388111261028,
+            "gate_active_fraction": 0.5106064628230809
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.98046875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6953125,
+            "multiple_fraction_valid": 0.07130792670425205,
+            "gate_active_fraction": 0.5097186579222507
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.43701171875,
+            "complete_valid_rate_std": 0.30340187562929793,
+            "multiple_bonds_per_attempt": 0.770751953125,
+            "multiple_bonds_per_attempt_std": 0.5796350398836383,
+            "multiple_fraction_valid": 0.06653809670247093,
+            "gate_active_fraction": 0.5159796198805533
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "const": {
+            "complete_valid_rate": 0.6875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.2978515625,
+            "multiple_fraction_valid": 0.07815299424278861,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.8974609375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.638671875,
+            "multiple_fraction_valid": 0.07580176950840324,
+            "gate_active_fraction": 0.7439333918447707
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.7880859375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.419921875,
+            "multiple_fraction_valid": 0.0744621255683755,
+            "gate_active_fraction": 0.7446913348506534
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.97265625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.7021484375,
+            "multiple_fraction_valid": 0.07312340029780048,
+            "gate_active_fraction": 0.5121479251773812
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.8818359375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.5771484375,
+            "multiple_fraction_valid": 0.07339220946782057,
+            "gate_active_fraction": 0.5105049934049368
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.67431640625,
+            "complete_valid_rate_std": 0.24491527493723825,
+            "multiple_bonds_per_attempt": 1.138916015625,
+            "multiple_bonds_per_attempt_std": 0.47206034020468074,
+            "multiple_fraction_valid": 0.06797476057424531,
+            "gate_active_fraction": 0.5122883325917117
+          }
+        }
+      }
+    },
+    "rand_base_seed1": {
+      "checkpoint": "runs/grid_rand/zinc_base/tf_seed1/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 13.19,
+      "baseline": {
+        "complete_valid_rate": 0.986328125,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.677734375,
+        "multiple_fraction_valid": 0.07031384357154681,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.9091796875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.5380859375,
+            "multiple_fraction_valid": 0.06987484959838228,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.9580078125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6123046875,
+            "multiple_fraction_valid": 0.0690740229762959,
+            "gate_active_fraction": 0.740672173170037
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.95703125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6103515625,
+            "multiple_fraction_valid": 0.06965688018294842,
+            "gate_active_fraction": 0.741735438629967
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.970703125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6533203125,
+            "multiple_fraction_valid": 0.07000860654685671,
+            "gate_active_fraction": 0.5099029863137171
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.978515625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.681640625,
+            "multiple_fraction_valid": 0.07094048728239367,
+            "gate_active_fraction": 0.5098319628173043
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.613525390625,
+            "complete_valid_rate_std": 0.25311567030302173,
+            "multiple_bonds_per_attempt": 0.97314453125,
+            "multiple_bonds_per_attempt_std": 0.4273364859735975,
+            "multiple_fraction_valid": 0.06511286697412916,
+            "gate_active_fraction": 0.509641176734897
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "const": {
+            "complete_valid_rate": 0.630859375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.1142578125,
+            "multiple_fraction_valid": 0.07085346494026042,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.896484375,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.63671875,
+            "multiple_fraction_valid": 0.07394775518023694,
+            "gate_active_fraction": 0.7435992751266205
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.73046875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.2666015625,
+            "multiple_fraction_valid": 0.07053775579324639,
+            "gate_active_fraction": 0.7454307483756369
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.95703125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.666015625,
+            "multiple_fraction_valid": 0.07131965667766293,
+            "gate_active_fraction": 0.5135548908307228
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.79296875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.3740234375,
+            "multiple_fraction_valid": 0.07082999510067726,
+            "gate_active_fraction": 0.5124515901889449
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.888671875,
+            "complete_valid_rate_std": 0.08644922660450803,
+            "multiple_bonds_per_attempt": 1.53955078125,
+            "multiple_bonds_per_attempt_std": 0.20517750103396326,
+            "multiple_fraction_valid": 0.07011749011631399,
+            "gate_active_fraction": 0.5187285741216191
+          }
+        }
+      }
+    },
+    "rand_base_seed2": {
+      "checkpoint": "runs/grid_rand/zinc_base/tf_seed2/checkpoint.pt",
+      "alpha": 8.0,
+      "n_samples": 1024,
+      "elapsed_sec": 8.84,
+      "baseline": {
+        "complete_valid_rate": 0.98828125,
+        "termination_rate": 1.0,
+        "multiple_bonds_per_attempt": 1.701171875,
+        "multiple_fraction_valid": 0.07044063520652845,
+        "gate_active_fraction": 0.0
+      },
+      "regimes": {
+        "single": {
+          "layers": [
+            1
+          ],
+          "const": {
+            "complete_valid_rate": 0.9345703125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.57421875,
+            "multiple_fraction_valid": 0.07096789364187318,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.9658203125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.626953125,
+            "multiple_fraction_valid": 0.07039017108718541,
+            "gate_active_fraction": 0.7413097753024774
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.978515625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.66015625,
+            "multiple_fraction_valid": 0.0708317867657207,
+            "gate_active_fraction": 0.7423711735917858
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.978515625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6611328125,
+            "multiple_fraction_valid": 0.0707817644948379,
+            "gate_active_fraction": 0.5165983557441097
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.98828125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.6953125,
+            "multiple_fraction_valid": 0.07080805056637812,
+            "gate_active_fraction": 0.5151529557177152
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.357421875,
+            "complete_valid_rate_std": 0.15749625065291734,
+            "multiple_bonds_per_attempt": 0.595947265625,
+            "multiple_bonds_per_attempt_std": 0.2362790647924568,
+            "multiple_fraction_valid": 0.06911683978490153,
+            "gate_active_fraction": 0.5252350615548695
+          }
+        },
+        "multi": {
+          "layers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "const": {
+            "complete_valid_rate": 0.7890625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.29296875,
+            "multiple_fraction_valid": 0.06903130055633187,
+            "gate_active_fraction": 1.0
+          },
+          "gated": {
+            "complete_valid_rate": 0.921875,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.55859375,
+            "multiple_fraction_valid": 0.07049339472965244,
+            "gate_active_fraction": 0.7471764310087952
+          },
+          "random_step_matched_gated": {
+            "complete_valid_rate": 0.869140625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.4169921875,
+            "multiple_fraction_valid": 0.06782968565245129,
+            "gate_active_fraction": 0.7482729570345409
+          },
+          "gated_nonarom": {
+            "complete_valid_rate": 0.9814453125,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.630859375,
+            "multiple_fraction_valid": 0.06945621304626412,
+            "gate_active_fraction": 0.5146005642497167
+          },
+          "random_step_matched_nonarom": {
+            "complete_valid_rate": 0.91015625,
+            "termination_rate": 1.0,
+            "multiple_bonds_per_attempt": 1.5419921875,
+            "multiple_fraction_valid": 0.07021492819955122,
+            "gate_active_fraction": 0.5135808383233533
+          },
+          "cov_null_gated_nonarom": {
+            "n_draws": 4,
+            "complete_valid_rate": 0.955810546875,
+            "complete_valid_rate_std": 0.01911638242759126,
+            "multiple_bonds_per_attempt": 1.683349609375,
+            "multiple_bonds_per_attempt_std": 0.07755030014894938,
+            "multiple_fraction_valid": 0.07300005097743405,
+            "gate_active_fraction": 0.521307063341032
+          }
+        }
+      }
+    }
+  },
+  "rand_base_matched_fig5_calibration": {
+    "calibration_corpus": "data/valid.smi (exact match to summary_constructive_steering_rand.json and Fig 5c-d)",
+    "summary": {
+      "single": {
+        "const": {
+          "valid_mean_pct": 27.47,
+          "valid_sd_pct": 11.87,
+          "per_seed_pct": [
+            30.27,
+            14.45,
+            37.7
+          ]
+        },
+        "gated": {
+          "valid_mean_pct": 52.28,
+          "valid_sd_pct": 9.84,
+          "per_seed_pct": [
+            47.66,
+            45.61,
+            63.57
+          ]
+        },
+        "random_step_matched_gated": {
+          "valid_mean_pct": 53.32,
+          "valid_sd_pct": 13.77,
+          "per_seed_pct": [
+            57.71,
+            37.89,
+            64.36
+          ]
+        },
+        "gated_nonarom": {
+          "valid_mean_pct": 76.04,
+          "valid_sd_pct": 2.01,
+          "per_seed_pct": [
+            77.93,
+            76.27,
+            73.93
+          ]
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean_pct": 73.18,
+          "valid_sd_pct": 9.99,
+          "per_seed_pct": [
+            76.66,
+            61.91,
+            80.96
+          ]
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean_pct": 44.01,
+          "valid_sd_pct": 2.66,
+          "per_seed_pct": [
+            42.87,
+            42.11,
+            47.05
+          ]
+        }
+      },
+      "multi": {
+        "const": {
+          "valid_mean_pct": 16.41,
+          "valid_sd_pct": 12.63,
+          "per_seed_pct": [
+            18.07,
+            3.03,
+            28.12
+          ]
+        },
+        "gated": {
+          "valid_mean_pct": 43.55,
+          "valid_sd_pct": 22.67,
+          "per_seed_pct": [
+            37.11,
+            24.8,
+            68.75
+          ]
+        },
+        "random_step_matched_gated": {
+          "valid_mean_pct": 34.8,
+          "valid_sd_pct": 16.94,
+          "per_seed_pct": [
+            36.23,
+            17.19,
+            50.98
+          ]
+        },
+        "gated_nonarom": {
+          "valid_mean_pct": 77.28,
+          "valid_sd_pct": 10.6,
+          "per_seed_pct": [
+            82.03,
+            65.14,
+            84.67
+          ]
+        },
+        "random_step_matched_nonarom": {
+          "valid_mean_pct": 56.8,
+          "valid_sd_pct": 15.09,
+          "per_seed_pct": [
+            55.37,
+            42.48,
+            72.56
+          ]
+        },
+        "cov_null_gated_nonarom": {
+          "valid_mean_pct": 82.91,
+          "valid_sd_pct": 5.04,
+          "per_seed_pct": [
+            77.17,
+            84.91,
+            86.65
+          ]
+        }
+      }
+    }
+  }
+}

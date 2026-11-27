@@ -1,0 +1,2755 @@
+{
+  "checkpoints": [
+    "base_seed0",
+    "base_seed1",
+    "base_seed2"
+  ],
+  "by_size": {
+    "base": {
+      "n_seeds": 3,
+      "n_layers": 6,
+      "d_model": 512,
+      "exp1_valence_summary": {
+        "single_const": {
+          "probe": {
+            "-8": {
+              "valid_rate_mean": 0.4280598958333333,
+              "valid_rate_std": 0.2066598435783018,
+              "multiple_fraction_valid_mean": 0.08658541709653882,
+              "multiple_bonds_per_attempt_mean": 0.8206380208333334,
+              "multiple_bonds_per_attempt_std": 0.3608142578157364,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "-4": {
+              "valid_rate_mean": 0.9716796875,
+              "valid_rate_std": 0.009700302360515195,
+              "multiple_fraction_valid_mean": 0.07113723154904365,
+              "multiple_bonds_per_attempt_mean": 1.6399739583333333,
+              "multiple_bonds_per_attempt_std": 0.007536352150254053,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "-2": {
+              "valid_rate_mean": 0.9892578125,
+              "valid_rate_std": 0.001594719884624465,
+              "multiple_fraction_valid_mean": 0.07074480612248575,
+              "multiple_bonds_per_attempt_mean": 1.6884765625,
+              "multiple_bonds_per_attempt_std": 0.011745845411893694,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "0": {
+              "valid_rate_mean": 0.9879557291666666,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07062616814820344,
+              "multiple_bonds_per_attempt_mean": 1.6962890625,
+              "multiple_bonds_per_attempt_std": 0.013601941676937616,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.0
+            },
+            "+2": {
+              "valid_rate_mean": 0.9892578125,
+              "valid_rate_std": 0.0021096161127629755,
+              "multiple_fraction_valid_mean": 0.07006663333647749,
+              "multiple_bonds_per_attempt_mean": 1.689453125,
+              "multiple_bonds_per_attempt_std": 0.009959022487485907,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "+4": {
+              "valid_rate_mean": 0.9606119791666666,
+              "valid_rate_std": 0.012988240457851564,
+              "multiple_fraction_valid_mean": 0.06888819513039246,
+              "multiple_bonds_per_attempt_mean": 1.59375,
+              "multiple_bonds_per_attempt_std": 0.04677316412042206,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "+8": {
+              "valid_rate_mean": 0.2747395833333333,
+              "valid_rate_std": 0.09692871354754812,
+              "multiple_fraction_valid_mean": 0.07220770444470685,
+              "multiple_bonds_per_attempt_mean": 0.4375,
+              "multiple_bonds_per_attempt_std": 0.1416812365650313,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            }
+          },
+          "cov_null": {
+            "-8": {
+              "valid_rate_mean": 0.08333333333333333,
+              "multiple_fraction_valid_mean": 0.0680493769262006,
+              "multiple_bonds_per_attempt_mean": 0.13330078125
+            },
+            "-4": {
+              "valid_rate_mean": 0.6290690104166666,
+              "multiple_fraction_valid_mean": 0.06968955936754852,
+              "multiple_bonds_per_attempt_mean": 1.06494140625
+            },
+            "-2": {
+              "valid_rate_mean": 0.9366048177083334,
+              "multiple_fraction_valid_mean": 0.07004463536931829,
+              "multiple_bonds_per_attempt_mean": 1.6022135416666667
+            },
+            "+2": {
+              "valid_rate_mean": 0.9396158854166666,
+              "multiple_fraction_valid_mean": 0.07092695683927043,
+              "multiple_bonds_per_attempt_mean": 1.6122233072916667
+            },
+            "+4": {
+              "valid_rate_mean": 0.6769205729166666,
+              "multiple_fraction_valid_mean": 0.06951720179663219,
+              "multiple_bonds_per_attempt_mean": 1.1442057291666667
+            },
+            "+8": {
+              "valid_rate_mean": 0.061442057291666664,
+              "multiple_fraction_valid_mean": 0.07087693672605368,
+              "multiple_bonds_per_attempt_mean": 0.11368815104166667
+            }
+          }
+        },
+        "single_gated": {
+          "probe": {
+            "-8": {
+              "valid_rate_mean": 0.5263671875,
+              "valid_rate_std": 0.20666702188440786,
+              "multiple_fraction_valid_mean": 0.0844040699920161,
+              "multiple_bonds_per_attempt_mean": 0.9938151041666666,
+              "multiple_bonds_per_attempt_std": 0.33582140274248534,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7431442595653257
+            },
+            "-4": {
+              "valid_rate_mean": 0.9791666666666666,
+              "valid_rate_std": 0.006444983682689887,
+              "multiple_fraction_valid_mean": 0.07106709956324063,
+              "multiple_bonds_per_attempt_mean": 1.66015625,
+              "multiple_bonds_per_attempt_std": 0.017953883116064683,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7399868095300168
+            },
+            "-2": {
+              "valid_rate_mean": 0.9895833333333334,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07080389583259379,
+              "multiple_bonds_per_attempt_mean": 1.6946614583333333,
+              "multiple_bonds_per_attempt_std": 0.012205946132325961,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7401330330877363
+            },
+            "0": {
+              "valid_rate_mean": 0.9879557291666666,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07062616814820344,
+              "multiple_bonds_per_attempt_mean": 1.6962890625,
+              "multiple_bonds_per_attempt_std": 0.013601941676937616,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.0
+            },
+            "+2": {
+              "valid_rate_mean": 0.9889322916666666,
+              "valid_rate_std": 0.002563153604821553,
+              "multiple_fraction_valid_mean": 0.07019237494307701,
+              "multiple_bonds_per_attempt_mean": 1.69140625,
+              "multiple_bonds_per_attempt_std": 0.018391206890397832,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7436628904130393
+            },
+            "+4": {
+              "valid_rate_mean": 0.9765625,
+              "valid_rate_std": 0.0048501511802575975,
+              "multiple_fraction_valid_mean": 0.06882771395143511,
+              "multiple_bonds_per_attempt_mean": 1.6223958333333333,
+              "multiple_bonds_per_attempt_std": 0.03804278850259207,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7450152165796521
+            },
+            "+8": {
+              "valid_rate_mean": 0.5227864583333334,
+              "valid_rate_std": 0.08030936083696927,
+              "multiple_fraction_valid_mean": 0.07280958056895019,
+              "multiple_bonds_per_attempt_mean": 0.8616536458333334,
+              "multiple_bonds_per_attempt_std": 0.10767705644015094,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7468424201488858
+            }
+          },
+          "cov_null": {
+            "-8": {
+              "valid_rate_mean": 0.234375,
+              "multiple_fraction_valid_mean": 0.09116277350468949,
+              "multiple_bonds_per_attempt_mean": 0.4088541666666667
+            },
+            "-4": {
+              "valid_rate_mean": 0.7970377604166666,
+              "multiple_fraction_valid_mean": 0.0709104231272391,
+              "multiple_bonds_per_attempt_mean": 1.3709309895833333
+            },
+            "-2": {
+              "valid_rate_mean": 0.9742838541666666,
+              "multiple_fraction_valid_mean": 0.07036511192213452,
+              "multiple_bonds_per_attempt_mean": 1.6731770833333333
+            },
+            "+2": {
+              "valid_rate_mean": 0.9698893229166666,
+              "multiple_fraction_valid_mean": 0.07095664561476844,
+              "multiple_bonds_per_attempt_mean": 1.6656087239583333
+            },
+            "+4": {
+              "valid_rate_mean": 0.7932942708333334,
+              "multiple_fraction_valid_mean": 0.07185916908747107,
+              "multiple_bonds_per_attempt_mean": 1.35302734375
+            },
+            "+8": {
+              "valid_rate_mean": 0.20109049479166666,
+              "multiple_fraction_valid_mean": 0.08862797264122109,
+              "multiple_bonds_per_attempt_mean": 0.368896484375
+            }
+          }
+        },
+        "single_gated_nonarom": {
+          "probe": {
+            "-8": {
+              "valid_rate_mean": 0.8095703125,
+              "valid_rate_std": 0.10500052800121461,
+              "multiple_fraction_valid_mean": 0.07436563696202729,
+              "multiple_bonds_per_attempt_mean": 1.3984375,
+              "multiple_bonds_per_attempt_std": 0.15779469203877544,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5076201497513187
+            },
+            "-4": {
+              "valid_rate_mean": 0.9856770833333334,
+              "valid_rate_std": 0.0050639157506849105,
+              "multiple_fraction_valid_mean": 0.07070263152372347,
+              "multiple_bonds_per_attempt_mean": 1.6686197916666667,
+              "multiple_bonds_per_attempt_std": 0.008819151812593793,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5160004652756328
+            },
+            "-2": {
+              "valid_rate_mean": 0.9905598958333334,
+              "valid_rate_std": 0.0016598370812476513,
+              "multiple_fraction_valid_mean": 0.07068050400507103,
+              "multiple_bonds_per_attempt_mean": 1.6949869791666667,
+              "multiple_bonds_per_attempt_std": 0.006037512041338349,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5176037662545417
+            },
+            "0": {
+              "valid_rate_mean": 0.9879557291666666,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07062616814820344,
+              "multiple_bonds_per_attempt_mean": 1.6962890625,
+              "multiple_bonds_per_attempt_std": 0.013601941676937616,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.0
+            },
+            "+2": {
+              "valid_rate_mean": 0.9915364583333334,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07037701529055049,
+              "multiple_bonds_per_attempt_mean": 1.7008463541666667,
+              "multiple_bonds_per_attempt_std": 0.017365857641079608,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5176171549585402
+            },
+            "+4": {
+              "valid_rate_mean": 0.9876302083333334,
+              "valid_rate_std": 0.0033196741624953027,
+              "multiple_fraction_valid_mean": 0.06933121602926844,
+              "multiple_bonds_per_attempt_mean": 1.650390625,
+              "multiple_bonds_per_attempt_std": 0.03788089168370518,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5161999555809106
+            },
+            "+8": {
+              "valid_rate_mean": 0.7604166666666666,
+              "valid_rate_std": 0.016425098712946437,
+              "multiple_fraction_valid_mean": 0.06744739227531257,
+              "multiple_bonds_per_attempt_mean": 1.1787109375,
+              "multiple_bonds_per_attempt_std": 0.04768852433437319,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5158851687836702
+            }
+          },
+          "cov_null": {}
+        },
+        "multi_const": {
+          "probe": {
+            "-8": {
+              "valid_rate_mean": 0.490234375,
+              "valid_rate_std": 0.1523124467038017,
+              "multiple_fraction_valid_mean": 0.06041812299354047,
+              "multiple_bonds_per_attempt_mean": 0.6412760416666666,
+              "multiple_bonds_per_attempt_std": 0.2090274691095393,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "-4": {
+              "valid_rate_mean": 0.98046875,
+              "valid_rate_std": 0.002392079826936697,
+              "multiple_fraction_valid_mean": 0.06984563274907407,
+              "multiple_bonds_per_attempt_mean": 1.6044921875,
+              "multiple_bonds_per_attempt_std": 0.030706123289776895,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "-2": {
+              "valid_rate_mean": 0.9915364583333334,
+              "valid_rate_std": 0.002800236089532105,
+              "multiple_fraction_valid_mean": 0.07047608453291054,
+              "multiple_bonds_per_attempt_mean": 1.6774088541666667,
+              "multiple_bonds_per_attempt_std": 0.023938510821419578,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "0": {
+              "valid_rate_mean": 0.9879557291666666,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07062616814820344,
+              "multiple_bonds_per_attempt_mean": 1.6962890625,
+              "multiple_bonds_per_attempt_std": 0.013601941676937616,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.0
+            },
+            "+2": {
+              "valid_rate_mean": 0.9869791666666666,
+              "valid_rate_std": 0.003222491841344943,
+              "multiple_fraction_valid_mean": 0.07017372230397895,
+              "multiple_bonds_per_attempt_mean": 1.701171875,
+              "multiple_bonds_per_attempt_std": 0.01715714056393807,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "+4": {
+              "valid_rate_mean": 0.9231770833333334,
+              "valid_rate_std": 0.02879709707629749,
+              "multiple_fraction_valid_mean": 0.06918418311772086,
+              "multiple_bonds_per_attempt_mean": 1.5651041666666667,
+              "multiple_bonds_per_attempt_std": 0.06542401898123591,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            },
+            "+8": {
+              "valid_rate_mean": 0.1640625,
+              "valid_rate_std": 0.10313104168697271,
+              "multiple_fraction_valid_mean": 0.08351858498677718,
+              "multiple_bonds_per_attempt_mean": 0.3313802083333333,
+              "multiple_bonds_per_attempt_std": 0.18852855995103024,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 1.0
+            }
+          },
+          "cov_null": {
+            "-8": {
+              "valid_rate_mean": 0.5355631510416666,
+              "multiple_fraction_valid_mean": 0.07116287982007295,
+              "multiple_bonds_per_attempt_mean": 0.9434407552083334
+            },
+            "-4": {
+              "valid_rate_mean": 0.9082845052083334,
+              "multiple_fraction_valid_mean": 0.06979195470046445,
+              "multiple_bonds_per_attempt_mean": 1.5520833333333333
+            },
+            "-2": {
+              "valid_rate_mean": 0.98779296875,
+              "multiple_fraction_valid_mean": 0.07044272160859888,
+              "multiple_bonds_per_attempt_mean": 1.6976725260416667
+            },
+            "+2": {
+              "valid_rate_mean": 0.988037109375,
+              "multiple_fraction_valid_mean": 0.07024311585571846,
+              "multiple_bonds_per_attempt_mean": 1.6787923177083333
+            },
+            "+4": {
+              "valid_rate_mean": 0.9138997395833334,
+              "multiple_fraction_valid_mean": 0.0705261918203292,
+              "multiple_bonds_per_attempt_mean": 1.5462239583333333
+            },
+            "+8": {
+              "valid_rate_mean": 0.5040690104166666,
+              "multiple_fraction_valid_mean": 0.06938657847915491,
+              "multiple_bonds_per_attempt_mean": 0.84033203125
+            }
+          }
+        },
+        "multi_gated": {
+          "probe": {
+            "-8": {
+              "valid_rate_mean": 0.5823567708333334,
+              "valid_rate_std": 0.10535214104118532,
+              "multiple_fraction_valid_mean": 0.059748927401339975,
+              "multiple_bonds_per_attempt_mean": 0.7744140625,
+              "multiple_bonds_per_attempt_std": 0.19995142028818003,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.770672439226888
+            },
+            "-4": {
+              "valid_rate_mean": 0.9856770833333334,
+              "valid_rate_std": 0.0037681760751270264,
+              "multiple_fraction_valid_mean": 0.07027232241102409,
+              "multiple_bonds_per_attempt_mean": 1.6350911458333333,
+              "multiple_bonds_per_attempt_std": 0.030616268375071608,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7409630710244238
+            },
+            "-2": {
+              "valid_rate_mean": 0.9912109375,
+              "valid_rate_std": 0.0028749221570077625,
+              "multiple_fraction_valid_mean": 0.0709132182082298,
+              "multiple_bonds_per_attempt_mean": 1.6910807291666667,
+              "multiple_bonds_per_attempt_std": 0.023523244485858942,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.740250920579669
+            },
+            "0": {
+              "valid_rate_mean": 0.9879557291666666,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07062616814820344,
+              "multiple_bonds_per_attempt_mean": 1.6962890625,
+              "multiple_bonds_per_attempt_std": 0.013601941676937616,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.0
+            },
+            "+2": {
+              "valid_rate_mean": 0.9889322916666666,
+              "valid_rate_std": 0.0016598370812476513,
+              "multiple_fraction_valid_mean": 0.07017138814076573,
+              "multiple_bonds_per_attempt_mean": 1.7001953125,
+              "multiple_bonds_per_attempt_std": 0.01659198559553992,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7438792797673738
+            },
+            "+4": {
+              "valid_rate_mean": 0.9651692708333334,
+              "valid_rate_std": 0.0148174566103399,
+              "multiple_fraction_valid_mean": 0.06979439969649351,
+              "multiple_bonds_per_attempt_mean": 1.6474609375,
+              "multiple_bonds_per_attempt_std": 0.029231698334171417,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7454104294584246
+            },
+            "+8": {
+              "valid_rate_mean": 0.435546875,
+              "valid_rate_std": 0.18510432420622633,
+              "multiple_fraction_valid_mean": 0.08420285044202479,
+              "multiple_bonds_per_attempt_mean": 0.8489583333333334,
+              "multiple_bonds_per_attempt_std": 0.2895880609579246,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.7434750358571774
+            }
+          },
+          "cov_null": {
+            "-8": {
+              "valid_rate_mean": 0.703857421875,
+              "multiple_fraction_valid_mean": 0.07341167048637888,
+              "multiple_bonds_per_attempt_mean": 1.24169921875
+            },
+            "-4": {
+              "valid_rate_mean": 0.9652506510416666,
+              "multiple_fraction_valid_mean": 0.07028041306076283,
+              "multiple_bonds_per_attempt_mean": 1.6556803385416667
+            },
+            "-2": {
+              "valid_rate_mean": 0.989990234375,
+              "multiple_fraction_valid_mean": 0.07063982867253545,
+              "multiple_bonds_per_attempt_mean": 1.7049967447916667
+            },
+            "+2": {
+              "valid_rate_mean": 0.9905598958333334,
+              "multiple_fraction_valid_mean": 0.07040102836643315,
+              "multiple_bonds_per_attempt_mean": 1.6891276041666667
+            },
+            "+4": {
+              "valid_rate_mean": 0.96044921875,
+              "multiple_fraction_valid_mean": 0.07046480851081888,
+              "multiple_bonds_per_attempt_mean": 1.6292317708333333
+            },
+            "+8": {
+              "valid_rate_mean": 0.7063802083333334,
+              "multiple_fraction_valid_mean": 0.072654414013834,
+              "multiple_bonds_per_attempt_mean": 1.19189453125
+            }
+          }
+        },
+        "multi_gated_nonarom": {
+          "probe": {
+            "-8": {
+              "valid_rate_mean": 0.8463541666666666,
+              "valid_rate_std": 0.08233039041425644,
+              "multiple_fraction_valid_mean": 0.05806777261330822,
+              "multiple_bonds_per_attempt_mean": 1.1126302083333333,
+              "multiple_bonds_per_attempt_std": 0.1777135070548529,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.4958384130768678
+            },
+            "-4": {
+              "valid_rate_mean": 0.9869791666666666,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.0704021980110305,
+              "multiple_bonds_per_attempt_mean": 1.6539713541666667,
+              "multiple_bonds_per_attempt_std": 0.017181827109891468,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5135606347331813
+            },
+            "-2": {
+              "valid_rate_mean": 0.9899088541666666,
+              "valid_rate_std": 0.0004603559773349919,
+              "multiple_fraction_valid_mean": 0.07069671939449318,
+              "multiple_bonds_per_attempt_mean": 1.6891276041666667,
+              "multiple_bonds_per_attempt_std": 0.011969255410709787,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5164432370443485
+            },
+            "0": {
+              "valid_rate_mean": 0.9879557291666666,
+              "valid_rate_std": 0.0012179874305904756,
+              "multiple_fraction_valid_mean": 0.07062616814820344,
+              "multiple_bonds_per_attempt_mean": 1.6962890625,
+              "multiple_bonds_per_attempt_std": 0.013601941676937616,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.0
+            },
+            "+2": {
+              "valid_rate_mean": 0.990234375,
+              "valid_rate_std": 0.0021096161127629755,
+              "multiple_fraction_valid_mean": 0.07033383204088493,
+              "multiple_bonds_per_attempt_mean": 1.7018229166666667,
+              "multiple_bonds_per_attempt_std": 0.01120094435812842,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5187166133799396
+            },
+            "+4": {
+              "valid_rate_mean": 0.9833984375,
+              "valid_rate_std": 0.0,
+              "multiple_fraction_valid_mean": 0.06997098380726478,
+              "multiple_bonds_per_attempt_mean": 1.6751302083333333,
+              "multiple_bonds_per_attempt_std": 0.029104548108407697,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5200382011157644
+            },
+            "+8": {
+              "valid_rate_mean": 0.7727864583333334,
+              "valid_rate_std": 0.08652855652495617,
+              "multiple_fraction_valid_mean": 0.07177977290422054,
+              "multiple_bonds_per_attempt_mean": 1.3268229166666667,
+              "multiple_bonds_per_attempt_std": 0.17493527138729692,
+              "termination_rate_mean": 1.0,
+              "gate_active_fraction_mean": 0.5297008919660029
+            }
+          },
+          "cov_null": {}
+        }
+      },
+      "exp2_property_summary": {
+        "MolLogP": {
+          "best_mid_layers": [
+            2,
+            2,
+            2
+          ],
+          "best_mid_r2_mean": 0.9487413500433767,
+          "token_bag_r2_mean": 0.7996416897731681,
+          "act_single": {
+            "-8": {
+              "valid_rate": 0.9632161458333334,
+              "mean_prop_valid": 2.194956352457805,
+              "delta_prop_valid": 0.39561682653551017,
+              "target_hit_high_yield_per_attempt": 0.107421875,
+              "target_hit_low_yield_per_attempt": 0.24055989583333334,
+              "target_hit_high_alt_yield_per_attempt": 0.275390625,
+              "internal_diversity": 0.856238497830518,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9598793063877123,
+              "step_kl": 0.022957564021150272
+            },
+            "-4": {
+              "valid_rate": 0.9899088541666666,
+              "mean_prop_valid": 1.9744823688425452,
+              "delta_prop_valid": 0.1751428429202501,
+              "target_hit_high_yield_per_attempt": 0.078125,
+              "target_hit_low_yield_per_attempt": 0.322265625,
+              "target_hit_high_alt_yield_per_attempt": 0.22102864583333334,
+              "internal_diversity": 0.8557257862015422,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9487143756526111,
+              "step_kl": 0.005021567301203807
+            },
+            "-2": {
+              "valid_rate": 0.9918619791666666,
+              "mean_prop_valid": 1.8801389831368065,
+              "delta_prop_valid": 0.0807994572145115,
+              "target_hit_high_yield_per_attempt": 0.06380208333333333,
+              "target_hit_low_yield_per_attempt": 0.3522135416666667,
+              "target_hit_high_alt_yield_per_attempt": 0.19466145833333334,
+              "internal_diversity": 0.8553433204568816,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9461777407134453,
+              "step_kl": 0.001569357778256138
+            },
+            "-1": {
+              "valid_rate": 0.9912109375,
+              "mean_prop_valid": 1.8355338850574716,
+              "delta_prop_valid": 0.036194359135176546,
+              "target_hit_high_yield_per_attempt": 0.048502604166666664,
+              "target_hit_low_yield_per_attempt": 0.3626302083333333,
+              "target_hit_high_alt_yield_per_attempt": 0.17936197916666666,
+              "internal_diversity": 0.8552305684513701,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9454844006568145,
+              "step_kl": 0.0004584205550296853
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.799339525922295,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.030924479166666668,
+              "target_hit_low_yield_per_attempt": 0.3645833333333333,
+              "target_hit_high_alt_yield_per_attempt": 0.16438802083333334,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+1": {
+              "valid_rate": 0.9895833333333334,
+              "mean_prop_valid": 1.7445074883060088,
+              "delta_prop_valid": -0.054832037616286376,
+              "target_hit_high_yield_per_attempt": 0.01953125,
+              "target_hit_low_yield_per_attempt": 0.3785807291666667,
+              "target_hit_high_alt_yield_per_attempt": 0.138671875,
+              "internal_diversity": 0.8558544268710234,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9480228058823377,
+              "step_kl": 0.0006928733200766146
+            },
+            "+2": {
+              "valid_rate": 0.9918619791666666,
+              "mean_prop_valid": 1.658156317458447,
+              "delta_prop_valid": -0.1411832084638481,
+              "target_hit_high_yield_per_attempt": 0.010091145833333334,
+              "target_hit_low_yield_per_attempt": 0.3987630208333333,
+              "target_hit_high_alt_yield_per_attempt": 0.10807291666666667,
+              "internal_diversity": 0.8562279628646373,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9468279588581007,
+              "step_kl": 0.003393248344461123
+            },
+            "+4": {
+              "valid_rate": 0.986328125,
+              "mean_prop_valid": 1.4387080677893291,
+              "delta_prop_valid": -0.3606314581329657,
+              "target_hit_high_yield_per_attempt": 0.0009765625,
+              "target_hit_low_yield_per_attempt": 0.4827473958333333,
+              "target_hit_high_alt_yield_per_attempt": 0.041666666666666664,
+              "internal_diversity": 0.8565173545475077,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9502081948361029,
+              "step_kl": 0.020087240263819695
+            },
+            "+8": {
+              "valid_rate": 0.8997395833333334,
+              "mean_prop_valid": 0.698930919501579,
+              "delta_prop_valid": -1.1004086064207161,
+              "target_hit_high_yield_per_attempt": 0.0,
+              "target_hit_low_yield_per_attempt": 0.7194010416666666,
+              "target_hit_high_alt_yield_per_attempt": 0.0029296875,
+              "internal_diversity": 0.8599117361274867,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9695045939144427,
+              "step_kl": 0.15240888794263205
+            }
+          },
+          "act_multi": {
+            "-8": {
+              "valid_rate": 0.888671875,
+              "mean_prop_valid": 2.4268861964693174,
+              "delta_prop_valid": 0.6275466705470226,
+              "target_hit_high_yield_per_attempt": 0.14973958333333334,
+              "target_hit_low_yield_per_attempt": 0.18001302083333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3333333333333333,
+              "internal_diversity": 0.8578010259627408,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.968411116244336,
+              "step_kl": 0.05357661719123522
+            },
+            "-4": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 2.019333537832285,
+              "delta_prop_valid": 0.2199940119099899,
+              "target_hit_high_yield_per_attempt": 0.09244791666666667,
+              "target_hit_low_yield_per_attempt": 0.3154296875,
+              "target_hit_high_alt_yield_per_attempt": 0.2451171875,
+              "internal_diversity": 0.8562129280978944,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9497201077667898,
+              "step_kl": 0.00728286678592364
+            },
+            "-2": {
+              "valid_rate": 0.9934895833333334,
+              "mean_prop_valid": 1.8913859002836275,
+              "delta_prop_valid": 0.09204637436133245,
+              "target_hit_high_yield_per_attempt": 0.06868489583333333,
+              "target_hit_low_yield_per_attempt": 0.3499348958333333,
+              "target_hit_high_alt_yield_per_attempt": 0.2001953125,
+              "internal_diversity": 0.8560111370828457,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9436520139852526,
+              "step_kl": 0.002346121046381692
+            },
+            "-1": {
+              "valid_rate": 0.9925130208333334,
+              "mean_prop_valid": 1.8377997004209286,
+              "delta_prop_valid": 0.03846017449863348,
+              "target_hit_high_yield_per_attempt": 0.049153645833333336,
+              "target_hit_low_yield_per_attempt": 0.3626302083333333,
+              "target_hit_high_alt_yield_per_attempt": 0.18391927083333334,
+              "internal_diversity": 0.8555739308925155,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9435918131914925,
+              "step_kl": 0.0007506988670987388
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.799339525922295,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.030924479166666668,
+              "target_hit_low_yield_per_attempt": 0.3645833333333333,
+              "target_hit_high_alt_yield_per_attempt": 0.16438802083333334,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+1": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 1.7266593851715017,
+              "delta_prop_valid": -0.07268014075079325,
+              "target_hit_high_yield_per_attempt": 0.0146484375,
+              "target_hit_low_yield_per_attempt": 0.3763020833333333,
+              "target_hit_high_alt_yield_per_attempt": 0.13020833333333334,
+              "internal_diversity": 0.8552756141718773,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9446747856230614,
+              "step_kl": 0.0013468649704009295
+            },
+            "+2": {
+              "valid_rate": 0.9886067708333334,
+              "mean_prop_valid": 1.6009058452041833,
+              "delta_prop_valid": -0.19843368071811174,
+              "target_hit_high_yield_per_attempt": 0.005533854166666667,
+              "target_hit_low_yield_per_attempt": 0.412109375,
+              "target_hit_high_alt_yield_per_attempt": 0.07877604166666667,
+              "internal_diversity": 0.8553467910318218,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9463177692918244,
+              "step_kl": 0.0072091926510135336
+            },
+            "+4": {
+              "valid_rate": 0.9674479166666666,
+              "mean_prop_valid": 1.2148998036536067,
+              "delta_prop_valid": -0.5844397222686885,
+              "target_hit_high_yield_per_attempt": 0.0006510416666666666,
+              "target_hit_low_yield_per_attempt": 0.5813802083333334,
+              "target_hit_high_alt_yield_per_attempt": 0.013997395833333334,
+              "internal_diversity": 0.8550638274554654,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9549632411042207,
+              "step_kl": 0.048909240091840424
+            },
+            "+8": {
+              "valid_rate": 0.6529947916666666,
+              "mean_prop_valid": -0.04014498846540645,
+              "delta_prop_valid": -1.8394845143877017,
+              "target_hit_high_yield_per_attempt": 0.0,
+              "target_hit_low_yield_per_attempt": 0.6155598958333334,
+              "target_hit_high_alt_yield_per_attempt": 0.0003255208333333333,
+              "internal_diversity": 0.8637717592089951,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9776965195692423,
+              "step_kl": 0.38095902403195697
+            }
+          },
+          "logit_unemb": {
+            "-16": {
+              "valid_rate": 0.9931640625,
+              "mean_prop_valid": 1.8480321211614854,
+              "delta_prop_valid": 0.04869259523919026,
+              "target_hit_high_yield_per_attempt": 0.034830729166666664,
+              "target_hit_low_yield_per_attempt": 0.345703125,
+              "target_hit_high_alt_yield_per_attempt": 0.1865234375,
+              "internal_diversity": 0.8509348832483802,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9459205280044789,
+              "step_kl": 0.022250647967060406
+            },
+            "-8": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 1.8150536211939308,
+              "delta_prop_valid": 0.015714095271635847,
+              "target_hit_high_yield_per_attempt": 0.029947916666666668,
+              "target_hit_low_yield_per_attempt": 0.3551432291666667,
+              "target_hit_high_alt_yield_per_attempt": 0.17057291666666666,
+              "internal_diversity": 0.8542321839922353,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9460166366520881,
+              "step_kl": 0.005878089771916469
+            },
+            "-4": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 1.7735388833829842,
+              "delta_prop_valid": -0.02580064253931084,
+              "target_hit_high_yield_per_attempt": 0.029296875,
+              "target_hit_low_yield_per_attempt": 0.3736979166666667,
+              "target_hit_high_alt_yield_per_attempt": 0.16536458333333334,
+              "internal_diversity": 0.8550435114126541,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9483913887212237,
+              "step_kl": 0.0015113890015830596
+            },
+            "-2": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 1.7738223176305927,
+              "delta_prop_valid": -0.02551720829170227,
+              "target_hit_high_yield_per_attempt": 0.028645833333333332,
+              "target_hit_low_yield_per_attempt": 0.3772786458333333,
+              "target_hit_high_alt_yield_per_attempt": 0.16080729166666666,
+              "internal_diversity": 0.8554744682226789,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9496342601364218,
+              "step_kl": 0.0003832045573896418
+            },
+            "-1": {
+              "valid_rate": 0.9886067708333334,
+              "mean_prop_valid": 1.7875687155960318,
+              "delta_prop_valid": -0.011770810326263112,
+              "target_hit_high_yield_per_attempt": 0.0283203125,
+              "target_hit_low_yield_per_attempt": 0.3697916666666667,
+              "target_hit_high_alt_yield_per_attempt": 0.15983072916666666,
+              "internal_diversity": 0.8554930707568004,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9492857280021768,
+              "step_kl": 9.648009290685877e-05
+            },
+            "-0.5": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 1.801395295802135,
+              "delta_prop_valid": 0.0020557698798400192,
+              "target_hit_high_yield_per_attempt": 0.030598958333333332,
+              "target_hit_low_yield_per_attempt": 0.3639322916666667,
+              "target_hit_high_alt_yield_per_attempt": 0.16471354166666666,
+              "internal_diversity": 0.855119826349965,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.948318109634046,
+              "step_kl": 2.4208586182794534e-05
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.799339525922295,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.030924479166666668,
+              "target_hit_low_yield_per_attempt": 0.3645833333333333,
+              "target_hit_high_alt_yield_per_attempt": 0.16438802083333334,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+0.5": {
+              "valid_rate": 0.9886067708333334,
+              "mean_prop_valid": 1.8082629195101365,
+              "delta_prop_valid": 0.008923393587841518,
+              "target_hit_high_yield_per_attempt": 0.030924479166666668,
+              "target_hit_low_yield_per_attempt": 0.3597005208333333,
+              "target_hit_high_alt_yield_per_attempt": 0.1640625,
+              "internal_diversity": 0.8562328325073425,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9440280308557917,
+              "step_kl": 2.4379229216719978e-05
+            },
+            "+1": {
+              "valid_rate": 0.9886067708333334,
+              "mean_prop_valid": 1.7996640651345777,
+              "delta_prop_valid": 0.0003245392122824449,
+              "target_hit_high_yield_per_attempt": 0.031575520833333336,
+              "target_hit_low_yield_per_attempt": 0.3642578125,
+              "target_hit_high_alt_yield_per_attempt": 0.16536458333333334,
+              "internal_diversity": 0.8565908539139607,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9417304166567289,
+              "step_kl": 9.784303256310523e-05
+            },
+            "+2": {
+              "valid_rate": 0.9892578125,
+              "mean_prop_valid": 1.8007120372461618,
+              "delta_prop_valid": 0.001372511323866954,
+              "target_hit_high_yield_per_attempt": 0.028645833333333332,
+              "target_hit_low_yield_per_attempt": 0.3629557291666667,
+              "target_hit_high_alt_yield_per_attempt": 0.1640625,
+              "internal_diversity": 0.8571104684333037,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9450508267245438,
+              "step_kl": 0.00039411728115131456
+            },
+            "+4": {
+              "valid_rate": 0.9905598958333334,
+              "mean_prop_valid": 1.7987772847216759,
+              "delta_prop_valid": -0.0005622412006191327,
+              "target_hit_high_yield_per_attempt": 0.0322265625,
+              "target_hit_low_yield_per_attempt": 0.3623046875,
+              "target_hit_high_alt_yield_per_attempt": 0.16666666666666666,
+              "internal_diversity": 0.8567726270327545,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9441295638949937,
+              "step_kl": 0.0015986669265354674
+            },
+            "+8": {
+              "valid_rate": 0.9899088541666666,
+              "mean_prop_valid": 1.7555256628194442,
+              "delta_prop_valid": -0.04381386310285099,
+              "target_hit_high_yield_per_attempt": 0.0322265625,
+              "target_hit_low_yield_per_attempt": 0.3707682291666667,
+              "target_hit_high_alt_yield_per_attempt": 0.1572265625,
+              "internal_diversity": 0.8583928876018684,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9431385451303963,
+              "step_kl": 0.006575495315094789
+            },
+            "+16": {
+              "valid_rate": 0.9811197916666666,
+              "mean_prop_valid": 1.8096895115761653,
+              "delta_prop_valid": 0.010349985653870167,
+              "target_hit_high_yield_per_attempt": 0.0302734375,
+              "target_hit_low_yield_per_attempt": 0.3518880208333333,
+              "target_hit_high_alt_yield_per_attempt": 0.1640625,
+              "internal_diversity": 0.8623831625135691,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.949234695963027,
+              "step_kl": 0.02782004450758298
+            }
+          },
+          "logit_token": {
+            "-16": {
+              "valid_rate": 0.1416015625,
+              "mean_prop_valid": -3.819713807446966,
+              "delta_prop_valid": -5.619053333369261,
+              "target_hit_high_yield_per_attempt": 0.0,
+              "target_hit_low_yield_per_attempt": 0.1416015625,
+              "target_hit_high_alt_yield_per_attempt": 0.0,
+              "internal_diversity": 0.888190312625345,
+              "uniqueness": 0.992831541218638,
+              "novelty_vs_train": 1.0,
+              "step_kl": 2.1956735452016196
+            },
+            "-8": {
+              "valid_rate": 0.9117838541666666,
+              "mean_prop_valid": -0.36431502856515546,
+              "delta_prop_valid": -2.163654554487451,
+              "target_hit_high_yield_per_attempt": 0.0,
+              "target_hit_low_yield_per_attempt": 0.869140625,
+              "target_hit_high_alt_yield_per_attempt": 0.0006510416666666666,
+              "internal_diversity": 0.85641185739173,
+              "uniqueness": 0.9996404171161452,
+              "novelty_vs_train": 0.9889380887949454,
+              "step_kl": 0.6136663754781088
+            },
+            "-4": {
+              "valid_rate": 0.9827473958333334,
+              "mean_prop_valid": 0.36320420772075385,
+              "delta_prop_valid": -1.436135318201541,
+              "target_hit_high_yield_per_attempt": 0.0003255208333333333,
+              "target_hit_low_yield_per_attempt": 0.8232421875,
+              "target_hit_high_alt_yield_per_attempt": 0.009440104166666666,
+              "internal_diversity": 0.850698413003045,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9625630383980335,
+              "step_kl": 0.1576444705327352
+            },
+            "-2": {
+              "valid_rate": 0.9873046875,
+              "mean_prop_valid": 0.998274461131409,
+              "delta_prop_valid": -0.8010650647908859,
+              "target_hit_high_yield_per_attempt": 0.00390625,
+              "target_hit_low_yield_per_attempt": 0.64453125,
+              "target_hit_high_alt_yield_per_attempt": 0.044596354166666664,
+              "internal_diversity": 0.8537239708171755,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9564862350515787,
+              "step_kl": 0.03797166049480438
+            },
+            "-1": {
+              "valid_rate": 0.9908854166666666,
+              "mean_prop_valid": 1.3841214544733316,
+              "delta_prop_valid": -0.41521807144896355,
+              "target_hit_high_yield_per_attempt": 0.0107421875,
+              "target_hit_low_yield_per_attempt": 0.5139973958333334,
+              "target_hit_high_alt_yield_per_attempt": 0.1005859375,
+              "internal_diversity": 0.8555356630024823,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9520356737952134,
+              "step_kl": 0.00914534212400516
+            },
+            "-0.5": {
+              "valid_rate": 0.9918619791666666,
+              "mean_prop_valid": 1.579221280643182,
+              "delta_prop_valid": -0.22011824527911314,
+              "target_hit_high_yield_per_attempt": 0.013671875,
+              "target_hit_low_yield_per_attempt": 0.4397786458333333,
+              "target_hit_high_alt_yield_per_attempt": 0.12662760416666666,
+              "internal_diversity": 0.8553419827383205,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9455260299244636,
+              "step_kl": 0.002233453250179688
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.799339525922295,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.030924479166666668,
+              "target_hit_low_yield_per_attempt": 0.3645833333333333,
+              "target_hit_high_alt_yield_per_attempt": 0.16438802083333334,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+0.5": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 1.9800935722837492,
+              "delta_prop_valid": 0.18075404636145387,
+              "target_hit_high_yield_per_attempt": 0.041015625,
+              "target_hit_low_yield_per_attempt": 0.2994791666666667,
+              "target_hit_high_alt_yield_per_attempt": 0.22493489583333334,
+              "internal_diversity": 0.8559707132598874,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9427979348365995,
+              "step_kl": 0.0021133852812151113
+            },
+            "+1": {
+              "valid_rate": 0.9895833333333334,
+              "mean_prop_valid": 2.192719509417659,
+              "delta_prop_valid": 0.39337998349536396,
+              "target_hit_high_yield_per_attempt": 0.060546875,
+              "target_hit_low_yield_per_attempt": 0.22200520833333334,
+              "target_hit_high_alt_yield_per_attempt": 0.2877604166666667,
+              "internal_diversity": 0.855486944095202,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9463737175596779,
+              "step_kl": 0.008194490025440851
+            },
+            "+2": {
+              "valid_rate": 0.9899088541666666,
+              "mean_prop_valid": 2.5292830333008918,
+              "delta_prop_valid": 0.7299435073785965,
+              "target_hit_high_yield_per_attempt": 0.10807291666666667,
+              "target_hit_low_yield_per_attempt": 0.1240234375,
+              "target_hit_high_alt_yield_per_attempt": 0.4287109375,
+              "internal_diversity": 0.853911423488836,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9411233901451187,
+              "step_kl": 0.030656596645712852
+            },
+            "+4": {
+              "valid_rate": 0.986328125,
+              "mean_prop_valid": 2.973746125744535,
+              "delta_prop_valid": 1.17440659982224,
+              "target_hit_high_yield_per_attempt": 0.23990885416666666,
+              "target_hit_low_yield_per_attempt": 0.04296875,
+              "target_hit_high_alt_yield_per_attempt": 0.6266276041666666,
+              "internal_diversity": 0.8524017721662168,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9613794397796008,
+              "step_kl": 0.10668023178974788
+            },
+            "+8": {
+              "valid_rate": 0.9384765625,
+              "mean_prop_valid": 3.5617776210294383,
+              "delta_prop_valid": 1.762438095107143,
+              "target_hit_high_yield_per_attempt": 0.5201822916666666,
+              "target_hit_low_yield_per_attempt": 0.0035807291666666665,
+              "target_hit_high_alt_yield_per_attempt": 0.822265625,
+              "internal_diversity": 0.8522562367644153,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9854025548935214,
+              "step_kl": 0.3354457716147105
+            },
+            "+16": {
+              "valid_rate": 0.5146484375,
+              "mean_prop_valid": 4.509318258216677,
+              "delta_prop_valid": 2.709978732294381,
+              "target_hit_high_yield_per_attempt": 0.4781901041666667,
+              "target_hit_low_yield_per_attempt": 0.0,
+              "target_hit_high_alt_yield_per_attempt": 0.5110677083333334,
+              "internal_diversity": 0.8252833803148966,
+              "uniqueness": 0.9932804534275647,
+              "novelty_vs_train": 0.9993972272453284,
+              "step_kl": 0.9844082196553549
+            }
+          },
+          "cov_null": {
+            "-8": {
+              "valid_rate": 0.5419921875,
+              "delta_prop_valid": -0.02126010867066099,
+              "target_hit_high_yield_per_attempt": 0.026936848958333332,
+              "target_hit_low_yield_per_attempt": 0.22013346354166666,
+              "internal_diversity": 0.8623900726009369,
+              "novelty_vs_train": 0.9740983017052537,
+              "step_kl": 0.27716064142684144
+            },
+            "-4": {
+              "valid_rate": 0.9609375,
+              "delta_prop_valid": -0.04778774810681933,
+              "target_hit_high_yield_per_attempt": 0.028645833333333332,
+              "target_hit_low_yield_per_attempt": 0.36181640625,
+              "internal_diversity": 0.8560751169142519,
+              "novelty_vs_train": 0.9530965414192117,
+              "step_kl": 0.042260958425079785
+            },
+            "-2": {
+              "valid_rate": 0.98974609375,
+              "delta_prop_valid": -0.0300473324051496,
+              "target_hit_high_yield_per_attempt": 0.027425130208333332,
+              "target_hit_low_yield_per_attempt": 0.3744303385416667,
+              "internal_diversity": 0.8555625750971544,
+              "novelty_vs_train": 0.947219111214115,
+              "step_kl": 0.008245918123672405
+            },
+            "-1": {
+              "valid_rate": 0.9903157552083334,
+              "delta_prop_valid": -0.014155674322081147,
+              "target_hit_high_yield_per_attempt": 0.029378255208333332,
+              "target_hit_low_yield_per_attempt": 0.3702799479166667,
+              "internal_diversity": 0.8554404814290795,
+              "novelty_vs_train": 0.9470810260883279,
+              "step_kl": 0.0016927142884621087
+            },
+            "+1": {
+              "valid_rate": 0.9893391927083334,
+              "delta_prop_valid": 0.01999209822262619,
+              "target_hit_high_yield_per_attempt": 0.0341796875,
+              "target_hit_low_yield_per_attempt": 0.3583170572916667,
+              "internal_diversity": 0.8553791951147632,
+              "novelty_vs_train": 0.9483342727811322,
+              "step_kl": 0.001239207883675893
+            },
+            "+2": {
+              "valid_rate": 0.9901529947916666,
+              "delta_prop_valid": 0.042774709750752704,
+              "target_hit_high_yield_per_attempt": 0.037679036458333336,
+              "target_hit_low_yield_per_attempt": 0.3497721354166667,
+              "internal_diversity": 0.8560655604331421,
+              "novelty_vs_train": 0.9502620953876652,
+              "step_kl": 0.0049749591465418535
+            },
+            "+4": {
+              "valid_rate": 0.965576171875,
+              "delta_prop_valid": 0.0792638935946307,
+              "target_hit_high_yield_per_attempt": 0.046305338541666664,
+              "target_hit_low_yield_per_attempt": 0.3310546875,
+              "internal_diversity": 0.8574318665230879,
+              "novelty_vs_train": 0.9589168901445798,
+              "step_kl": 0.02156483195722103
+            },
+            "+8": {
+              "valid_rate": 0.4896647135416667,
+              "delta_prop_valid": 0.22496872488865974,
+              "target_hit_high_yield_per_attempt": 0.041341145833333336,
+              "target_hit_low_yield_per_attempt": 0.16634114583333334,
+              "internal_diversity": 0.8604603606316675,
+              "novelty_vs_train": 0.9751344473699932,
+              "step_kl": 0.15293772301326194
+            }
+          },
+          "best_of_n": {
+            "high": {
+              "N=1": {
+                "valid_rate": 0.9879557291666666,
+                "mean_prop_valid": 1.799339525922295,
+                "delta_prop_valid": 0.0,
+                "target_hit_high_yield_per_selected": 0.030924479166666668,
+                "target_hit_low_yield_per_selected": 0.3645833333333333,
+                "target_hit_high_yield_per_total_attempt": 0.030924479166666668,
+                "target_hit_low_yield_per_total_attempt": 0.3645833333333333,
+                "internal_diversity": 0.8555851221062567,
+                "novelty_vs_train": 0.9476013471126933
+              },
+              "N=2": {
+                "valid_rate": 0.9996744791666666,
+                "mean_prop_valid": 2.346812049511624,
+                "delta_prop_valid": 0.5474725235893289,
+                "target_hit_high_yield_per_selected": 0.055989583333333336,
+                "target_hit_low_yield_per_selected": 0.14811197916666666,
+                "target_hit_high_yield_per_total_attempt": 0.027994791666666668,
+                "target_hit_low_yield_per_total_attempt": 0.07405598958333333,
+                "internal_diversity": 0.8559839014619496,
+                "novelty_vs_train": 0.9563639800219942
+              },
+              "N=4": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 2.801316015625001,
+                "delta_prop_valid": 1.0019764897027061,
+                "target_hit_high_yield_per_selected": 0.10904947916666667,
+                "target_hit_low_yield_per_selected": 0.023111979166666668,
+                "target_hit_high_yield_per_total_attempt": 0.027262369791666668,
+                "target_hit_low_yield_per_total_attempt": 0.005777994791666667,
+                "internal_diversity": 0.8567210212445695,
+                "novelty_vs_train": 0.9524739583333334
+              },
+              "N=8": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 3.145433756510419,
+                "delta_prop_valid": 1.3460942305881234,
+                "target_hit_high_yield_per_selected": 0.20930989583333334,
+                "target_hit_low_yield_per_selected": 0.0003255208333333333,
+                "target_hit_high_yield_per_total_attempt": 0.026163736979166668,
+                "target_hit_low_yield_per_total_attempt": 4.0690104166666664e-05,
+                "internal_diversity": 0.8580396494932998,
+                "novelty_vs_train": 0.9560546875
+              },
+              "N=16": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 3.40320246419271,
+                "delta_prop_valid": 1.6038629382704155,
+                "target_hit_high_yield_per_selected": 0.3870442708333333,
+                "target_hit_low_yield_per_selected": 0.0,
+                "target_hit_high_yield_per_total_attempt": 0.024190266927083332,
+                "target_hit_low_yield_per_total_attempt": 0.0,
+                "internal_diversity": 0.8585819531352884,
+                "novelty_vs_train": 0.9716796875
+              }
+            },
+            "low": {
+              "N=1": {
+                "valid_rate": 0.9879557291666666,
+                "mean_prop_valid": 1.799339525922295,
+                "delta_prop_valid": 0.0,
+                "target_hit_high_yield_per_selected": 0.030924479166666668,
+                "target_hit_low_yield_per_selected": 0.3645833333333333,
+                "target_hit_high_yield_per_total_attempt": 0.030924479166666668,
+                "target_hit_low_yield_per_total_attempt": 0.3645833333333333,
+                "internal_diversity": 0.8555851221062567,
+                "novelty_vs_train": 0.9476013471126933
+              },
+              "N=2": {
+                "valid_rate": 0.9996744791666666,
+                "mean_prop_valid": 1.1857175383465453,
+                "delta_prop_valid": -0.6136219875757497,
+                "target_hit_high_yield_per_selected": 0.001953125,
+                "target_hit_low_yield_per_selected": 0.6139322916666666,
+                "target_hit_high_yield_per_total_attempt": 0.0009765625,
+                "target_hit_low_yield_per_total_attempt": 0.3069661458333333,
+                "internal_diversity": 0.8531413045973603,
+                "novelty_vs_train": 0.9387791727761486
+              },
+              "N=4": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 0.6753384440104169,
+                "delta_prop_valid": -1.1240010819118782,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 0.8473307291666666,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.21183268229166666,
+                "internal_diversity": 0.850661968973168,
+                "novelty_vs_train": 0.9420572916666666
+              },
+              "N=8": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 0.23097714192708393,
+                "delta_prop_valid": -1.5683623839952112,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 0.9765625,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.1220703125,
+                "internal_diversity": 0.8501012851315354,
+                "novelty_vs_train": 0.9352213541666666
+              },
+              "N=16": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": -0.16172249023437404,
+                "delta_prop_valid": -1.961062016156669,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 0.9993489583333334,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.062459309895833336,
+                "internal_diversity": 0.8470566050336007,
+                "novelty_vs_train": 0.9449869791666666
+              }
+            }
+          }
+        },
+        "TPSA": {
+          "best_mid_layers": [
+            1,
+            1,
+            1
+          ],
+          "best_mid_r2_mean": 0.9841213229090569,
+          "token_bag_r2_mean": 0.8266039061642857,
+          "act_single": {
+            "-8": {
+              "valid_rate": 0.9573567708333334,
+              "mean_prop_valid": 71.55193043172764,
+              "delta_prop_valid": 0.663342793033299,
+              "target_hit_high_yield_per_attempt": 0.18326822916666666,
+              "target_hit_low_yield_per_attempt": 0.0908203125,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8581741232065143,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9657640789129979,
+              "step_kl": 0.026849859083692234
+            },
+            "-4": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 71.9543326282379,
+              "delta_prop_valid": 1.0657449895435558,
+              "target_hit_high_yield_per_attempt": 0.19759114583333334,
+              "target_hit_low_yield_per_attempt": 0.09895833333333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8561115251472797,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9526740145133568,
+              "step_kl": 0.003458919934928417
+            },
+            "-2": {
+              "valid_rate": 0.9899088541666666,
+              "mean_prop_valid": 71.31801799686919,
+              "delta_prop_valid": 0.4294303581748409,
+              "target_hit_high_yield_per_attempt": 0.1875,
+              "target_hit_low_yield_per_attempt": 0.1015625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8554563630355028,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9493626174597495,
+              "step_kl": 0.0007760090132554373
+            },
+            "-1": {
+              "valid_rate": 0.9908854166666666,
+              "mean_prop_valid": 71.15326293698386,
+              "delta_prop_valid": 0.2646752982895227,
+              "target_hit_high_yield_per_attempt": 0.18001302083333334,
+              "target_hit_low_yield_per_attempt": 0.10123697916666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8551062266720028,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9517133850073555,
+              "step_kl": 0.00019258507139359912
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 70.88858763869435,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.18359375,
+              "target_hit_low_yield_per_attempt": 0.103515625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+1": {
+              "valid_rate": 0.98828125,
+              "mean_prop_valid": 70.97549358132217,
+              "delta_prop_valid": 0.08690594262782743,
+              "target_hit_high_yield_per_attempt": 0.1845703125,
+              "target_hit_low_yield_per_attempt": 0.10188802083333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8557129707855542,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9443127546564766,
+              "step_kl": 0.00020259932110396525
+            },
+            "+2": {
+              "valid_rate": 0.9892578125,
+              "mean_prop_valid": 70.72901481926864,
+              "delta_prop_valid": -0.1595728194257049,
+              "target_hit_high_yield_per_attempt": 0.181640625,
+              "target_hit_low_yield_per_attempt": 0.10774739583333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8558625853546449,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9424031447263997,
+              "step_kl": 0.0008672945744668444
+            },
+            "+4": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 69.65101425807606,
+              "delta_prop_valid": -1.2375733806182865,
+              "target_hit_high_yield_per_attempt": 0.1669921875,
+              "target_hit_low_yield_per_attempt": 0.11328125,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8561625305199483,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9462907867141394,
+              "step_kl": 0.004344016080722213
+            },
+            "+8": {
+              "valid_rate": 0.9212239583333334,
+              "mean_prop_valid": 64.96724445040496,
+              "delta_prop_valid": -5.921343188289389,
+              "target_hit_high_yield_per_attempt": 0.11588541666666667,
+              "target_hit_low_yield_per_attempt": 0.16438802083333334,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8583478337018652,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9561660813616667,
+              "step_kl": 0.04076549814393123
+            }
+          },
+          "act_multi": {
+            "-8": {
+              "valid_rate": 0.8922526041666666,
+              "mean_prop_valid": 73.67060348229514,
+              "delta_prop_valid": 2.782015843600798,
+              "target_hit_high_yield_per_attempt": 0.1875,
+              "target_hit_low_yield_per_attempt": 0.07389322916666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8597989169986051,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9762894307874449,
+              "step_kl": 0.04617429648836454
+            },
+            "-4": {
+              "valid_rate": 0.9820963541666666,
+              "mean_prop_valid": 72.51569598889039,
+              "delta_prop_valid": 1.6271083501960295,
+              "target_hit_high_yield_per_attempt": 0.197265625,
+              "target_hit_low_yield_per_attempt": 0.08561197916666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8566414430745543,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9569026354800747,
+              "step_kl": 0.007326512597501278
+            },
+            "-2": {
+              "valid_rate": 0.9892578125,
+              "mean_prop_valid": 71.51637744447312,
+              "delta_prop_valid": 0.6277898057787704,
+              "target_hit_high_yield_per_attempt": 0.18782552083333334,
+              "target_hit_low_yield_per_attempt": 0.09928385416666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8558463973166722,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9549083934013102,
+              "step_kl": 0.0016517869274442394
+            },
+            "-1": {
+              "valid_rate": 0.98828125,
+              "mean_prop_valid": 71.33609574061636,
+              "delta_prop_valid": 0.4475081019220066,
+              "target_hit_high_yield_per_attempt": 0.1865234375,
+              "target_hit_low_yield_per_attempt": 0.09993489583333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8553450070928701,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.950560891367751,
+              "step_kl": 0.0004056896917366733
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 70.88858763869435,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.18359375,
+              "target_hit_low_yield_per_attempt": 0.103515625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+1": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 70.83633494383027,
+              "delta_prop_valid": -0.05225269486408498,
+              "target_hit_high_yield_per_attempt": 0.18294270833333334,
+              "target_hit_low_yield_per_attempt": 0.10677083333333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8554591403670252,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9434477234888053,
+              "step_kl": 0.0004154395913550009
+            },
+            "+2": {
+              "valid_rate": 0.9912109375,
+              "mean_prop_valid": 70.32064971441415,
+              "delta_prop_valid": -0.5679379242802062,
+              "target_hit_high_yield_per_attempt": 0.17805989583333334,
+              "target_hit_low_yield_per_attempt": 0.1123046875,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8548559855442736,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9415402395247421,
+              "step_kl": 0.0017382039222866297
+            },
+            "+4": {
+              "valid_rate": 0.9895833333333334,
+              "mean_prop_valid": 68.83143449878342,
+              "delta_prop_valid": -2.0571531399109326,
+              "target_hit_high_yield_per_attempt": 0.15852864583333334,
+              "target_hit_low_yield_per_attempt": 0.13541666666666666,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8561181102075519,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9414561445573041,
+              "step_kl": 0.008179955029239258
+            },
+            "+8": {
+              "valid_rate": 0.9296875,
+              "mean_prop_valid": 60.59896472677398,
+              "delta_prop_valid": -10.289622911920366,
+              "target_hit_high_yield_per_attempt": 0.0830078125,
+              "target_hit_low_yield_per_attempt": 0.2177734375,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8591627089724373,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9614042989765532,
+              "step_kl": 0.06305227180322011
+            }
+          },
+          "logit_unemb": {
+            "-16": {
+              "valid_rate": 0.962890625,
+              "mean_prop_valid": 53.447829897287306,
+              "delta_prop_valid": -17.440757741407044,
+              "target_hit_high_yield_per_attempt": 0.029622395833333332,
+              "target_hit_low_yield_per_attempt": 0.2825520833333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8342998073756237,
+              "uniqueness": 0.9996609020006781,
+              "novelty_vs_train": 0.9719276179410786,
+              "step_kl": 0.31920451919237774
+            },
+            "-8": {
+              "valid_rate": 0.9905598958333334,
+              "mean_prop_valid": 59.8960705085878,
+              "delta_prop_valid": -10.992517130106547,
+              "target_hit_high_yield_per_attempt": 0.0771484375,
+              "target_hit_low_yield_per_attempt": 0.2158203125,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8499134284025366,
+              "uniqueness": 0.9996712689020382,
+              "novelty_vs_train": 0.9549650475576041,
+              "step_kl": 0.09111375361680984
+            },
+            "-4": {
+              "valid_rate": 0.9931640625,
+              "mean_prop_valid": 65.35262392105905,
+              "delta_prop_valid": -5.535963717635293,
+              "target_hit_high_yield_per_attempt": 0.12369791666666667,
+              "target_hit_low_yield_per_attempt": 0.1533203125,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8547634424793015,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9446135472923897,
+              "step_kl": 0.024222266239424545
+            },
+            "-2": {
+              "valid_rate": 0.994140625,
+              "mean_prop_valid": 67.48480126879895,
+              "delta_prop_valid": -3.403786369895395,
+              "target_hit_high_yield_per_attempt": 0.13932291666666666,
+              "target_hit_low_yield_per_attempt": 0.134765625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8554541078711416,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9453096637245793,
+              "step_kl": 0.006225725480665763
+            },
+            "-1": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 68.87784822505223,
+              "delta_prop_valid": -2.0107394136421135,
+              "target_hit_high_yield_per_attempt": 0.154296875,
+              "target_hit_low_yield_per_attempt": 0.12369791666666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8574658886123544,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9474069958529013,
+              "step_kl": 0.0015765844921891887
+            },
+            "-0.5": {
+              "valid_rate": 0.9873046875,
+              "mean_prop_valid": 69.91616403357745,
+              "delta_prop_valid": -0.9724236051169015,
+              "target_hit_high_yield_per_attempt": 0.16666666666666666,
+              "target_hit_low_yield_per_attempt": 0.11458333333333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8565947749813653,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.948567605443502,
+              "step_kl": 0.000396584674793606
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 70.88858763869435,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.18359375,
+              "target_hit_low_yield_per_attempt": 0.103515625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+0.5": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 72.10562633494976,
+              "delta_prop_valid": 1.21703869625541,
+              "target_hit_high_yield_per_attempt": 0.19694010416666666,
+              "target_hit_low_yield_per_attempt": 0.09765625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8552505054979118,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9459621142692564,
+              "step_kl": 0.00040126880048774183
+            },
+            "+1": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 72.18117338124345,
+              "delta_prop_valid": 1.2925857425491027,
+              "target_hit_high_yield_per_attempt": 0.19759114583333334,
+              "target_hit_low_yield_per_attempt": 0.1015625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8548151543646129,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9479914855390864,
+              "step_kl": 0.0016140417816738288
+            },
+            "+2": {
+              "valid_rate": 0.9895833333333334,
+              "mean_prop_valid": 73.7610991074477,
+              "delta_prop_valid": 2.872511468753354,
+              "target_hit_high_yield_per_attempt": 0.21614583333333334,
+              "target_hit_low_yield_per_attempt": 0.08951822916666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8552163510594268,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9526459542505975,
+              "step_kl": 0.00652457990994056
+            },
+            "+4": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 76.24338765967666,
+              "delta_prop_valid": 5.3548000209823,
+              "target_hit_high_yield_per_attempt": 0.2542317708333333,
+              "target_hit_low_yield_per_attempt": 0.07747395833333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8562721086346663,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9499075467690706,
+              "step_kl": 0.02658788301050663
+            },
+            "+8": {
+              "valid_rate": 0.9733072916666666,
+              "mean_prop_valid": 82.61237410577154,
+              "delta_prop_valid": 11.723786467077199,
+              "target_hit_high_yield_per_attempt": 0.3470052083333333,
+              "target_hit_low_yield_per_attempt": 0.037760416666666664,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8593824253466588,
+              "uniqueness": 0.9996629592180654,
+              "novelty_vs_train": 0.9555364335796516,
+              "step_kl": 0.1092313602566719
+            },
+            "+16": {
+              "valid_rate": 0.8076171875,
+              "mean_prop_valid": 94.4698867106842,
+              "delta_prop_valid": 23.581299071989847,
+              "target_hit_high_yield_per_attempt": 0.4339192708333333,
+              "target_hit_low_yield_per_attempt": 0.0126953125,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8704320041466577,
+              "uniqueness": 0.9996203492786636,
+              "novelty_vs_train": 0.9788854057082821,
+              "step_kl": 0.4416946272055308
+            }
+          },
+          "logit_token": {
+            "-16": {
+              "valid_rate": 0.8590494791666666,
+              "mean_prop_valid": 43.07676103734476,
+              "delta_prop_valid": -27.811826601349594,
+              "target_hit_high_yield_per_attempt": 0.004557291666666667,
+              "target_hit_low_yield_per_attempt": 0.4541015625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8570957505183219,
+              "uniqueness": 0.999243725276458,
+              "novelty_vs_train": 0.993961183625451,
+              "step_kl": 0.5626712838808695
+            },
+            "-8": {
+              "valid_rate": 0.9798177083333334,
+              "mean_prop_valid": 48.85702551408679,
+              "delta_prop_valid": -22.031562124607547,
+              "target_hit_high_yield_per_attempt": 0.006510416666666667,
+              "target_hit_low_yield_per_attempt": 0.3873697916666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8505961449588764,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9770782582064056,
+              "step_kl": 0.18276800711949667
+            },
+            "-4": {
+              "valid_rate": 0.9895833333333334,
+              "mean_prop_valid": 55.55692155622285,
+              "delta_prop_valid": -15.331666082471498,
+              "target_hit_high_yield_per_attempt": 0.030924479166666668,
+              "target_hit_low_yield_per_attempt": 0.2591145833333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8536161736315653,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9539597291803273,
+              "step_kl": 0.05414065718650818
+            },
+            "-2": {
+              "valid_rate": 0.9908854166666666,
+              "mean_prop_valid": 62.115040005778276,
+              "delta_prop_valid": -8.77354763291607,
+              "target_hit_high_yield_per_attempt": 0.083984375,
+              "target_hit_low_yield_per_attempt": 0.18489583333333334,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8543353641145145,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.956637177905684,
+              "step_kl": 0.014735993618766466
+            },
+            "-1": {
+              "valid_rate": 0.9886067708333334,
+              "mean_prop_valid": 66.0971330888885,
+              "delta_prop_valid": -4.791454549805849,
+              "target_hit_high_yield_per_attempt": 0.12760416666666666,
+              "target_hit_low_yield_per_attempt": 0.14485677083333334,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.854185602403016,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9433591557654012,
+              "step_kl": 0.0038330620930840573
+            },
+            "-0.5": {
+              "valid_rate": 0.98828125,
+              "mean_prop_valid": 68.49875629390827,
+              "delta_prop_valid": -2.3898313447860695,
+              "target_hit_high_yield_per_attempt": 0.15266927083333334,
+              "target_hit_low_yield_per_attempt": 0.12174479166666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8549969844633386,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9410361283105414,
+              "step_kl": 0.0009763509927627941
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 70.88858763869435,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.18359375,
+              "target_hit_low_yield_per_attempt": 0.103515625,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+0.5": {
+              "valid_rate": 0.9928385416666666,
+              "mean_prop_valid": 73.239354752024,
+              "delta_prop_valid": 2.3507671133296477,
+              "target_hit_high_yield_per_attempt": 0.20930989583333334,
+              "target_hit_low_yield_per_attempt": 0.10286458333333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8558442777103449,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9449170531412188,
+              "step_kl": 0.0010106599268813927
+            },
+            "+1": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 75.39683928339474,
+              "delta_prop_valid": 4.508251644700394,
+              "target_hit_high_yield_per_attempt": 0.23860677083333334,
+              "target_hit_low_yield_per_attempt": 0.08561197916666667,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8543616957282234,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9503629969358302,
+              "step_kl": 0.004106359866758187
+            },
+            "+2": {
+              "valid_rate": 0.9921875,
+              "mean_prop_valid": 80.62939740389706,
+              "delta_prop_valid": 9.740809765202718,
+              "target_hit_high_yield_per_attempt": 0.3212890625,
+              "target_hit_low_yield_per_attempt": 0.054361979166666664,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8542329241316179,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9625993223678724,
+              "step_kl": 0.016885599121451378
+            },
+            "+4": {
+              "valid_rate": 0.9869791666666666,
+              "mean_prop_valid": 89.54753209052292,
+              "delta_prop_valid": 18.658944451828585,
+              "target_hit_high_yield_per_attempt": 0.4752604166666667,
+              "target_hit_low_yield_per_attempt": 0.024088541666666668,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.856185169912061,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9554792144670955,
+              "step_kl": 0.07026541233062744
+            },
+            "+8": {
+              "valid_rate": 0.97265625,
+              "mean_prop_valid": 103.3506718417219,
+              "delta_prop_valid": 32.46208420302756,
+              "target_hit_high_yield_per_attempt": 0.6673177083333334,
+              "target_hit_low_yield_per_attempt": 0.005208333333333333,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8598329632894193,
+              "uniqueness": 0.9996679946879151,
+              "novelty_vs_train": 0.971523789306809,
+              "step_kl": 0.2868861456712087
+            },
+            "+16": {
+              "valid_rate": 0.6422526041666666,
+              "mean_prop_valid": 141.80840820807404,
+              "delta_prop_valid": 70.91982056937968,
+              "target_hit_high_yield_per_attempt": 0.6031901041666666,
+              "target_hit_low_yield_per_attempt": 0.0,
+              "target_hit_high_alt_yield_per_attempt": null,
+              "internal_diversity": 0.8709368923201191,
+              "uniqueness": 0.9920026785287225,
+              "novelty_vs_train": 0.9989539218524826,
+              "step_kl": 1.059106707572937
+            }
+          },
+          "cov_null": {
+            "-8": {
+              "valid_rate": 0.131103515625,
+              "delta_prop_valid": -2.6248686148331726,
+              "target_hit_high_yield_per_attempt": 0.018310546875,
+              "target_hit_low_yield_per_attempt": 0.031087239583333332,
+              "internal_diversity": 0.8652450177685779,
+              "novelty_vs_train": 0.9927881798262147,
+              "step_kl": 0.7218048845728239
+            },
+            "-4": {
+              "valid_rate": 0.7171223958333334,
+              "delta_prop_valid": -1.2139474679115179,
+              "target_hit_high_yield_per_attempt": 0.12263997395833333,
+              "target_hit_low_yield_per_attempt": 0.08976236979166667,
+              "internal_diversity": 0.8578583777881751,
+              "novelty_vs_train": 0.9591288997567279,
+              "step_kl": 0.1311106914654374
+            },
+            "-2": {
+              "valid_rate": 0.9690755208333334,
+              "delta_prop_valid": 0.06743188563961056,
+              "target_hit_high_yield_per_attempt": 0.17976888020833334,
+              "target_hit_low_yield_per_attempt": 0.10237630208333333,
+              "internal_diversity": 0.8565007911452532,
+              "novelty_vs_train": 0.9538726950899697,
+              "step_kl": 0.020293610674949985
+            },
+            "-1": {
+              "valid_rate": 0.9896647135416666,
+              "delta_prop_valid": 0.3444508922315019,
+              "target_hit_high_yield_per_attempt": 0.18733723958333334,
+              "target_hit_low_yield_per_attempt": 0.10188802083333333,
+              "internal_diversity": 0.8560653074415633,
+              "novelty_vs_train": 0.948854720112542,
+              "step_kl": 0.0041972290734217195
+            },
+            "+1": {
+              "valid_rate": 0.990234375,
+              "delta_prop_valid": -0.2743848095240793,
+              "target_hit_high_yield_per_attempt": 0.178955078125,
+              "target_hit_low_yield_per_attempt": 0.10701497395833333,
+              "internal_diversity": 0.8551222616675856,
+              "novelty_vs_train": 0.9489573226064674,
+              "step_kl": 0.00617766037369923
+            },
+            "+2": {
+              "valid_rate": 0.973876953125,
+              "delta_prop_valid": -0.733760277538431,
+              "target_hit_high_yield_per_attempt": 0.174560546875,
+              "target_hit_low_yield_per_attempt": 0.10872395833333333,
+              "internal_diversity": 0.8556064394560785,
+              "novelty_vs_train": 0.9533429641574008,
+              "step_kl": 0.0343895930564031
+            },
+            "+4": {
+              "valid_rate": 0.7655436197916666,
+              "delta_prop_valid": -3.4458042024709883,
+              "target_hit_high_yield_per_attempt": 0.12247721354166667,
+              "target_hit_low_yield_per_attempt": 0.10595703125,
+              "internal_diversity": 0.8575084334080123,
+              "novelty_vs_train": 0.9664382383261944,
+              "step_kl": 0.19317000731825829
+            },
+            "+8": {
+              "valid_rate": 0.13330078125,
+              "delta_prop_valid": -6.296727198414307,
+              "target_hit_high_yield_per_attempt": 0.014485677083333334,
+              "target_hit_low_yield_per_attempt": 0.038655598958333336,
+              "internal_diversity": 0.8660846625097977,
+              "novelty_vs_train": 0.9971886697811353,
+              "step_kl": 0.8927593467136224
+            }
+          },
+          "best_of_n": {
+            "high": {
+              "N=1": {
+                "valid_rate": 0.9879557291666666,
+                "mean_prop_valid": 70.88858763869435,
+                "delta_prop_valid": 0.0,
+                "target_hit_high_yield_per_selected": 0.18359375,
+                "target_hit_low_yield_per_selected": 0.103515625,
+                "target_hit_high_yield_per_total_attempt": 0.18359375,
+                "target_hit_low_yield_per_total_attempt": 0.103515625,
+                "internal_diversity": 0.8555851221062567,
+                "novelty_vs_train": 0.9476013471126933
+              },
+              "N=2": {
+                "valid_rate": 0.9996744791666666,
+                "mean_prop_valid": 83.19275931250509,
+                "delta_prop_valid": 12.304171673810748,
+                "target_hit_high_yield_per_selected": 0.3362630208333333,
+                "target_hit_low_yield_per_selected": 0.011393229166666666,
+                "target_hit_high_yield_per_total_attempt": 0.16813151041666666,
+                "target_hit_low_yield_per_total_attempt": 0.005696614583333333,
+                "internal_diversity": 0.8534820949985223,
+                "novelty_vs_train": 0.946592945584881
+              },
+              "N=4": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 93.44367187499999,
+                "delta_prop_valid": 22.55508423630565,
+                "target_hit_high_yield_per_selected": 0.5608723958333334,
+                "target_hit_low_yield_per_selected": 0.0,
+                "target_hit_high_yield_per_total_attempt": 0.14021809895833334,
+                "target_hit_low_yield_per_total_attempt": 0.0,
+                "internal_diversity": 0.8518033142410246,
+                "novelty_vs_train": 0.953125
+              },
+              "N=8": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 102.78855143229167,
+                "delta_prop_valid": 31.89996379359732,
+                "target_hit_high_yield_per_selected": 0.80859375,
+                "target_hit_low_yield_per_selected": 0.0,
+                "target_hit_high_yield_per_total_attempt": 0.10107421875,
+                "target_hit_low_yield_per_total_attempt": 0.0,
+                "internal_diversity": 0.8528219781835977,
+                "novelty_vs_train": 0.9485677083333334
+              },
+              "N=16": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 110.78142903645833,
+                "delta_prop_valid": 39.89284139776398,
+                "target_hit_high_yield_per_selected": 0.9635416666666666,
+                "target_hit_low_yield_per_selected": 0.0,
+                "target_hit_high_yield_per_total_attempt": 0.060221354166666664,
+                "target_hit_low_yield_per_total_attempt": 0.0,
+                "internal_diversity": 0.852405456847031,
+                "novelty_vs_train": 0.94921875
+              }
+            },
+            "low": {
+              "N=1": {
+                "valid_rate": 0.9879557291666666,
+                "mean_prop_valid": 70.88858763869435,
+                "delta_prop_valid": 0.0,
+                "target_hit_high_yield_per_selected": 0.18359375,
+                "target_hit_low_yield_per_selected": 0.103515625,
+                "target_hit_high_yield_per_total_attempt": 0.18359375,
+                "target_hit_low_yield_per_total_attempt": 0.103515625,
+                "internal_diversity": 0.8555851221062567,
+                "novelty_vs_train": 0.9476013471126933
+              },
+              "N=2": {
+                "valid_rate": 0.9996744791666666,
+                "mean_prop_valid": 58.989032277156646,
+                "delta_prop_valid": -11.899555361537699,
+                "target_hit_high_yield_per_selected": 0.040690104166666664,
+                "target_hit_low_yield_per_selected": 0.19759114583333334,
+                "target_hit_high_yield_per_total_attempt": 0.020345052083333332,
+                "target_hit_low_yield_per_total_attempt": 0.09879557291666667,
+                "internal_diversity": 0.8548225464862264,
+                "novelty_vs_train": 0.9485502072132617
+              },
+              "N=4": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 49.11910481770834,
+                "delta_prop_valid": -21.76948282098601,
+                "target_hit_high_yield_per_selected": 0.0013020833333333333,
+                "target_hit_low_yield_per_selected": 0.3629557291666667,
+                "target_hit_high_yield_per_total_attempt": 0.0003255208333333333,
+                "target_hit_low_yield_per_total_attempt": 0.09073893229166667,
+                "internal_diversity": 0.8552778700298688,
+                "novelty_vs_train": 0.9514973958333334
+              },
+              "N=8": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 42.133463541666664,
+                "delta_prop_valid": -28.755124097027675,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 0.591796875,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.073974609375,
+                "internal_diversity": 0.8548548561030228,
+                "novelty_vs_train": 0.9508463541666666
+              },
+              "N=16": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 36.14836588541667,
+                "delta_prop_valid": -34.74022175327767,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 0.8385416666666666,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.052408854166666664,
+                "internal_diversity": 0.8558832836922877,
+                "novelty_vs_train": 0.9537760416666666
+              }
+            }
+          }
+        },
+        "NumAromaticRings": {
+          "best_mid_layers": [
+            1,
+            1,
+            2
+          ],
+          "best_mid_r2_mean": 0.9789335442000652,
+          "token_bag_r2_mean": 0.9510460817872142,
+          "act_single": {
+            "-8": {
+              "valid_rate": 0.9300130208333334,
+              "mean_prop_valid": 1.235517368624668,
+              "delta_prop_valid": -0.0033494739804473075,
+              "target_hit_high_yield_per_attempt": 0.034505208333333336,
+              "target_hit_low_yield_per_attempt": 0.6171875,
+              "target_hit_high_alt_yield_per_attempt": 0.3128255208333333,
+              "internal_diversity": 0.8557285842745804,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9501337484185509,
+              "step_kl": 0.021204743223885696
+            },
+            "-4": {
+              "valid_rate": 0.98828125,
+              "mean_prop_valid": 1.2457500420726966,
+              "delta_prop_valid": 0.006883199467581018,
+              "target_hit_high_yield_per_attempt": 0.0380859375,
+              "target_hit_low_yield_per_attempt": 0.6526692708333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3356119791666667,
+              "internal_diversity": 0.8553718680039276,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9492808446781796,
+              "step_kl": 0.0024422636100401482
+            },
+            "-2": {
+              "valid_rate": 0.9892578125,
+              "mean_prop_valid": 1.2408896201250024,
+              "delta_prop_valid": 0.002022777519886887,
+              "target_hit_high_yield_per_attempt": 0.037760416666666664,
+              "target_hit_low_yield_per_attempt": 0.6533203125,
+              "target_hit_high_alt_yield_per_attempt": 0.3359375,
+              "internal_diversity": 0.8560434153857175,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9519688207844129,
+              "step_kl": 0.0005874836157696942
+            },
+            "-1": {
+              "valid_rate": 0.98828125,
+              "mean_prop_valid": 1.2414544546477895,
+              "delta_prop_valid": 0.0025876120426739924,
+              "target_hit_high_yield_per_attempt": 0.036458333333333336,
+              "target_hit_low_yield_per_attempt": 0.6507161458333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3375651041666667,
+              "internal_diversity": 0.856003403499399,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9509322501789975,
+              "step_kl": 0.00014643694885307923
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.2388668426051155,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.036783854166666664,
+              "target_hit_low_yield_per_attempt": 0.6507161458333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3372395833333333,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+1": {
+              "valid_rate": 0.9899088541666666,
+              "mean_prop_valid": 1.2426482814281685,
+              "delta_prop_valid": 0.0037814388230529663,
+              "target_hit_high_yield_per_attempt": 0.036458333333333336,
+              "target_hit_low_yield_per_attempt": 0.6484375,
+              "target_hit_high_alt_yield_per_attempt": 0.3414713541666667,
+              "internal_diversity": 0.8549237705001246,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9460638688907411,
+              "step_kl": 0.0001523501171808069
+            },
+            "+2": {
+              "valid_rate": 0.9915364583333334,
+              "mean_prop_valid": 1.239327218547409,
+              "delta_prop_valid": 0.0004603759422934228,
+              "target_hit_high_yield_per_attempt": 0.0361328125,
+              "target_hit_low_yield_per_attempt": 0.6497395833333334,
+              "target_hit_high_alt_yield_per_attempt": 0.341796875,
+              "internal_diversity": 0.8551790514340971,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9497596840048103,
+              "step_kl": 0.0006280237770018479
+            },
+            "+4": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 1.2363675110700008,
+              "delta_prop_valid": -0.002499331535114724,
+              "target_hit_high_yield_per_attempt": 0.035481770833333336,
+              "target_hit_low_yield_per_attempt": 0.6500651041666666,
+              "target_hit_high_alt_yield_per_attempt": 0.3401692708333333,
+              "internal_diversity": 0.8561901989119797,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9516725482118288,
+              "step_kl": 0.002779006181905667
+            },
+            "+8": {
+              "valid_rate": 0.9375,
+              "mean_prop_valid": 1.2304584297324233,
+              "delta_prop_valid": -0.008408412872692228,
+              "target_hit_high_yield_per_attempt": 0.0341796875,
+              "target_hit_low_yield_per_attempt": 0.6178385416666666,
+              "target_hit_high_alt_yield_per_attempt": 0.3196614583333333,
+              "internal_diversity": 0.8579542780729161,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9562758043764129,
+              "step_kl": 0.017482342198491096
+            }
+          },
+          "act_multi": {
+            "-8": {
+              "valid_rate": 0.3961588541666667,
+              "mean_prop_valid": 0.60262875494044,
+              "delta_prop_valid": -0.6362380876646756,
+              "target_hit_high_yield_per_attempt": 0.0003255208333333333,
+              "target_hit_low_yield_per_attempt": 0.3723958333333333,
+              "target_hit_high_alt_yield_per_attempt": 0.023763020833333332,
+              "internal_diversity": 0.8576437404320743,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9686173537509513,
+              "step_kl": 0.1399451494216919
+            },
+            "-4": {
+              "valid_rate": 0.947265625,
+              "mean_prop_valid": 1.1313186303426372,
+              "delta_prop_valid": -0.10754821226247809,
+              "target_hit_high_yield_per_attempt": 0.0234375,
+              "target_hit_low_yield_per_attempt": 0.6852213541666666,
+              "target_hit_high_alt_yield_per_attempt": 0.2620442708333333,
+              "internal_diversity": 0.8576345847002719,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9505060462910525,
+              "step_kl": 0.009100771353890499
+            },
+            "-2": {
+              "valid_rate": 0.9886067708333334,
+              "mean_prop_valid": 1.1916335985287443,
+              "delta_prop_valid": -0.04723324407637127,
+              "target_hit_high_yield_per_attempt": 0.028645833333333332,
+              "target_hit_low_yield_per_attempt": 0.673828125,
+              "target_hit_high_alt_yield_per_attempt": 0.3147786458333333,
+              "internal_diversity": 0.8558905125204905,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9525825012648482,
+              "step_kl": 0.0016470658592879772
+            },
+            "-1": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.2108831283145483,
+              "delta_prop_valid": -0.02798371429056723,
+              "target_hit_high_yield_per_attempt": 0.032552083333333336,
+              "target_hit_low_yield_per_attempt": 0.6669921875,
+              "target_hit_high_alt_yield_per_attempt": 0.3209635416666667,
+              "internal_diversity": 0.8556066269420867,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9509114491431117,
+              "step_kl": 0.00039338677500685054
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.2388668426051155,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.036783854166666664,
+              "target_hit_low_yield_per_attempt": 0.6507161458333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3372395833333333,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+1": {
+              "valid_rate": 0.9915364583333334,
+              "mean_prop_valid": 1.259998472824033,
+              "delta_prop_valid": 0.02113163021891758,
+              "target_hit_high_yield_per_attempt": 0.038736979166666664,
+              "target_hit_low_yield_per_attempt": 0.6412760416666666,
+              "target_hit_high_alt_yield_per_attempt": 0.3502604166666667,
+              "internal_diversity": 0.8555064965139124,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9432000548747975,
+              "step_kl": 0.0004022409363339345
+            },
+            "+2": {
+              "valid_rate": 0.9886067708333334,
+              "mean_prop_valid": 1.2893691478807339,
+              "delta_prop_valid": 0.05050230527561824,
+              "target_hit_high_yield_per_attempt": 0.040690104166666664,
+              "target_hit_low_yield_per_attempt": 0.6204427083333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3681640625,
+              "internal_diversity": 0.855439331872725,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9473060210283183,
+              "step_kl": 0.0017821512107426922
+            },
+            "+4": {
+              "valid_rate": 0.9645182291666666,
+              "mean_prop_valid": 1.4320624414196652,
+              "delta_prop_valid": 0.1931955988145498,
+              "target_hit_high_yield_per_attempt": 0.07194010416666667,
+              "target_hit_low_yield_per_attempt": 0.5315755208333334,
+              "target_hit_high_alt_yield_per_attempt": 0.4329427083333333,
+              "internal_diversity": 0.8578849860565964,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9477228888511521,
+              "step_kl": 0.01504571239153544
+            },
+            "+8": {
+              "valid_rate": 0.130859375,
+              "mean_prop_valid": 2.83422035480859,
+              "delta_prop_valid": 1.5953535122034745,
+              "target_hit_high_yield_per_attempt": 0.0771484375,
+              "target_hit_low_yield_per_attempt": 0.0078125,
+              "target_hit_high_alt_yield_per_attempt": 0.123046875,
+              "internal_diversity": 0.8737176347505274,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9934640522875817,
+              "step_kl": 0.5855761567751566
+            }
+          },
+          "logit_unemb": {
+            "-16": {
+              "valid_rate": 0.9866536458333334,
+              "mean_prop_valid": 0.18438822966483437,
+              "delta_prop_valid": -1.0544786129402812,
+              "target_hit_high_yield_per_attempt": 0.0,
+              "target_hit_low_yield_per_attempt": 0.9811197916666666,
+              "target_hit_high_alt_yield_per_attempt": 0.005533854166666667,
+              "internal_diversity": 0.8085807904673018,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.971681758076329,
+              "step_kl": 0.20408137142658234
+            },
+            "-8": {
+              "valid_rate": 0.9944661458333334,
+              "mean_prop_valid": 0.5178629483911604,
+              "delta_prop_valid": -0.7210038942139549,
+              "target_hit_high_yield_per_attempt": 0.0009765625,
+              "target_hit_low_yield_per_attempt": 0.9401041666666666,
+              "target_hit_high_alt_yield_per_attempt": 0.054361979166666664,
+              "internal_diversity": 0.8429988816590895,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9433718677395483,
+              "step_kl": 0.05558550109465917
+            },
+            "-4": {
+              "valid_rate": 0.9957682291666666,
+              "mean_prop_valid": 0.8323188699192478,
+              "delta_prop_valid": -0.4065479726858676,
+              "target_hit_high_yield_per_attempt": 0.010416666666666666,
+              "target_hit_low_yield_per_attempt": 0.8385416666666666,
+              "target_hit_high_alt_yield_per_attempt": 0.1572265625,
+              "internal_diversity": 0.8542250331990338,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9496569719054367,
+              "step_kl": 0.014372682819763819
+            },
+            "-2": {
+              "valid_rate": 0.9915364583333334,
+              "mean_prop_valid": 1.0335060301812609,
+              "delta_prop_valid": -0.20536081242385476,
+              "target_hit_high_yield_per_attempt": 0.015950520833333332,
+              "target_hit_low_yield_per_attempt": 0.7486979166666666,
+              "target_hit_high_alt_yield_per_attempt": 0.24283854166666666,
+              "internal_diversity": 0.8543696611594335,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9484641347267915,
+              "step_kl": 0.003640180453658104
+            },
+            "-1": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 1.1354525398979327,
+              "delta_prop_valid": -0.10341430270718262,
+              "target_hit_high_yield_per_attempt": 0.027018229166666668,
+              "target_hit_low_yield_per_attempt": 0.6998697916666666,
+              "target_hit_high_alt_yield_per_attempt": 0.2903645833333333,
+              "internal_diversity": 0.8565589946711616,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9467487688885381,
+              "step_kl": 0.0009149701800197363
+            },
+            "-0.5": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 1.1843335713458893,
+              "delta_prop_valid": -0.05453327125922599,
+              "target_hit_high_yield_per_attempt": 0.031575520833333336,
+              "target_hit_low_yield_per_attempt": 0.6770833333333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3118489583333333,
+              "internal_diversity": 0.8562541184813499,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9489814233150856,
+              "step_kl": 0.00022929907815220454
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.2388668426051155,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.036783854166666664,
+              "target_hit_low_yield_per_attempt": 0.6507161458333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3372395833333333,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+0.5": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 1.3022008551420017,
+              "delta_prop_valid": 0.0633340125368862,
+              "target_hit_high_yield_per_attempt": 0.044270833333333336,
+              "target_hit_low_yield_per_attempt": 0.6201171875,
+              "target_hit_high_alt_yield_per_attempt": 0.3688151041666667,
+              "internal_diversity": 0.8551678969423594,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9470064431982396,
+              "step_kl": 0.0002302750654052943
+            },
+            "+1": {
+              "valid_rate": 0.9908854166666666,
+              "mean_prop_valid": 1.3446216029770406,
+              "delta_prop_valid": 0.1057547603719251,
+              "target_hit_high_yield_per_attempt": 0.053059895833333336,
+              "target_hit_low_yield_per_attempt": 0.6083984375,
+              "target_hit_high_alt_yield_per_attempt": 0.3824869791666667,
+              "internal_diversity": 0.85471895366342,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9434951726728915,
+              "step_kl": 0.0009227942985792955
+            },
+            "+2": {
+              "valid_rate": 0.9889322916666666,
+              "mean_prop_valid": 1.4374930150238845,
+              "delta_prop_valid": 0.19862617241876893,
+              "target_hit_high_yield_per_attempt": 0.068359375,
+              "target_hit_low_yield_per_attempt": 0.5472005208333334,
+              "target_hit_high_alt_yield_per_attempt": 0.4417317708333333,
+              "internal_diversity": 0.85611977265016,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9466750759377068,
+              "step_kl": 0.00370277549761037
+            },
+            "+4": {
+              "valid_rate": 0.9840494791666666,
+              "mean_prop_valid": 1.6092987639204575,
+              "delta_prop_valid": 0.37043192131534197,
+              "target_hit_high_yield_per_attempt": 0.10416666666666667,
+              "target_hit_low_yield_per_attempt": 0.4417317708333333,
+              "target_hit_high_alt_yield_per_attempt": 0.5423177083333334,
+              "internal_diversity": 0.857344576261708,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9503847941652729,
+              "step_kl": 0.014873380151887735
+            },
+            "+8": {
+              "valid_rate": 0.9811197916666666,
+              "mean_prop_valid": 2.0254431280072303,
+              "delta_prop_valid": 0.786576285402115,
+              "target_hit_high_yield_per_attempt": 0.2275390625,
+              "target_hit_low_yield_per_attempt": 0.21712239583333334,
+              "target_hit_high_alt_yield_per_attempt": 0.7639973958333334,
+              "internal_diversity": 0.8577300478115252,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9555229939845323,
+              "step_kl": 0.05957229187091192
+            },
+            "+16": {
+              "valid_rate": 0.951171875,
+              "mean_prop_valid": 2.580824435070203,
+              "delta_prop_valid": 1.3419575924650875,
+              "target_hit_high_yield_per_attempt": 0.5006510416666666,
+              "target_hit_low_yield_per_attempt": 0.047200520833333336,
+              "target_hit_high_alt_yield_per_attempt": 0.9039713541666666,
+              "internal_diversity": 0.862809184990617,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9705388858200868,
+              "step_kl": 0.23442789415518442
+            }
+          },
+          "logit_token": {
+            "-16": {
+              "valid_rate": 0.9733072916666666,
+              "mean_prop_valid": 0.028397222470176023,
+              "delta_prop_valid": -1.2104696201349394,
+              "target_hit_high_yield_per_attempt": 0.0,
+              "target_hit_low_yield_per_attempt": 0.9733072916666666,
+              "target_hit_high_alt_yield_per_attempt": 0.0,
+              "internal_diversity": 0.8476235867403507,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9655746380571903,
+              "step_kl": 0.3522154887517293
+            },
+            "-8": {
+              "valid_rate": 0.9866536458333334,
+              "mean_prop_valid": 0.2345536712263516,
+              "delta_prop_valid": -1.0043131713787639,
+              "target_hit_high_yield_per_attempt": 0.0006510416666666666,
+              "target_hit_low_yield_per_attempt": 0.9759114583333334,
+              "target_hit_high_alt_yield_per_attempt": 0.0107421875,
+              "internal_diversity": 0.8474909532110567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9580968505513215,
+              "step_kl": 0.10526591042677562
+            },
+            "-4": {
+              "valid_rate": 0.9925130208333334,
+              "mean_prop_valid": 0.6146246163334964,
+              "delta_prop_valid": -0.6242422262716191,
+              "target_hit_high_yield_per_attempt": 0.007161458333333333,
+              "target_hit_low_yield_per_attempt": 0.9036458333333334,
+              "target_hit_high_alt_yield_per_attempt": 0.0888671875,
+              "internal_diversity": 0.8554594439401573,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9534314034161456,
+              "step_kl": 0.029169888546069462
+            },
+            "-2": {
+              "valid_rate": 0.9912109375,
+              "mean_prop_valid": 0.8988537471379635,
+              "delta_prop_valid": -0.34001309546715186,
+              "target_hit_high_yield_per_attempt": 0.010416666666666666,
+              "target_hit_low_yield_per_attempt": 0.806640625,
+              "target_hit_high_alt_yield_per_attempt": 0.1845703125,
+              "internal_diversity": 0.8569742250528858,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9530364420117756,
+              "step_kl": 0.0076544987969100475
+            },
+            "-1": {
+              "valid_rate": 0.9908854166666666,
+              "mean_prop_valid": 1.0587983567271482,
+              "delta_prop_valid": -0.18006848587796723,
+              "target_hit_high_yield_per_attempt": 0.020182291666666668,
+              "target_hit_low_yield_per_attempt": 0.7451171875,
+              "target_hit_high_alt_yield_per_attempt": 0.24576822916666666,
+              "internal_diversity": 0.8557594741890057,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.944486373491851,
+              "step_kl": 0.0019568465650081635
+            },
+            "-0.5": {
+              "valid_rate": 0.990234375,
+              "mean_prop_valid": 1.1439650811452722,
+              "delta_prop_valid": -0.09490176145984323,
+              "target_hit_high_yield_per_attempt": 0.027994791666666668,
+              "target_hit_low_yield_per_attempt": 0.6988932291666666,
+              "target_hit_high_alt_yield_per_attempt": 0.2913411458333333,
+              "internal_diversity": 0.8561944064494466,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9480433697706337,
+              "step_kl": 0.0004944142031793793
+            },
+            "0": {
+              "valid_rate": 0.9879557291666666,
+              "mean_prop_valid": 1.2388668426051155,
+              "delta_prop_valid": 0.0,
+              "target_hit_high_yield_per_attempt": 0.036783854166666664,
+              "target_hit_low_yield_per_attempt": 0.6507161458333334,
+              "target_hit_high_alt_yield_per_attempt": 0.3372395833333333,
+              "internal_diversity": 0.8555851221062567,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9476013471126933,
+              "step_kl": 0.0
+            },
+            "+0.5": {
+              "valid_rate": 0.9892578125,
+              "mean_prop_valid": 1.3382878706455192,
+              "delta_prop_valid": 0.09942102804040369,
+              "target_hit_high_yield_per_attempt": 0.0498046875,
+              "target_hit_low_yield_per_attempt": 0.6022135416666666,
+              "target_hit_high_alt_yield_per_attempt": 0.3870442708333333,
+              "internal_diversity": 0.8556316219968707,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9430727929103044,
+              "step_kl": 0.0005043300528389713
+            },
+            "+1": {
+              "valid_rate": 0.9928385416666666,
+              "mean_prop_valid": 1.4183433170749238,
+              "delta_prop_valid": 0.17947647446980816,
+              "target_hit_high_yield_per_attempt": 0.06608072916666667,
+              "target_hit_low_yield_per_attempt": 0.5592447916666666,
+              "target_hit_high_alt_yield_per_attempt": 0.43359375,
+              "internal_diversity": 0.8554436950268395,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9390063504940406,
+              "step_kl": 0.0020360969162235656
+            },
+            "+2": {
+              "valid_rate": 0.9908854166666666,
+              "mean_prop_valid": 1.5788150562214351,
+              "delta_prop_valid": 0.3399482136163195,
+              "target_hit_high_yield_per_attempt": 0.09342447916666667,
+              "target_hit_low_yield_per_attempt": 0.4576822916666667,
+              "target_hit_high_alt_yield_per_attempt": 0.533203125,
+              "internal_diversity": 0.8530607791232159,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.941845229060377,
+              "step_kl": 0.008286208224793276
+            },
+            "+4": {
+              "valid_rate": 0.9869791666666666,
+              "mean_prop_valid": 1.9056678882291076,
+              "delta_prop_valid": 0.6668010456239922,
+              "target_hit_high_yield_per_attempt": 0.1689453125,
+              "target_hit_low_yield_per_attempt": 0.2591145833333333,
+              "target_hit_high_alt_yield_per_attempt": 0.7278645833333334,
+              "internal_diversity": 0.8528725078567044,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9436083524823505,
+              "step_kl": 0.03415486464897791
+            },
+            "+8": {
+              "valid_rate": 0.9807942708333334,
+              "mean_prop_valid": 2.3916193414991374,
+              "delta_prop_valid": 1.1527524988940216,
+              "target_hit_high_yield_per_attempt": 0.3828125,
+              "target_hit_low_yield_per_attempt": 0.050130208333333336,
+              "target_hit_high_alt_yield_per_attempt": 0.9306640625,
+              "internal_diversity": 0.8547620854721446,
+              "uniqueness": 1.0,
+              "novelty_vs_train": 0.9528751811190915,
+              "step_kl": 0.14332097272078195
+            },
+            "+16": {
+              "valid_rate": 0.822265625,
+              "mean_prop_valid": 2.9139861228559263,
+              "delta_prop_valid": 1.6751192802508112,
+              "target_hit_high_yield_per_attempt": 0.6181640625,
+              "target_hit_low_yield_per_attempt": 0.0022786458333333335,
+              "target_hit_high_alt_yield_per_attempt": 0.8199869791666666,
+              "internal_diversity": 0.8527559366329802,
+              "uniqueness": 0.9952610299460182,
+              "novelty_vs_train": 0.9852666325430457,
+              "step_kl": 0.6138889988263448
+            }
+          },
+          "cov_null": {
+            "-8": {
+              "valid_rate": 0.2981770833333333,
+              "delta_prop_valid": -0.21707637822698,
+              "target_hit_high_yield_per_attempt": 0.015462239583333334,
+              "target_hit_low_yield_per_attempt": 0.20206705729166666,
+              "internal_diversity": 0.8646211893332428,
+              "novelty_vs_train": 0.993915204105415,
+              "step_kl": 0.5193626104543606
+            },
+            "-4": {
+              "valid_rate": 0.8562825520833334,
+              "delta_prop_valid": -0.032628873932532054,
+              "target_hit_high_yield_per_attempt": 0.032063802083333336,
+              "target_hit_low_yield_per_attempt": 0.5681966145833334,
+              "internal_diversity": 0.8583961003087798,
+              "novelty_vs_train": 0.9638054814108843,
+              "step_kl": 0.07791254731516044
+            },
+            "-2": {
+              "valid_rate": 0.9833170572916666,
+              "delta_prop_valid": 0.000939313263389141,
+              "target_hit_high_yield_per_attempt": 0.037516276041666664,
+              "target_hit_low_yield_per_attempt": 0.6460774739583334,
+              "internal_diversity": 0.8561456364999094,
+              "novelty_vs_train": 0.9482356919583186,
+              "step_kl": 0.01170622993959114
+            },
+            "-1": {
+              "valid_rate": 0.9906412760416666,
+              "delta_prop_valid": 0.0026641204522274697,
+              "target_hit_high_yield_per_attempt": 0.0361328125,
+              "target_hit_low_yield_per_attempt": 0.6513671875,
+              "internal_diversity": 0.8553275403816402,
+              "novelty_vs_train": 0.946352979779337,
+              "step_kl": 0.0023471303623712934
+            },
+            "+1": {
+              "valid_rate": 0.9894205729166666,
+              "delta_prop_valid": -0.00027233747533345065,
+              "target_hit_high_yield_per_attempt": 0.037353515625,
+              "target_hit_low_yield_per_attempt": 0.654052734375,
+              "internal_diversity": 0.8555905983487525,
+              "novelty_vs_train": 0.9497320180893682,
+              "step_kl": 0.0021436307021455527
+            },
+            "+2": {
+              "valid_rate": 0.9845377604166666,
+              "delta_prop_valid": -0.007132154236057582,
+              "target_hit_high_yield_per_attempt": 0.035807291666666664,
+              "target_hit_low_yield_per_attempt": 0.6500651041666666,
+              "internal_diversity": 0.8566979270117058,
+              "novelty_vs_train": 0.9510465786301868,
+              "step_kl": 0.010306023934390396
+            },
+            "+4": {
+              "valid_rate": 0.8633626302083334,
+              "delta_prop_valid": -0.017403010470099862,
+              "target_hit_high_yield_per_attempt": 0.032633463541666664,
+              "target_hit_low_yield_per_attempt": 0.576904296875,
+              "internal_diversity": 0.8584206439552542,
+              "novelty_vs_train": 0.9535846057469993,
+              "step_kl": 0.05967708583921194
+            },
+            "+8": {
+              "valid_rate": 0.2979329427083333,
+              "delta_prop_valid": -0.13223433729230374,
+              "target_hit_high_yield_per_attempt": 0.008382161458333334,
+              "target_hit_low_yield_per_attempt": 0.225830078125,
+              "internal_diversity": 0.8611406343565321,
+              "novelty_vs_train": 0.9840682866789892,
+              "step_kl": 0.42488029164572555
+            }
+          },
+          "best_of_n": {
+            "high": {
+              "N=1": {
+                "valid_rate": 0.9879557291666666,
+                "mean_prop_valid": 1.2388668426051155,
+                "delta_prop_valid": 0.0,
+                "target_hit_high_yield_per_selected": 0.036783854166666664,
+                "target_hit_low_yield_per_selected": 0.6507161458333334,
+                "target_hit_high_yield_per_total_attempt": 0.036783854166666664,
+                "target_hit_low_yield_per_total_attempt": 0.6507161458333334,
+                "internal_diversity": 0.8555851221062567,
+                "novelty_vs_train": 0.9476013471126933
+              },
+              "N=2": {
+                "valid_rate": 0.9996744791666666,
+                "mean_prop_valid": 1.599475730083089,
+                "delta_prop_valid": 0.3606088874779734,
+                "target_hit_high_yield_per_selected": 0.06705729166666667,
+                "target_hit_low_yield_per_selected": 0.4518229166666667,
+                "target_hit_high_yield_per_total_attempt": 0.033528645833333336,
+                "target_hit_low_yield_per_total_attempt": 0.22591145833333334,
+                "internal_diversity": 0.851606542666611,
+                "novelty_vs_train": 0.9475714172979798
+              },
+              "N=4": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 1.9410807291666667,
+                "delta_prop_valid": 0.7022138865615511,
+                "target_hit_high_yield_per_selected": 0.140625,
+                "target_hit_low_yield_per_selected": 0.203125,
+                "target_hit_high_yield_per_total_attempt": 0.03515625,
+                "target_hit_low_yield_per_total_attempt": 0.05078125,
+                "internal_diversity": 0.852812760919416,
+                "novelty_vs_train": 0.9466145833333334
+              },
+              "N=8": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 2.2415364583333335,
+                "delta_prop_valid": 1.0026696157282178,
+                "target_hit_high_yield_per_selected": 0.2666015625,
+                "target_hit_low_yield_per_selected": 0.040364583333333336,
+                "target_hit_high_yield_per_total_attempt": 0.0333251953125,
+                "target_hit_low_yield_per_total_attempt": 0.005045572916666667,
+                "internal_diversity": 0.8544757732923056,
+                "novelty_vs_train": 0.9524739583333334
+              },
+              "N=16": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 2.5035807291666665,
+                "delta_prop_valid": 1.264713886561551,
+                "target_hit_high_yield_per_selected": 0.4759114583333333,
+                "target_hit_low_yield_per_selected": 0.0013020833333333333,
+                "target_hit_high_yield_per_total_attempt": 0.029744466145833332,
+                "target_hit_low_yield_per_total_attempt": 8.138020833333333e-05,
+                "internal_diversity": 0.8568956861500657,
+                "novelty_vs_train": 0.9593098958333334
+              }
+            },
+            "low": {
+              "N=1": {
+                "valid_rate": 0.9879557291666666,
+                "mean_prop_valid": 1.2388668426051155,
+                "delta_prop_valid": 0.0,
+                "target_hit_high_yield_per_selected": 0.036783854166666664,
+                "target_hit_low_yield_per_selected": 0.6507161458333334,
+                "target_hit_high_yield_per_total_attempt": 0.036783854166666664,
+                "target_hit_low_yield_per_total_attempt": 0.6507161458333334,
+                "internal_diversity": 0.8555851221062567,
+                "novelty_vs_train": 0.9476013471126933
+              },
+              "N=2": {
+                "valid_rate": 0.9996744791666666,
+                "mean_prop_valid": 0.8414188508064516,
+                "delta_prop_valid": -0.3974479917986639,
+                "target_hit_high_yield_per_selected": 0.0032552083333333335,
+                "target_hit_low_yield_per_selected": 0.8854166666666666,
+                "target_hit_high_yield_per_total_attempt": 0.0016276041666666667,
+                "target_hit_low_yield_per_total_attempt": 0.4427083333333333,
+                "internal_diversity": 0.8527596019138522,
+                "novelty_vs_train": 0.9456189287023461
+              },
+              "N=4": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 0.5364583333333334,
+                "delta_prop_valid": -0.7024085092717822,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 0.9827473958333334,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.24568684895833334,
+                "internal_diversity": 0.8526424002019883,
+                "novelty_vs_train": 0.9430338541666666
+              },
+              "N=8": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 0.2884114583333333,
+                "delta_prop_valid": -0.9504553842717822,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 0.9990234375,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.1248779296875,
+                "internal_diversity": 0.8488864366850764,
+                "novelty_vs_train": 0.9485677083333334
+              },
+              "N=16": {
+                "valid_rate": 1.0,
+                "mean_prop_valid": 0.08203125,
+                "delta_prop_valid": -1.1568355926051155,
+                "target_hit_high_yield_per_selected": 0.0,
+                "target_hit_low_yield_per_selected": 1.0,
+                "target_hit_high_yield_per_total_attempt": 0.0,
+                "target_hit_low_yield_per_total_attempt": 0.0625,
+                "internal_diversity": 0.8430091677390994,
+                "novelty_vs_train": 0.9514973958333334
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

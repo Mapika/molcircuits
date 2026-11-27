@@ -1,0 +1,403 @@
+{
+  "smarts_31": [
+    {
+      "name": "alcohol",
+      "smarts": "[OX2H][CX4]",
+      "sae_wsd": 0.578965832065191,
+      "neuron_wsd": 0.3086142155786557,
+      "atom_id_wsd": 0.38002614711513477
+    },
+    {
+      "name": "alkene",
+      "smarts": "[CX3]=[CX3]",
+      "sae_wsd": 0.6533064066557163,
+      "neuron_wsd": 0.34003507269434025,
+      "atom_id_wsd": 0.30571515238315605
+    },
+    {
+      "name": "amide",
+      "smarts": "[NX3][CX3](=[OX1])",
+      "sae_wsd": 0.4825788522947528,
+      "neuron_wsd": 0.41885776156298754,
+      "atom_id_wsd": 0.4369426707221111
+    },
+    {
+      "name": "benzene",
+      "smarts": "c1ccccc1",
+      "sae_wsd": 0.6298896357074915,
+      "neuron_wsd": 0.43996715919302387,
+      "atom_id_wsd": 0.8594375709657457
+    },
+    {
+      "name": "carboxylic_acid",
+      "smarts": "[CX3](=O)[OX2H1]",
+      "sae_wsd": 0.5489805022650045,
+      "neuron_wsd": 0.4364794620163603,
+      "atom_id_wsd": 0.5533557148785347
+    },
+    {
+      "name": "chloro_aromatic",
+      "smarts": "[Cl][c]",
+      "sae_wsd": 0.6885756167036495,
+      "neuron_wsd": 0.37449883279080004,
+      "atom_id_wsd": 0.6889328404928605
+    },
+    {
+      "name": "cyclohexane",
+      "smarts": "C1CCCCC1",
+      "sae_wsd": 0.2567051954078341,
+      "neuron_wsd": 0.35271919247510647,
+      "atom_id_wsd": 0.2808166265010262
+    },
+    {
+      "name": "ester",
+      "smarts": "[CX3](=O)[OX2H0][#6]",
+      "sae_wsd": 0.3861652088786414,
+      "neuron_wsd": 0.3867348185765341,
+      "atom_id_wsd": 0.46006290253614784
+    },
+    {
+      "name": "ether",
+      "smarts": "[OD2]([#6])[#6]",
+      "sae_wsd": 0.4787418763941225,
+      "neuron_wsd": 0.27040579668285436,
+      "atom_id_wsd": 0.2878983210966035
+    },
+    {
+      "name": "fluoro_aliphatic",
+      "smarts": "[F][CX4]",
+      "sae_wsd": 0.7463626913327607,
+      "neuron_wsd": 0.43879979215587256,
+      "atom_id_wsd": 0.7624184469732853
+    },
+    {
+      "name": "fluoro_aromatic",
+      "smarts": "[F][c]",
+      "sae_wsd": 0.676481695874887,
+      "neuron_wsd": 0.3550206543029375,
+      "atom_id_wsd": 0.678787285117498
+    },
+    {
+      "name": "furan",
+      "smarts": "c1ccoc1",
+      "sae_wsd": 0.4631872462176503,
+      "neuron_wsd": 0.35946197763021237,
+      "atom_id_wsd": 0.62796743817236
+    },
+    {
+      "name": "imidazole",
+      "smarts": "c1cnc[nH]1",
+      "sae_wsd": 0.3988478038915036,
+      "neuron_wsd": 0.3792134539077427,
+      "atom_id_wsd": 0.45688775657779646
+    },
+    {
+      "name": "isopropyl",
+      "smarts": "[CH1X4]([CH3])[CH3]",
+      "sae_wsd": 0.528239950060442,
+      "neuron_wsd": 0.47403912601411147,
+      "atom_id_wsd": 0.4038364815084223
+    },
+    {
+      "name": "ketone",
+      "smarts": "[#6][CX3](=O)[#6]",
+      "sae_wsd": 0.32704725077846547,
+      "neuron_wsd": 0.28121448624706274,
+      "atom_id_wsd": 0.12952436271702394
+    },
+    {
+      "name": "morpholine",
+      "smarts": "C1COCCN1",
+      "sae_wsd": 0.2650859640703613,
+      "neuron_wsd": 0.3359392756939996,
+      "atom_id_wsd": 0.23481419270824885
+    },
+    {
+      "name": "nitrile",
+      "smarts": "[NX1]#[CX2]",
+      "sae_wsd": 0.6759277282533277,
+      "neuron_wsd": 0.41711979745714417,
+      "atom_id_wsd": 0.3842975202636832
+    },
+    {
+      "name": "nitro",
+      "smarts": "[NX3+](=[OX1])[OX1-]",
+      "sae_wsd": 0.7419765729595115,
+      "neuron_wsd": 0.6510928968588511,
+      "atom_id_wsd": 0.5492919501331118
+    },
+    {
+      "name": "phenol",
+      "smarts": "[OX2H][c]",
+      "sae_wsd": 0.6647071218549322,
+      "neuron_wsd": 0.29947770992580586,
+      "atom_id_wsd": 0.36260542682701785
+    },
+    {
+      "name": "piperazine",
+      "smarts": "C1CNCCN1",
+      "sae_wsd": 0.3617926868029196,
+      "neuron_wsd": 0.40871500662776156,
+      "atom_id_wsd": 0.4109694174937788
+    },
+    {
+      "name": "piperidine",
+      "smarts": "C1CCNCC1",
+      "sae_wsd": 0.23167099666517152,
+      "neuron_wsd": 0.3778548886554393,
+      "atom_id_wsd": 0.22979882392267117
+    },
+    {
+      "name": "primary_amine",
+      "smarts": "[NX3;H2;!$([NX3][CX3]=[OX1])]",
+      "sae_wsd": 0.445092419674279,
+      "neuron_wsd": 0.33493144799793656,
+      "atom_id_wsd": 0.6076373813172563
+    },
+    {
+      "name": "pyridine",
+      "smarts": "c1ccncc1",
+      "sae_wsd": 0.44092877386457,
+      "neuron_wsd": 0.34632209905257677,
+      "atom_id_wsd": 0.6762589651504388
+    },
+    {
+      "name": "pyrimidine",
+      "smarts": "c1cncnc1",
+      "sae_wsd": 0.40077933087023404,
+      "neuron_wsd": 0.32530254107366174,
+      "atom_id_wsd": 0.5394122216543342
+    },
+    {
+      "name": "sulfonamide",
+      "smarts": "[SX4](=[OX1])(=[OX1])[NX3]",
+      "sae_wsd": 0.5649924502920013,
+      "neuron_wsd": 0.5531310970503632,
+      "atom_id_wsd": 0.48067746871487577
+    },
+    {
+      "name": "sulfone",
+      "smarts": "[SX4](=[OX1])(=[OX1])([#6])[#6]",
+      "sae_wsd": 0.4517651867327523,
+      "neuron_wsd": 0.36993080944141515,
+      "atom_id_wsd": 0.38255167327712547
+    },
+    {
+      "name": "tert_butyl",
+      "smarts": "[CX4]([CH3])([CH3])[CH3]",
+      "sae_wsd": 0.5583736396044848,
+      "neuron_wsd": 0.42929378785789024,
+      "atom_id_wsd": 0.44255384181584784
+    },
+    {
+      "name": "thioether",
+      "smarts": "[SX2]([#6])[#6]",
+      "sae_wsd": 0.5336292639808845,
+      "neuron_wsd": 0.3868589055084631,
+      "atom_id_wsd": 0.5272235127322397
+    },
+    {
+      "name": "thiophene",
+      "smarts": "c1ccsc1",
+      "sae_wsd": 0.4870646058755352,
+      "neuron_wsd": 0.41069353536887915,
+      "atom_id_wsd": 0.661237447261425
+    },
+    {
+      "name": "trifluoromethyl",
+      "smarts": "[CX4](F)(F)F",
+      "sae_wsd": 0.7979379674642426,
+      "neuron_wsd": 0.5864108465013795,
+      "atom_id_wsd": 0.8259140469720124
+    },
+    {
+      "name": "urea",
+      "smarts": "[NX3][CX3](=[OX1])[NX3]",
+      "sae_wsd": 0.4328359330449676,
+      "neuron_wsd": 0.39111972507794257,
+      "atom_id_wsd": 0.5608068703045467
+    }
+  ],
+  "moleculeace_30_large": [
+    {
+      "endpoint": "CHEMBL1862_Ki",
+      "sae_rmse": 0.7378611215236205,
+      "neuron_rmse": 0.8350456032139344,
+      "ecfp_rmse": 0.7882242904033712
+    },
+    {
+      "endpoint": "CHEMBL1871_Ki",
+      "sae_rmse": 0.714101913770711,
+      "neuron_rmse": 0.7513191316321294,
+      "ecfp_rmse": 0.6773043983778119
+    },
+    {
+      "endpoint": "CHEMBL2034_Ki",
+      "sae_rmse": 0.7228116186856316,
+      "neuron_rmse": 0.7462683057489827,
+      "ecfp_rmse": 0.7214205562380904
+    },
+    {
+      "endpoint": "CHEMBL2047_EC50",
+      "sae_rmse": 0.6606682933931557,
+      "neuron_rmse": 0.6925874700324751,
+      "ecfp_rmse": 0.5948880359420816
+    },
+    {
+      "endpoint": "CHEMBL204_Ki",
+      "sae_rmse": 0.7856940047855123,
+      "neuron_rmse": 0.8760888360206075,
+      "ecfp_rmse": 0.7446904848703824
+    },
+    {
+      "endpoint": "CHEMBL2147_Ki",
+      "sae_rmse": 0.6705909933165893,
+      "neuron_rmse": 0.7906135225138119,
+      "ecfp_rmse": 0.6449433235117433
+    },
+    {
+      "endpoint": "CHEMBL214_Ki",
+      "sae_rmse": 0.6991983052759773,
+      "neuron_rmse": 0.7639006397388618,
+      "ecfp_rmse": 0.6629270055057229
+    },
+    {
+      "endpoint": "CHEMBL218_EC50",
+      "sae_rmse": 0.7104472450495032,
+      "neuron_rmse": 0.7694365935141289,
+      "ecfp_rmse": 0.698422300498723
+    },
+    {
+      "endpoint": "CHEMBL219_Ki",
+      "sae_rmse": 0.744326274659648,
+      "neuron_rmse": 0.8036224368158038,
+      "ecfp_rmse": 0.7256670905273416
+    },
+    {
+      "endpoint": "CHEMBL228_Ki",
+      "sae_rmse": 0.6879423452283944,
+      "neuron_rmse": 0.7834567699903617,
+      "ecfp_rmse": 0.6520814165152289
+    },
+    {
+      "endpoint": "CHEMBL231_Ki",
+      "sae_rmse": 0.7333687148364935,
+      "neuron_rmse": 0.8438257237739011,
+      "ecfp_rmse": 0.7366408452828056
+    },
+    {
+      "endpoint": "CHEMBL233_Ki",
+      "sae_rmse": 0.7919690796117441,
+      "neuron_rmse": 0.8532336649868691,
+      "ecfp_rmse": 0.8087978793714505
+    },
+    {
+      "endpoint": "CHEMBL234_Ki",
+      "sae_rmse": 0.684111007515343,
+      "neuron_rmse": 0.7445987114053466,
+      "ecfp_rmse": 0.6531140841048914
+    },
+    {
+      "endpoint": "CHEMBL235_EC50",
+      "sae_rmse": 0.6472653345304044,
+      "neuron_rmse": 0.7094800927897312,
+      "ecfp_rmse": 0.6686669961077737
+    },
+    {
+      "endpoint": "CHEMBL236_Ki",
+      "sae_rmse": 0.7499635586708121,
+      "neuron_rmse": 0.8067729094132782,
+      "ecfp_rmse": 0.7095235615697414
+    },
+    {
+      "endpoint": "CHEMBL237_EC50",
+      "sae_rmse": 0.797712078766781,
+      "neuron_rmse": 0.8825082028506884,
+      "ecfp_rmse": 0.7538834399396306
+    },
+    {
+      "endpoint": "CHEMBL237_Ki",
+      "sae_rmse": 0.7440691624516771,
+      "neuron_rmse": 0.8031965181364472,
+      "ecfp_rmse": 0.7097989994934398
+    },
+    {
+      "endpoint": "CHEMBL238_Ki",
+      "sae_rmse": 0.6629929613765957,
+      "neuron_rmse": 0.7621965853756979,
+      "ecfp_rmse": 0.6426214373117695
+    },
+    {
+      "endpoint": "CHEMBL239_EC50",
+      "sae_rmse": 0.6930987261465272,
+      "neuron_rmse": 0.744106352051786,
+      "ecfp_rmse": 0.6785072981568029
+    },
+    {
+      "endpoint": "CHEMBL244_Ki",
+      "sae_rmse": 0.7758371324187326,
+      "neuron_rmse": 0.8539104031795882,
+      "ecfp_rmse": 0.7445380914771587
+    },
+    {
+      "endpoint": "CHEMBL262_Ki",
+      "sae_rmse": 0.6979655267895041,
+      "neuron_rmse": 0.7963816285645299,
+      "ecfp_rmse": 0.7156701269673437
+    },
+    {
+      "endpoint": "CHEMBL264_Ki",
+      "sae_rmse": 0.630642154503669,
+      "neuron_rmse": 0.6940395754318618,
+      "ecfp_rmse": 0.6535353732934942
+    },
+    {
+      "endpoint": "CHEMBL2835_Ki",
+      "sae_rmse": 0.4236003882542105,
+      "neuron_rmse": 0.46587818930697567,
+      "ecfp_rmse": 0.3927520320696091
+    },
+    {
+      "endpoint": "CHEMBL287_Ki",
+      "sae_rmse": 0.6878168614321121,
+      "neuron_rmse": 0.7561765283254749,
+      "ecfp_rmse": 0.7260572237339605
+    },
+    {
+      "endpoint": "CHEMBL2971_Ki",
+      "sae_rmse": 0.6386689898569621,
+      "neuron_rmse": 0.6929922294132438,
+      "ecfp_rmse": 0.6374528287019354
+    },
+    {
+      "endpoint": "CHEMBL3979_EC50",
+      "sae_rmse": 0.6641495077333093,
+      "neuron_rmse": 0.6799462068625624,
+      "ecfp_rmse": 0.6564633416411123
+    },
+    {
+      "endpoint": "CHEMBL4005_Ki",
+      "sae_rmse": 0.6664979240604564,
+      "neuron_rmse": 0.6847936412131896,
+      "ecfp_rmse": 0.6395276154295358
+    },
+    {
+      "endpoint": "CHEMBL4203_Ki",
+      "sae_rmse": 0.8909340450471834,
+      "neuron_rmse": 0.9213958331591067,
+      "ecfp_rmse": 0.8591258815026097
+    },
+    {
+      "endpoint": "CHEMBL4616_EC50",
+      "sae_rmse": 0.679947214902433,
+      "neuron_rmse": 0.6842587720193216,
+      "ecfp_rmse": 0.6847584699298087
+    },
+    {
+      "endpoint": "CHEMBL4792_Ki",
+      "sae_rmse": 0.700761491634006,
+      "neuron_rmse": 0.7796485003581232,
+      "ecfp_rmse": 0.6727492645263581
+    }
+  ]
+}

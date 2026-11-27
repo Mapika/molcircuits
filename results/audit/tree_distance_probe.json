@@ -1,0 +1,81 @@
+{
+  "config": {
+    "n_mols": 1000,
+    "pairs_sha256": "d397777b9c28730f001c8076e44ce2bb4a958013716b4018fdec977be1af17de",
+    "split": "500/500 molecule-grouped (seed 2026, exact 04_graph_invariance.py split)",
+    "n_train_pairs": 40000,
+    "n_test_pairs": 40000,
+    "n_ring_shortened_test_pairs": 17144,
+    "block_idx_zero_based": 6
+  },
+  "baselines": {
+    "token_offset_only": {
+      "alpha": 0.01,
+      "r2_all": 0.436429669149786,
+      "r2_ring_shortened": 0.19477219656199818
+    },
+    "token_offset_plus_branch_tree": {
+      "alpha": 0.31622776601683794,
+      "r2_all": 0.8420523679646995,
+      "r2_ring_shortened": 0.7302257216076908
+    }
+  },
+  "models": {
+    "canonical_large": {
+      "seed0": {
+        "ckpt": "runs/grid/zinc_large/tf_seed0/checkpoint.pt",
+        "alpha_tree_plus_hidden": 10.0,
+        "r2_hidden_only_all": 0.5831584626223439,
+        "r2_tree_plus_hidden_all": 0.8900582824026024,
+        "r2_tree_plus_hidden_ring_shortened": 0.8309705974358846
+      },
+      "seed1": {
+        "ckpt": "runs/grid/zinc_large/tf_seed1/checkpoint.pt",
+        "alpha_tree_plus_hidden": 3.162277660168379,
+        "r2_hidden_only_all": 0.5800953711082648,
+        "r2_tree_plus_hidden_all": 0.8886853684817881,
+        "r2_tree_plus_hidden_ring_shortened": 0.8299127464407694
+      },
+      "seed2": {
+        "ckpt": "runs/grid/zinc_large/tf_seed2/checkpoint.pt",
+        "alpha_tree_plus_hidden": 3.162277660168379,
+        "r2_hidden_only_all": 0.5919428260602777,
+        "r2_tree_plus_hidden_all": 0.890586835802905,
+        "r2_tree_plus_hidden_ring_shortened": 0.8316188819825148
+      },
+      "mean": {
+        "r2_hidden_only_all": 0.5850655532636287,
+        "r2_tree_plus_hidden_all": 0.8897768288957651,
+        "r2_tree_plus_hidden_ring_shortened": 0.8308340752863895
+      }
+    },
+    "randomized_large": {
+      "seed0": {
+        "ckpt": "runs/grid_rand/zinc_large/tf_seed0/checkpoint.pt",
+        "alpha_tree_plus_hidden": 3.162277660168379,
+        "r2_hidden_only_all": 0.6925259721854921,
+        "r2_tree_plus_hidden_all": 0.8998404515694761,
+        "r2_tree_plus_hidden_ring_shortened": 0.8444366618578794
+      },
+      "seed1": {
+        "ckpt": "runs/grid_rand/zinc_large/tf_seed1/checkpoint.pt",
+        "alpha_tree_plus_hidden": 100.0,
+        "r2_hidden_only_all": 0.6781678516379196,
+        "r2_tree_plus_hidden_all": 0.9021161350863337,
+        "r2_tree_plus_hidden_ring_shortened": 0.8487836370678234
+      },
+      "seed2": {
+        "ckpt": "runs/grid_rand/zinc_large/tf_seed2/checkpoint.pt",
+        "alpha_tree_plus_hidden": 0.03162277660168379,
+        "r2_hidden_only_all": 0.6706832935815998,
+        "r2_tree_plus_hidden_all": 0.8997476797647674,
+        "r2_tree_plus_hidden_ring_shortened": 0.8446332288953524
+      },
+      "mean": {
+        "r2_hidden_only_all": 0.6804590391350039,
+        "r2_tree_plus_hidden_all": 0.9005680888068591,
+        "r2_tree_plus_hidden_ring_shortened": 0.8459511759403519
+      }
+    }
+  }
+}

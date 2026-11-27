@@ -1,0 +1,34 @@
+# Python bytecode, virtualenvs, caches, build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Bulk data, model checkpoints, dense array caches, and run logs
+data/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.smi
+*.log
+
+# Local manuscript sources, submission bundles, and plotting scripts
+paper/
+experiments/figures/
+molcircuits/figures/
+*-review.md
+
+# Track curated lightweight JSON summaries and compact valence-atlas NPZ arrays
+!results/
+!results/**/*.json
+!results/canonical_grid/valence_atlas.npz
+!results/canonical_grid/valence_patching/*.npz

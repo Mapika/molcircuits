@@ -1,0 +1,10 @@
+{
+  "n": 10000,
+  "validity": 0.9913,
+  "uniqueness": 1.0,
+  "novelty": 0.9468374861293252,
+  "n_scaffolds": 8639,
+  "mean_qed": 0.7944272260606273,
+  "max_tokens": 256,
+  "temperature": 1.0
+}

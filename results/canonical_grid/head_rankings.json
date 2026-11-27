@@ -1,0 +1,364 @@
+{
+  "runs": {
+    "small_0": {
+      "source": "zinc_small/pointers_seed0/pointer_results.json",
+      "sha256": "546b72e266e0d28471f7178e58d74b45744def813af8f5e53d7c99a080077c62",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 16,
+        "strongest_pointer": {
+          "layer": 2,
+          "head": 2,
+          "pointer_mass": 0.31236759232894135,
+          "relative_specificity": 0.0442968420455192
+        },
+        "most_specific_head": {
+          "layer": 0,
+          "head": 3,
+          "pointer_mass": 0.07694266906798884,
+          "relative_specificity": 0.2746251810195375
+        },
+        "specificity_rank_of_pointer": 6
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 16,
+        "strongest_pointer": {
+          "layer": 3,
+          "head": 2,
+          "pointer_mass": 0.2838320142902472,
+          "relative_specificity": -0.00279779199022857
+        },
+        "most_specific_head": {
+          "layer": 0,
+          "head": 1,
+          "pointer_mass": 0.014424965676543252,
+          "relative_specificity": 0.2529112657342426
+        },
+        "specificity_rank_of_pointer": 3
+      }
+    },
+    "small_1": {
+      "source": "zinc_small/pointers_seed1/pointer_results.json",
+      "sha256": "955db85f515b0ef0babd073517b591297ead89dedf9bd55f53b81f17d140c1da",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 16,
+        "strongest_pointer": {
+          "layer": 2,
+          "head": 3,
+          "pointer_mass": 0.2765723528621939,
+          "relative_specificity": 0.09552263147210296
+        },
+        "most_specific_head": {
+          "layer": 0,
+          "head": 0,
+          "pointer_mass": 0.013570081428747462,
+          "relative_specificity": 0.4392246497422091
+        },
+        "specificity_rank_of_pointer": 2
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 16,
+        "strongest_pointer": {
+          "layer": 1,
+          "head": 2,
+          "pointer_mass": 0.4291595486439634,
+          "relative_specificity": -0.10774123332656674
+        },
+        "most_specific_head": {
+          "layer": 3,
+          "head": 0,
+          "pointer_mass": 0.04063602603795332,
+          "relative_specificity": -0.010078699583683567
+        },
+        "specificity_rank_of_pointer": 10
+      }
+    },
+    "small_2": {
+      "source": "zinc_small/pointers_seed2/pointer_results.json",
+      "sha256": "f4f5ff4b5f97cdd9a1a34a799f63edce895e76186a5e8e5ecbac6a688d704d36",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 16,
+        "strongest_pointer": {
+          "layer": 2,
+          "head": 1,
+          "pointer_mass": 0.8729998759658697,
+          "relative_specificity": 0.2629950922429044
+        },
+        "most_specific_head": {
+          "layer": 0,
+          "head": 2,
+          "pointer_mass": 0.011381938195580945,
+          "relative_specificity": 0.4231463910205675
+        },
+        "specificity_rank_of_pointer": 2
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 16,
+        "strongest_pointer": {
+          "layer": 0,
+          "head": 1,
+          "pointer_mass": 0.6031776131989056,
+          "relative_specificity": -0.05099993306748196
+        },
+        "most_specific_head": {
+          "layer": 3,
+          "head": 0,
+          "pointer_mass": 0.09200874967114939,
+          "relative_specificity": 0.0012507698561392971
+        },
+        "specificity_rank_of_pointer": 6
+      }
+    },
+    "base_0": {
+      "source": "zinc_base/pointers_seed0/pointer_results.json",
+      "sha256": "d383acc3241ab9c8244de794ea95fea9b355395a92f1bd3bcf9b8a43c5ef464c",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 48,
+        "strongest_pointer": {
+          "layer": 4,
+          "head": 4,
+          "pointer_mass": 0.7241030946286684,
+          "relative_specificity": 0.0141784303939727
+        },
+        "most_specific_head": {
+          "layer": 1,
+          "head": 1,
+          "pointer_mass": 5.115335660628173e-05,
+          "relative_specificity": 0.29917498945146626
+        },
+        "specificity_rank_of_pointer": 15
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 48,
+        "strongest_pointer": {
+          "layer": 2,
+          "head": 7,
+          "pointer_mass": 0.667176667413736,
+          "relative_specificity": -0.01646839153808649
+        },
+        "most_specific_head": {
+          "layer": 0,
+          "head": 4,
+          "pointer_mass": 1.9981181708776205e-07,
+          "relative_specificity": 0.23939456811643767
+        },
+        "specificity_rank_of_pointer": 31
+      }
+    },
+    "base_1": {
+      "source": "zinc_base/pointers_seed1/pointer_results.json",
+      "sha256": "6011cd1f96b626b8836d080c11f86e6ce9729122a1afe9075e3771c0b3248fe3",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 48,
+        "strongest_pointer": {
+          "layer": 3,
+          "head": 5,
+          "pointer_mass": 0.6162280074772305,
+          "relative_specificity": -0.014775662610962068
+        },
+        "most_specific_head": {
+          "layer": 1,
+          "head": 5,
+          "pointer_mass": 1.5183789034877954e-07,
+          "relative_specificity": 0.34290167652105863
+        },
+        "specificity_rank_of_pointer": 36
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 48,
+        "strongest_pointer": {
+          "layer": 5,
+          "head": 2,
+          "pointer_mass": 0.6319092921349172,
+          "relative_specificity": -0.011495605242459628
+        },
+        "most_specific_head": {
+          "layer": 5,
+          "head": 4,
+          "pointer_mass": 0.02321800585282646,
+          "relative_specificity": 0.009393328878587914
+        },
+        "specificity_rank_of_pointer": 27
+      }
+    },
+    "base_2": {
+      "source": "zinc_base/pointers_seed2/pointer_results.json",
+      "sha256": "2f1c77f0df9d53355d5ddf564a60517dc8668fa07a760b736759416b99ebcb80",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 48,
+        "strongest_pointer": {
+          "layer": 3,
+          "head": 5,
+          "pointer_mass": 0.8373588119640372,
+          "relative_specificity": 0.09256612189071996
+        },
+        "most_specific_head": {
+          "layer": 2,
+          "head": 2,
+          "pointer_mass": 8.783440689303394e-06,
+          "relative_specificity": 0.36781971843816585
+        },
+        "specificity_rank_of_pointer": 4
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 48,
+        "strongest_pointer": {
+          "layer": 5,
+          "head": 5,
+          "pointer_mass": 0.6618217972161218,
+          "relative_specificity": -0.0016298752194715497
+        },
+        "most_specific_head": {
+          "layer": 2,
+          "head": 2,
+          "pointer_mass": 0.28070318267857697,
+          "relative_specificity": 0.13234702333304532
+        },
+        "specificity_rank_of_pointer": 12
+      }
+    },
+    "large_0": {
+      "source": "zinc_large/pointers_seed0/pointer_results.json",
+      "sha256": "310459380fee9de60aa637993058a793b6677e81cee5c5c3afe807f007f8884f",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 144,
+        "strongest_pointer": {
+          "layer": 8,
+          "head": 5,
+          "pointer_mass": 0.8642886443340594,
+          "relative_specificity": 0.006555677027330073
+        },
+        "most_specific_head": {
+          "layer": 1,
+          "head": 3,
+          "pointer_mass": 1.4430066394329673e-14,
+          "relative_specificity": 0.3785103502541076
+        },
+        "specificity_rank_of_pointer": 17
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 144,
+        "strongest_pointer": {
+          "layer": 2,
+          "head": 0,
+          "pointer_mass": 0.6522851834172085,
+          "relative_specificity": -8.266947849854553e-05
+        },
+        "most_specific_head": {
+          "layer": 1,
+          "head": 2,
+          "pointer_mass": 0.0009042022597019521,
+          "relative_specificity": 0.021981423889709646
+        },
+        "specificity_rank_of_pointer": 51
+      }
+    },
+    "large_1": {
+      "source": "zinc_large/pointers_seed1/pointer_results.json",
+      "sha256": "f012896bd2ea61d8eec4945caf0c5b5e50eae303da86b93e6105809251052663",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 144,
+        "strongest_pointer": {
+          "layer": 7,
+          "head": 2,
+          "pointer_mass": 0.7853037444413007,
+          "relative_specificity": 0.003061737190431309
+        },
+        "most_specific_head": {
+          "layer": 2,
+          "head": 7,
+          "pointer_mass": 9.236200713275162e-07,
+          "relative_specificity": 0.3037522264925
+        },
+        "specificity_rank_of_pointer": 23
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 144,
+        "strongest_pointer": {
+          "layer": 4,
+          "head": 1,
+          "pointer_mass": 0.6661439132064945,
+          "relative_specificity": -0.0025962919251217406
+        },
+        "most_specific_head": {
+          "layer": 0,
+          "head": 4,
+          "pointer_mass": 1.9956117713075852e-06,
+          "relative_specificity": 0.2527625609072033
+        },
+        "specificity_rank_of_pointer": 87
+      }
+    },
+    "large_2": {
+      "source": "zinc_large/pointers_seed2/pointer_results.json",
+      "sha256": "65cc33c4974bba4d8a94f1fe3b0570a4d8d12f52095e7680d09179e12c20a4fd",
+      "ring": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 144,
+        "strongest_pointer": {
+          "layer": 7,
+          "head": 8,
+          "pointer_mass": 0.8283524487488254,
+          "relative_specificity": -0.002016293717900573
+        },
+        "most_specific_head": {
+          "layer": 1,
+          "head": 1,
+          "pointer_mass": 0.06075000000000975,
+          "relative_specificity": 0.522148629292802
+        },
+        "specificity_rank_of_pointer": 101
+      },
+      "branch": {
+        "n_events": 4000,
+        "n_controls": 16000,
+        "n_heads": 144,
+        "strongest_pointer": {
+          "layer": 3,
+          "head": 6,
+          "pointer_mass": 0.6667623470181441,
+          "relative_specificity": 0.0004539176845451611
+        },
+        "most_specific_head": {
+          "layer": 0,
+          "head": 7,
+          "pointer_mass": 3.0284209296206897e-06,
+          "relative_specificity": 0.017534012090423705
+        },
+        "specificity_rank_of_pointer": 53
+      }
+    }
+  }
+}

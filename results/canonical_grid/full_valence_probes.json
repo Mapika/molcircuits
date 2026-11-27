@@ -1,0 +1,241 @@
+{
+  "runs": {
+    "small_seed0": {
+      "size": "small",
+      "seed": 0,
+      "width": 256,
+      "depth": 4,
+      "accuracy_by_layer": [
+        0.9991351974632459,
+        0.9995315652925916,
+        0.9961083885846065,
+        0.9463822427212453
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7124,
+      "ordinal_layer": 2,
+      "heldout_r2": 0.9330662142015308,
+      "token_only_accuracy": 0.8667123090227732,
+      "first_pc_variance_fraction": 0.47488712109312964,
+      "cosine_with_first_pc": 0.02244188738092784,
+      "sources": {
+        "grid/zinc_small/valence_seed0/valence_results.json": "37f2cf75dd3a84490b162619d4cf739cb7fffc93fc0a3ccf82ac233198fec237",
+        "grid/zinc_small/valence_geom_seed0/valence_geometry.json": "51180321069bc5c652b2a6cb9b053c445c2a98957e1efda75cf9d72700e9569a"
+      }
+    },
+    "small_seed1": {
+      "size": "small",
+      "seed": 1,
+      "width": 256,
+      "depth": 4,
+      "accuracy_by_layer": [
+        0.9993494759667509,
+        0.9994578966389591,
+        0.9973256234188652,
+        0.9440549331405854
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7074,
+      "ordinal_layer": 2,
+      "heldout_r2": 0.9194404421702602,
+      "token_only_accuracy": 0.8699313335742681,
+      "first_pc_variance_fraction": 0.4213701030886965,
+      "cosine_with_first_pc": 0.020609453760673926,
+      "sources": {
+        "grid/zinc_small/valence_seed1/valence_results.json": "0c51229a201deee2d3263eb71851ce6050867d1548e4b624fcefc270709bdd64",
+        "grid/zinc_small/valence_geom_seed1/valence_geometry.json": "3b588cfdade33cad5576af26873fea062e4967349dc203628d40e11022eb6e66"
+      }
+    },
+    "small_seed2": {
+      "size": "small",
+      "seed": 2,
+      "width": 256,
+      "depth": 4,
+      "accuracy_by_layer": [
+        0.9994230283797916,
+        0.9995672712848437,
+        0.9961415022898561,
+        0.9480004327287151
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7101,
+      "ordinal_layer": 2,
+      "heldout_r2": 0.9320201093330436,
+      "token_only_accuracy": 0.8676931953409541,
+      "first_pc_variance_fraction": 0.27961085965284466,
+      "cosine_with_first_pc": -0.04134743474172353,
+      "sources": {
+        "grid/zinc_small/valence_seed2/valence_results.json": "fe8e4cc1fa80e55e93657eb5e71e8ca12caedbbbf240dc4d1e38f79da413e074",
+        "grid/zinc_small/valence_geom_seed2/valence_geometry.json": "3b85166b589c1ed747e239952b47ad1cd82a0077950bba6add4ab4d157ea5b34"
+      }
+    },
+    "base_seed0": {
+      "size": "base",
+      "seed": 0,
+      "width": 512,
+      "depth": 6,
+      "accuracy_by_layer": [
+        0.9081867973479388,
+        0.9988108965119631,
+        0.9996756990487172,
+        0.99974776592678,
+        0.9983064283655232,
+        0.9562554050158547
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7124,
+      "ordinal_layer": 4,
+      "heldout_r2": 0.914899387358411,
+      "token_only_accuracy": 0.8667123090227732,
+      "first_pc_variance_fraction": 0.25293984485336546,
+      "cosine_with_first_pc": -0.02101318414298498,
+      "sources": {
+        "grid/zinc_base/valence_seed0/valence_results.json": "b9744566d8bb43396d5a703269c1e6deaa2efbb9d9237acd0bab4b2b77c64514",
+        "grid/zinc_base/valence_geom_seed0/valence_geometry.json": "79b10785a004033c3e97c99ea46138822d1f73af85cec01012f7de8bac68225d"
+      }
+    },
+    "base_seed1": {
+      "size": "base",
+      "seed": 1,
+      "width": 512,
+      "depth": 6,
+      "accuracy_by_layer": [
+        0.9508131550415613,
+        0.9980484279002529,
+        0.9990242139501265,
+        0.9995301770870979,
+        0.9976147452114204,
+        0.9627394289844597
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7074,
+      "ordinal_layer": 4,
+      "heldout_r2": 0.9129336620853996,
+      "token_only_accuracy": 0.8699313335742681,
+      "first_pc_variance_fraction": 0.1949214890849808,
+      "cosine_with_first_pc": 0.01668842516513651,
+      "sources": {
+        "grid/zinc_base/valence_seed1/valence_results.json": "9520c90850519fbc3dae991558597ac994432b70c93f61bf8adbbda3da3725cb",
+        "grid/zinc_base/valence_geom_seed1/valence_geometry.json": "ad247054262da972e3b681159b6a7cd1a8befbca96a2c24f77f4a1dc950c453e"
+      }
+    },
+    "base_seed2": {
+      "size": "base",
+      "seed": 2,
+      "width": 512,
+      "depth": 6,
+      "accuracy_by_layer": [
+        0.9173127546788792,
+        0.9809959972593848,
+        0.9998557570949479,
+        0.9998196963686848,
+        0.998557570949479,
+        0.957123796473261
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7101,
+      "ordinal_layer": 4,
+      "heldout_r2": 0.9270662987808296,
+      "token_only_accuracy": 0.8676931953409541,
+      "first_pc_variance_fraction": 0.2253588161471507,
+      "cosine_with_first_pc": 0.020658503901925248,
+      "sources": {
+        "grid/zinc_base/valence_seed2/valence_results.json": "4a9ace62e2b32e0b7045f2d1072d8f29d24a83554b8f02160adb35c9b784a101",
+        "grid/zinc_base/valence_geom_seed2/valence_geometry.json": "30f5c149921f1a4970c5f937827e990d420fadeaba158ae16482241115660973"
+      }
+    },
+    "large_seed0": {
+      "size": "large",
+      "seed": 0,
+      "width": 768,
+      "depth": 12,
+      "accuracy_by_layer": [
+        0.9267440184491208,
+        0.9985946958777746,
+        0.9994955318535601,
+        0.9996756990487172,
+        0.9994234649754973,
+        0.9999279331219372,
+        0.9997837993658115,
+        0.9999279331219372,
+        0.9996756990487172,
+        0.9992432977803402,
+        0.9969371576823292,
+        0.9817670798501009
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7124,
+      "ordinal_layer": 9,
+      "heldout_r2": 0.9400766658810833,
+      "token_only_accuracy": 0.8667123090227732,
+      "first_pc_variance_fraction": 0.18479412813793192,
+      "cosine_with_first_pc": -0.018936616034440697,
+      "sources": {
+        "grid/zinc_large/valence_seed0/valence_results.json": "648c590cd1b2ffaf83566e0aa4d270612aeb49aa179bc4c9ad954a1a0cd56447",
+        "grid/zinc_large/valence_geom_seed0/valence_geometry.json": "92c7a0e2679ca6e03882e760f4c0b74fa130c4c805d90a9b2621dae607e08e5d"
+      }
+    },
+    "large_seed1": {
+      "size": "large",
+      "seed": 1,
+      "width": 768,
+      "depth": 12,
+      "accuracy_by_layer": [
+        0.9453198409830141,
+        0.9821467293097217,
+        0.9984459703650163,
+        0.9990603541741959,
+        0.9995301770870979,
+        0.9994578966389591,
+        0.9997470184315143,
+        0.9996747379833755,
+        0.9995663173111673,
+        0.9986266714853632,
+        0.9974701843151428,
+        0.9798698951933502
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7074,
+      "ordinal_layer": 9,
+      "heldout_r2": 0.9359625377424159,
+      "token_only_accuracy": 0.8699313335742681,
+      "first_pc_variance_fraction": 0.17663690728654405,
+      "cosine_with_first_pc": 0.024098233258840685,
+      "sources": {
+        "grid/zinc_large/valence_seed1/valence_results.json": "ba6f0125aca28c41b9b1df7bb8829bf459918ead2c8a78caf78e0663d1973cc6",
+        "grid/zinc_large/valence_geom_seed1/valence_geometry.json": "9f08793e6d50256600298b374f14c61994374933a2c59da2ac82ae03e4d8952f"
+      }
+    },
+    "large_seed2": {
+      "size": "large",
+      "seed": 2,
+      "width": 768,
+      "depth": 12,
+      "accuracy_by_layer": [
+        0.9556453066964768,
+        0.9807075114492806,
+        0.9978724171504814,
+        0.9992787854747395,
+        0.9992787854747395,
+        0.9998196963686848,
+        0.9996754534636327,
+        0.9998557570949479,
+        0.9997475749161588,
+        0.9991706032959504,
+        0.9978724171504814,
+        0.9820778190472756
+      ],
+      "n_molecules": 4000,
+      "n_bond_decisions": 7101,
+      "ordinal_layer": 9,
+      "heldout_r2": 0.9519835563710323,
+      "token_only_accuracy": 0.8676931953409541,
+      "first_pc_variance_fraction": 0.24273474940474518,
+      "cosine_with_first_pc": -0.018953402033244242,
+      "sources": {
+        "grid/zinc_large/valence_seed2/valence_results.json": "8fbb8cf80ef799ebbfe982767690573a059db0d3ae3f1ceaf6eb170ae9b151bb",
+        "grid/zinc_large/valence_geom_seed2/valence_geometry.json": "05227ce55a8fce008c25a3f840486207553f561523c8814da956285fd1a0b985"
+      }
+    }
+  }
+}
